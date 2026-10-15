@@ -10,28 +10,33 @@
 namespace tarte {
 
 class Articulation {
+public:
+    struct ReducedSet {
+        std::array<float, 6> areas, positions;
+        std::array<float, 4> etas; // Etas are the "warping exponent"
+    };
+
 private:
-    std::array<float, 6> areas_, positions_;
-    std::array<float, 4> etas_; // Etas are the "warping exponent"
+    ReducedSet reduced_set_;
 
 public:
     Articulation(vowels::Vowel const& v = vowels::a) { SetFromVowel(v); };
 
     void SetFromVowel(vowels::Vowel const& v)
     {
-        positions_ = v.positions;
-        areas_ = v.areas;
-        etas_ = v.etas;
+        reduced_set_.positions = v.positions;
+        reduced_set_.areas = v.areas;
+        reduced_set_.etas = v.etas;
     };
 
     void Interpolate2Vowels(vowels::Vowel const& v1, vowels::Vowel const& v2, float alpha)
     {
         // Vowel = (1 - alpha) * v1 + alpha * v2
         for (size_t i = 0; i < 6; ++i) {
-            positions_[i] = v1.positions[i] + alpha * (v2.positions[i] - v1.positions[i]);
-            areas_[i] = v1.areas[i] + alpha * (v2.areas[i] - v1.areas[i]);
+            reduced_set_.positions[i] = v1.positions[i] + alpha * (v2.positions[i] - v1.positions[i]);
+            reduced_set_.areas[i] = v1.areas[i] + alpha * (v2.areas[i] - v1.areas[i]);
             if (i < 4) {
-                etas_[i] = v1.etas[i] + alpha * (v2.etas[i] - v1.etas[i]); // Only 4 exponents
+                reduced_set_.etas[i] = v1.etas[i] + alpha * (v2.etas[i] - v1.etas[i]); // Only 4 exponents
             }
         }
     };
@@ -44,16 +49,16 @@ public:
             sum_alphas += alphas[i];
         }
         for (size_t i = 0; i < 6; ++i) {
-            positions_[i] = 0;
-            areas_[i] = 0;
+            reduced_set_.positions[i] = 0;
+            reduced_set_.areas[i] = 0;
             if (i < 4) {
-                etas_[i] = 0;
+                reduced_set_.etas[i] = 0;
             }
             for (size_t j = 0; j < n; ++j) {
-                positions_[i] += alphas[j] / sum_alphas * vs[j].positions[i];
-                areas_[i] += alphas[j] / sum_alphas * vs[j].areas[i];
+                reduced_set_.positions[i] += alphas[j] / sum_alphas * vs[j].positions[i];
+                reduced_set_.areas[i] += alphas[j] / sum_alphas * vs[j].areas[i];
                 if (i < 4) {
-                    etas_[i] += alphas[j] / sum_alphas * vs[j].etas[i];
+                    reduced_set_.etas[i] += alphas[j] / sum_alphas * vs[j].etas[i];
                 }
             }
         }
@@ -136,40 +141,42 @@ public:
     template<typename T>
     void getAreas(T const* evaluation_positions, T* out, std::size_t const size)
     {
-        double xscale = positions_[5] / evaluation_positions[size - 1];
+        double xscale = reduced_set_.positions[5] / evaluation_positions[size - 1];
         for (size_t i = 0; i < size; ++i) {
-            if (evaluation_positions[i] * xscale < positions_[0]) {
-                out[i] = areas_[0];
-            } else if (evaluation_positions[i] * xscale < positions_[1]) {
-                out[i] = (areas_[1] + areas_[0]) / 2 +
-                         (areas_[1] - areas_[0]) / 2 *
-                             std::cos(M_PI * std::pow((positions_[1] - evaluation_positions[i] * xscale) /
-                                                          (positions_[1] - positions_[0]),
-                                                      etas_[0]));
-            } else if (evaluation_positions[i] * xscale < positions_[2]) {
-                out[i] = (areas_[2] + areas_[1]) / 2 +
-                         (areas_[2] - areas_[1]) / 2 *
-                             std::cos(M_PI * std::pow((positions_[2] - evaluation_positions[i] * xscale) /
-                                                          (positions_[2] - positions_[1]),
-                                                      etas_[1]));
-            } else if (evaluation_positions[i] * xscale < positions_[3]) {
-                out[i] = (areas_[3] + areas_[2]) / 2 +
-                         (areas_[3] - areas_[2]) / 2 *
-                             std::cos(M_PI * std::pow((positions_[3] - evaluation_positions[i] * xscale) /
-                                                          (positions_[3] - positions_[2]),
-                                                      etas_[2]));
-            } else if (evaluation_positions[i] * xscale < positions_[4]) {
-                out[i] = (areas_[4] + areas_[3]) / 2 +
-                         (areas_[4] - areas_[3]) / 2 *
-                             std::cos(M_PI * std::pow((positions_[4] - evaluation_positions[i] * xscale) /
-                                                          (positions_[4] - positions_[3]),
-                                                      etas_[3]));
+            if (evaluation_positions[i] * xscale < reduced_set_.positions[0]) {
+                out[i] = reduced_set_.areas[0];
+            } else if (evaluation_positions[i] * xscale < reduced_set_.positions[1]) {
+                out[i] = (reduced_set_.areas[1] + reduced_set_.areas[0]) / 2 +
+                         (reduced_set_.areas[1] - reduced_set_.areas[0]) / 2 *
+                             std::cos(M_PI * std::pow((reduced_set_.positions[1] - evaluation_positions[i] * xscale) /
+                                                          (reduced_set_.positions[1] - reduced_set_.positions[0]),
+                                                      reduced_set_.etas[0]));
+            } else if (evaluation_positions[i] * xscale < reduced_set_.positions[2]) {
+                out[i] = (reduced_set_.areas[2] + reduced_set_.areas[1]) / 2 +
+                         (reduced_set_.areas[2] - reduced_set_.areas[1]) / 2 *
+                             std::cos(M_PI * std::pow((reduced_set_.positions[2] - evaluation_positions[i] * xscale) /
+                                                          (reduced_set_.positions[2] - reduced_set_.positions[1]),
+                                                      reduced_set_.etas[1]));
+            } else if (evaluation_positions[i] * xscale < reduced_set_.positions[3]) {
+                out[i] = (reduced_set_.areas[3] + reduced_set_.areas[2]) / 2 +
+                         (reduced_set_.areas[3] - reduced_set_.areas[2]) / 2 *
+                             std::cos(M_PI * std::pow((reduced_set_.positions[3] - evaluation_positions[i] * xscale) /
+                                                          (reduced_set_.positions[3] - reduced_set_.positions[2]),
+                                                      reduced_set_.etas[2]));
+            } else if (evaluation_positions[i] * xscale < reduced_set_.positions[4]) {
+                out[i] = (reduced_set_.areas[4] + reduced_set_.areas[3]) / 2 +
+                         (reduced_set_.areas[4] - reduced_set_.areas[3]) / 2 *
+                             std::cos(M_PI * std::pow((reduced_set_.positions[4] - evaluation_positions[i] * xscale) /
+                                                          (reduced_set_.positions[4] - reduced_set_.positions[3]),
+                                                      reduced_set_.etas[3]));
             } else {
-                out[i] = areas_[5];
+                out[i] = reduced_set_.areas[5];
             }
             // Bound the area
             out[i] = std::max(T(1e-8), out[i]);
         }
     };
+
+    inline ReducedSet get_reduced_set() { return reduced_set_; }
 };
 } // namespace tarte
