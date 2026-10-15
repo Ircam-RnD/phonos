@@ -177,6 +177,8 @@ public:
         }
     };
 
+    void setFromReducedSet(ReducedSet reduced_set) { reduced_set_ = reduced_set; }
+
     inline ReducedSet get_reduced_set() { return reduced_set_; }
 };
 } // namespace tarte
