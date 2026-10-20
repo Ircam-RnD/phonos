@@ -1,0 +1,686 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classphonos_1_1_duffing" kind="class" language="C++" prot="public">
+    <compoundname>phonos::Duffing</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1a52d26843e6aa9c1296bd311e118b9c7c" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::kNumEps</definition>
+        <argsstring></argsstring>
+        <name>kNumEps</name>
+        <qualifiedname>phonos::Duffing::kNumEps</qualifiedname>
+        <initializer>{1e-14}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="16" column="24" bodyfile="include/duffing.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1a8b439704948fb79d2855a44ae4b1780d" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::mass_</definition>
+        <argsstring></argsstring>
+        <name>mass_</name>
+        <qualifiedname>phonos::Duffing::mass_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="19" column="7" bodyfile="include/duffing.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1ad35238d8d380fd5ec412642cf522a3e3" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::stiffness_</definition>
+        <argsstring></argsstring>
+        <name>stiffness_</name>
+        <qualifiedname>phonos::Duffing::stiffness_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="19" column="13" bodyfile="include/duffing.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1a3ef4ee031c59d1018aef798c9ae726a9" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::dissipation_</definition>
+        <argsstring></argsstring>
+        <name>dissipation_</name>
+        <qualifiedname>phonos::Duffing::dissipation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="19" column="24" bodyfile="include/duffing.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1a37a1e71d9414f49d2995524e2655813e" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::amplitude_</definition>
+        <argsstring></argsstring>
+        <name>amplitude_</name>
+        <qualifiedname>phonos::Duffing::amplitude_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="21" column="7" bodyfile="include/duffing.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1aaae722f1b466723f6698cafbcd922ef2" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::pulsation_</definition>
+        <argsstring></argsstring>
+        <name>pulsation_</name>
+        <qualifiedname>phonos::Duffing::pulsation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="21" column="18" bodyfile="include/duffing.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1ae8251be020b824d00827ee27aa1ca5af" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::decay_time_</definition>
+        <argsstring></argsstring>
+        <name>decay_time_</name>
+        <qualifiedname>phonos::Duffing::decay_time_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="21" column="29" bodyfile="include/duffing.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1adc2b70f236605593bccf332dd1104e9a" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::eta_</definition>
+        <argsstring></argsstring>
+        <name>eta_</name>
+        <qualifiedname>phonos::Duffing::eta_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="24" column="7" bodyfile="include/duffing.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1a9f66ec4f8c8a61d965d15c16bff8a935" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::sr_</definition>
+        <argsstring></argsstring>
+        <name>sr_</name>
+        <qualifiedname>phonos::Duffing::sr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="27" column="7" bodyfile="include/duffing.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1a115b9a493a76d9e1f642132b8ad28b17" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::dt_</definition>
+        <argsstring></argsstring>
+        <name>dt_</name>
+        <qualifiedname>phonos::Duffing::dt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="28" column="7" bodyfile="include/duffing.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1a3261928d6acfd5ac1924d2f0c8444809" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool phonos::Duffing&lt; T &gt;::ctrl_term_</definition>
+        <argsstring></argsstring>
+        <name>ctrl_term_</name>
+        <qualifiedname>phonos::Duffing::ctrl_term_</qualifiedname>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="29" column="10" bodyfile="include/duffing.h" bodystart="29" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1a031430e7ee2f96f509d84e09242cfc7e" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::lambda_ctrl_</definition>
+        <argsstring></argsstring>
+        <name>lambda_ctrl_</name>
+        <qualifiedname>phonos::Duffing::lambda_ctrl_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="30" column="7" bodyfile="include/duffing.h" bodystart="30" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1ada4103ca0fb167feed7033c584fda051" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::q_last_</definition>
+        <argsstring></argsstring>
+        <name>q_last_</name>
+        <qualifiedname>phonos::Duffing::q_last_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="33" column="7" bodyfile="include/duffing.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1a9760aa881b30ee395f541d5c0091e5c5" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::q_now_</definition>
+        <argsstring></argsstring>
+        <name>q_now_</name>
+        <qualifiedname>phonos::Duffing::q_now_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="33" column="15" bodyfile="include/duffing.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1ab20a721f227db0c0a7aaa189b137a31a" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::q_next_</definition>
+        <argsstring></argsstring>
+        <name>q_next_</name>
+        <qualifiedname>phonos::Duffing::q_next_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="33" column="22" bodyfile="include/duffing.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1a61f00092473c74903eaaf82e1c604e01" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::r_now_</definition>
+        <argsstring></argsstring>
+        <name>r_now_</name>
+        <qualifiedname>phonos::Duffing::r_now_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="34" column="7" bodyfile="include/duffing.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1a4bf7c124703f4dae6a4e807c24cd2bb2" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::r_last_</definition>
+        <argsstring></argsstring>
+        <name>r_last_</name>
+        <qualifiedname>phonos::Duffing::r_last_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="34" column="14" bodyfile="include/duffing.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1af62f2f92b5b4bd71f30a0e0983b13276" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::rhs_</definition>
+        <argsstring></argsstring>
+        <name>rhs_</name>
+        <qualifiedname>phonos::Duffing::rhs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="37" column="7" bodyfile="include/duffing.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1aa530bc5ef0b71e75dfa35b22c1fec04b" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::lhs_</definition>
+        <argsstring></argsstring>
+        <name>lhs_</name>
+        <qualifiedname>phonos::Duffing::lhs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="37" column="12" bodyfile="include/duffing.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1a94306a27225ed1927ddd01ceb7771d0b" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::g_</definition>
+        <argsstring></argsstring>
+        <name>g_</name>
+        <qualifiedname>phonos::Duffing::g_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="40" column="7" bodyfile="include/duffing.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1ae64890eeb449311ee4b3d0ec8f507cfa" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::f_nl_</definition>
+        <argsstring></argsstring>
+        <name>f_nl_</name>
+        <qualifiedname>phonos::Duffing::f_nl_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="40" column="10" bodyfile="include/duffing.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1a53b80497676d1c41cb611d04cb306ce5" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::E_nl_</definition>
+        <argsstring></argsstring>
+        <name>E_nl_</name>
+        <qualifiedname>phonos::Duffing::E_nl_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="41" column="7" bodyfile="include/duffing.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1afc2c66f268619db3ccc68cbbbb640117" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::epsilon_</definition>
+        <argsstring></argsstring>
+        <name>epsilon_</name>
+        <qualifiedname>phonos::Duffing::epsilon_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="44" column="7" bodyfile="include/duffing.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_duffing_1a6344cb50088861790e2ade9f577126c4" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::max_E_nl_</definition>
+        <argsstring></argsstring>
+        <name>max_E_nl_</name>
+        <qualifiedname>phonos::Duffing::max_E_nl_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="44" column="16" bodyfile="include/duffing.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classphonos_1_1_duffing_1a9c44e80d62c988c5b76318d5c9e5ca28" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Duffing&lt; T &gt;::ComputePhysicalParameters</definition>
+        <argsstring>()</argsstring>
+        <name>ComputePhysicalParameters</name>
+        <qualifiedname>phonos::Duffing::ComputePhysicalParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="46" column="10" bodyfile="src/duffing.cpp" bodystart="68" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_duffing_1a10cc27bb73a8af814cff0c843851e6bf" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Duffing&lt; T &gt;::ComputeVAndVprime</definition>
+        <argsstring>(T q)</argsstring>
+        <name>ComputeVAndVprime</name>
+        <qualifiedname>phonos::Duffing::ComputeVAndVprime</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="48" column="10" bodyfile="src/duffing.cpp" bodystart="76" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_duffing_1a79ac18ca198383281301afbd485e3cef" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Duffing&lt; T &gt;::ComputeV</definition>
+        <argsstring>(T q)</argsstring>
+        <name>ComputeV</name>
+        <qualifiedname>phonos::Duffing::ComputeV</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="50" column="10" bodyfile="src/duffing.cpp" bodystart="83" bodyend="86"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classphonos_1_1_duffing_1a16cb4fde448bc580406b199b8c3c8f80" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>phonos::Duffing&lt; T &gt;::Duffing</definition>
+        <argsstring>(float sample_rate)</argsstring>
+        <name>Duffing</name>
+        <qualifiedname>phonos::Duffing::Duffing</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>sample_rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="53" column="5" bodyfile="src/duffing.cpp" bodystart="6" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_duffing_1a2e6cb012217e8b79e44d7aafd6da7a84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Duffing&lt; T &gt;::ReinitDsp</definition>
+        <argsstring>(float sample_rate)</argsstring>
+        <name>ReinitDsp</name>
+        <qualifiedname>phonos::Duffing::ReinitDsp</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>sample_rate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="55" column="10" bodyfile="src/duffing.cpp" bodystart="13" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_duffing_1a211499aa61e3d9d7a1eb233ee1fec493" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Duffing&lt; T &gt;::Process</definition>
+        <argsstring>(T input_force)</argsstring>
+        <name>Process</name>
+        <qualifiedname>phonos::Duffing::Process</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>input_force</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="57" column="10" bodyfile="src/duffing.cpp" bodystart="32" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_duffing_1a0a1e048ce86b6661e8798ed985b9b7f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::ReadDisplacement</definition>
+        <argsstring>()</argsstring>
+        <name>ReadDisplacement</name>
+        <qualifiedname>phonos::Duffing::ReadDisplacement</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="60" column="7" bodyfile="include/duffing.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_duffing_1a81930e28881f245c4fd53b2efc62094f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T phonos::Duffing&lt; T &gt;::ReadVelocity</definition>
+        <argsstring>()</argsstring>
+        <name>ReadVelocity</name>
+        <qualifiedname>phonos::Duffing::ReadVelocity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="61" column="7" bodyfile="include/duffing.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_duffing_1a00c32139db3324b76238bd5c3909ea94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Duffing&lt; T &gt;::set_physical_parameters</definition>
+        <argsstring>(T mass, T stiffness, T dissipation, T eta_nl=0)</argsstring>
+        <name>set_physical_parameters</name>
+        <qualifiedname>phonos::Duffing::set_physical_parameters</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>mass</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>stiffness</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>dissipation</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>eta_nl</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="65" column="10" bodyfile="src/duffing.cpp" bodystart="90" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_duffing_1a8932e95579fce8583f804013f430a732" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Duffing&lt; T &gt;::set_linear_parameters</definition>
+        <argsstring>(T amplitude, T pulsation, T decay_time)</argsstring>
+        <name>set_linear_parameters</name>
+        <qualifiedname>phonos::Duffing::set_linear_parameters</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>amplitude</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>pulsation</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>decay_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="67" column="10" bodyfile="src/duffing.cpp" bodystart="99" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_duffing_1a0b10ad531c7e6054f0ee39d345b8129a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Duffing&lt; T &gt;::set_amplitude</definition>
+        <argsstring>(T amplitude)</argsstring>
+        <name>set_amplitude</name>
+        <qualifiedname>phonos::Duffing::set_amplitude</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>amplitude</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="68" column="10" bodyfile="src/duffing.cpp" bodystart="109" bodyend="113"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_duffing_1a9ed975ac3bfefa6448ca587f634b7b2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Duffing&lt; T &gt;::set_frequency</definition>
+        <argsstring>(T frequency)</argsstring>
+        <name>set_frequency</name>
+        <qualifiedname>phonos::Duffing::set_frequency</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>frequency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="69" column="10" bodyfile="src/duffing.cpp" bodystart="116" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_duffing_1a451590e1d64d1b71094cc86ebc5b7791" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Duffing&lt; T &gt;::set_decay_time</definition>
+        <argsstring>(T decay_time)</argsstring>
+        <name>set_decay_time</name>
+        <qualifiedname>phonos::Duffing::set_decay_time</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>decay_time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="70" column="10" bodyfile="src/duffing.cpp" bodystart="123" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_duffing_1add9bef31520a91408455f9265d2cd4d9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Duffing&lt; T &gt;::set_nonlinearity</definition>
+        <argsstring>(T eta)</argsstring>
+        <name>set_nonlinearity</name>
+        <qualifiedname>phonos::Duffing::set_nonlinearity</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>eta</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="71" column="10" bodyfile="include/duffing.h" bodystart="71" bodyend="71"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_duffing_1adfb9963c3fde1046e67fff80bb555d03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Duffing&lt; T &gt;::set_lambda_ctrl</definition>
+        <argsstring>(T lambda_ctrl)</argsstring>
+        <name>set_lambda_ctrl</name>
+        <qualifiedname>phonos::Duffing::set_lambda_ctrl</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>lambda_ctrl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/duffing.h" line="73" column="10" bodyfile="include/duffing.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/duffing.h" line="13" column="1" bodyfile="include/duffing.h" bodystart="13" bodyend="74"/>
+    <listofallmembers>
+      <member refid="classphonos_1_1_duffing_1a37a1e71d9414f49d2995524e2655813e" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>amplitude_</name></member>
+      <member refid="classphonos_1_1_duffing_1a9c44e80d62c988c5b76318d5c9e5ca28" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>ComputePhysicalParameters</name></member>
+      <member refid="classphonos_1_1_duffing_1a79ac18ca198383281301afbd485e3cef" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>ComputeV</name></member>
+      <member refid="classphonos_1_1_duffing_1a10cc27bb73a8af814cff0c843851e6bf" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>ComputeVAndVprime</name></member>
+      <member refid="classphonos_1_1_duffing_1a3261928d6acfd5ac1924d2f0c8444809" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>ctrl_term_</name></member>
+      <member refid="classphonos_1_1_duffing_1ae8251be020b824d00827ee27aa1ca5af" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>decay_time_</name></member>
+      <member refid="classphonos_1_1_duffing_1a3ef4ee031c59d1018aef798c9ae726a9" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>dissipation_</name></member>
+      <member refid="classphonos_1_1_duffing_1a115b9a493a76d9e1f642132b8ad28b17" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>dt_</name></member>
+      <member refid="classphonos_1_1_duffing_1a16cb4fde448bc580406b199b8c3c8f80" prot="public" virt="non-virtual"><scope>phonos::Duffing</scope><name>Duffing</name></member>
+      <member refid="classphonos_1_1_duffing_1a53b80497676d1c41cb611d04cb306ce5" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>E_nl_</name></member>
+      <member refid="classphonos_1_1_duffing_1afc2c66f268619db3ccc68cbbbb640117" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>epsilon_</name></member>
+      <member refid="classphonos_1_1_duffing_1adc2b70f236605593bccf332dd1104e9a" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>eta_</name></member>
+      <member refid="classphonos_1_1_duffing_1ae64890eeb449311ee4b3d0ec8f507cfa" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>f_nl_</name></member>
+      <member refid="classphonos_1_1_duffing_1a94306a27225ed1927ddd01ceb7771d0b" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>g_</name></member>
+      <member refid="classphonos_1_1_duffing_1a52d26843e6aa9c1296bd311e118b9c7c" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>kNumEps</name></member>
+      <member refid="classphonos_1_1_duffing_1a031430e7ee2f96f509d84e09242cfc7e" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>lambda_ctrl_</name></member>
+      <member refid="classphonos_1_1_duffing_1aa530bc5ef0b71e75dfa35b22c1fec04b" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>lhs_</name></member>
+      <member refid="classphonos_1_1_duffing_1a8b439704948fb79d2855a44ae4b1780d" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>mass_</name></member>
+      <member refid="classphonos_1_1_duffing_1a6344cb50088861790e2ade9f577126c4" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>max_E_nl_</name></member>
+      <member refid="classphonos_1_1_duffing_1a211499aa61e3d9d7a1eb233ee1fec493" prot="public" virt="non-virtual"><scope>phonos::Duffing</scope><name>Process</name></member>
+      <member refid="classphonos_1_1_duffing_1aaae722f1b466723f6698cafbcd922ef2" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>pulsation_</name></member>
+      <member refid="classphonos_1_1_duffing_1ada4103ca0fb167feed7033c584fda051" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>q_last_</name></member>
+      <member refid="classphonos_1_1_duffing_1ab20a721f227db0c0a7aaa189b137a31a" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>q_next_</name></member>
+      <member refid="classphonos_1_1_duffing_1a9760aa881b30ee395f541d5c0091e5c5" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>q_now_</name></member>
+      <member refid="classphonos_1_1_duffing_1a4bf7c124703f4dae6a4e807c24cd2bb2" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>r_last_</name></member>
+      <member refid="classphonos_1_1_duffing_1a61f00092473c74903eaaf82e1c604e01" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>r_now_</name></member>
+      <member refid="classphonos_1_1_duffing_1a0a1e048ce86b6661e8798ed985b9b7f3" prot="public" virt="non-virtual"><scope>phonos::Duffing</scope><name>ReadDisplacement</name></member>
+      <member refid="classphonos_1_1_duffing_1a81930e28881f245c4fd53b2efc62094f" prot="public" virt="non-virtual"><scope>phonos::Duffing</scope><name>ReadVelocity</name></member>
+      <member refid="classphonos_1_1_duffing_1a2e6cb012217e8b79e44d7aafd6da7a84" prot="public" virt="non-virtual"><scope>phonos::Duffing</scope><name>ReinitDsp</name></member>
+      <member refid="classphonos_1_1_duffing_1af62f2f92b5b4bd71f30a0e0983b13276" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>rhs_</name></member>
+      <member refid="classphonos_1_1_duffing_1a0b10ad531c7e6054f0ee39d345b8129a" prot="public" virt="non-virtual"><scope>phonos::Duffing</scope><name>set_amplitude</name></member>
+      <member refid="classphonos_1_1_duffing_1a451590e1d64d1b71094cc86ebc5b7791" prot="public" virt="non-virtual"><scope>phonos::Duffing</scope><name>set_decay_time</name></member>
+      <member refid="classphonos_1_1_duffing_1a9ed975ac3bfefa6448ca587f634b7b2a" prot="public" virt="non-virtual"><scope>phonos::Duffing</scope><name>set_frequency</name></member>
+      <member refid="classphonos_1_1_duffing_1adfb9963c3fde1046e67fff80bb555d03" prot="public" virt="non-virtual"><scope>phonos::Duffing</scope><name>set_lambda_ctrl</name></member>
+      <member refid="classphonos_1_1_duffing_1a8932e95579fce8583f804013f430a732" prot="public" virt="non-virtual"><scope>phonos::Duffing</scope><name>set_linear_parameters</name></member>
+      <member refid="classphonos_1_1_duffing_1add9bef31520a91408455f9265d2cd4d9" prot="public" virt="non-virtual"><scope>phonos::Duffing</scope><name>set_nonlinearity</name></member>
+      <member refid="classphonos_1_1_duffing_1a00c32139db3324b76238bd5c3909ea94" prot="public" virt="non-virtual"><scope>phonos::Duffing</scope><name>set_physical_parameters</name></member>
+      <member refid="classphonos_1_1_duffing_1a9f66ec4f8c8a61d965d15c16bff8a935" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>sr_</name></member>
+      <member refid="classphonos_1_1_duffing_1ad35238d8d380fd5ec412642cf522a3e3" prot="private" virt="non-virtual"><scope>phonos::Duffing</scope><name>stiffness_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

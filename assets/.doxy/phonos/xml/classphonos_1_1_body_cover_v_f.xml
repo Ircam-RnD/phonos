@@ -1,0 +1,1380 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classphonos_1_1_body_cover_v_f" kind="class" language="C++" prot="public">
+    <compoundname>phonos::BodyCoverVF</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a7b9c816ed1eda0d309ab0674d2b111ad" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::alpha_ct_</definition>
+        <argsstring></argsstring>
+        <name>alpha_ct_</name>
+        <qualifiedname>phonos::BodyCoverVF::alpha_ct_</qualifiedname>
+        <initializer>{0.}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="21" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1ae34fa07e8e029ccf4ad80d02c95147b5" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::alpha_ta_</definition>
+        <argsstring></argsstring>
+        <name>alpha_ta_</name>
+        <qualifiedname>phonos::BodyCoverVF::alpha_ta_</qualifiedname>
+        <initializer>{0.}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="21" column="17" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a1258b364b4c73507b75c0c9d2eec8a93" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::alpha_lc_</definition>
+        <argsstring></argsstring>
+        <name>alpha_lc_</name>
+        <qualifiedname>phonos::BodyCoverVF::alpha_lc_</qualifiedname>
+        <initializer>{0.49}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="21" column="27" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a212f7875e3ff71b4915cae5d8305443c" prot="private" static="no" mutable="no">
+        <type>Gender</type>
+        <definition>Gender phonos::BodyCoverVF&lt; T &gt;::gender_</definition>
+        <argsstring></argsstring>
+        <name>gender_</name>
+        <qualifiedname>phonos::BodyCoverVF::gender_</qualifiedname>
+        <initializer>{Gender::MALE}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="24" column="12" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a73000fa424d57953670261eacf7b3d4d" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::comp_striffness_</definition>
+        <argsstring></argsstring>
+        <name>comp_striffness_</name>
+        <qualifiedname>phonos::BodyCoverVF::comp_striffness_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="25" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1aaa35539a8d7cfc4a01629d28da84f31b" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::shear_stiffness_</definition>
+        <argsstring></argsstring>
+        <name>shear_stiffness_</name>
+        <qualifiedname>phonos::BodyCoverVF::shear_stiffness_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="25" column="24" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a86d945d20abf154098a5ccab39d4308e" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::depth_</definition>
+        <argsstring></argsstring>
+        <name>depth_</name>
+        <qualifiedname>phonos::BodyCoverVF::depth_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="26" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1ac734d393ffa20eb3e01c43332d5a11a0" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::depth_cover_</definition>
+        <argsstring></argsstring>
+        <name>depth_cover_</name>
+        <qualifiedname>phonos::BodyCoverVF::depth_cover_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="26" column="14" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1afbd0bbc5cb66ba16237f7969faf5265c" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::depth_body_</definition>
+        <argsstring></argsstring>
+        <name>depth_body_</name>
+        <qualifiedname>phonos::BodyCoverVF::depth_body_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="26" column="27" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a9a80e782eb6f7cbcbee156da4a6aaaa6" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::shear_mode_nodal_point_</definition>
+        <argsstring></argsstring>
+        <name>shear_mode_nodal_point_</name>
+        <qualifiedname>phonos::BodyCoverVF::shear_mode_nodal_point_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="27" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a074d02de83d4cb74ca539656b989a40f" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::elongation_</definition>
+        <argsstring></argsstring>
+        <name>elongation_</name>
+        <qualifiedname>phonos::BodyCoverVF::elongation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="28" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a753a6a28a102c10d15924bccba885209" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::thickness_</definition>
+        <argsstring></argsstring>
+        <name>thickness_</name>
+        <qualifiedname>phonos::BodyCoverVF::thickness_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="29" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a3b84865625bf239c21228d468223f7d8" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; T, 3 &gt;</type>
+        <definition>Eigen::Vector&lt;T, 3&gt; phonos::BodyCoverVF&lt; T &gt;::thicknesses_</definition>
+        <argsstring></argsstring>
+        <name>thicknesses_</name>
+        <qualifiedname>phonos::BodyCoverVF::thicknesses_</qualifiedname>
+        <initializer>{1.5e-3,
+                                     1.5e-3,
+                                     3e-3}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="30" column="19" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="30" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a50f114e635f6c316ebec678d477e54a4" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; T, 3 &gt;</type>
+        <definition>Eigen::Vector&lt;T, 3&gt; phonos::BodyCoverVF&lt; T &gt;::lengths_</definition>
+        <argsstring></argsstring>
+        <name>lengths_</name>
+        <qualifiedname>phonos::BodyCoverVF::lengths_</qualifiedname>
+        <initializer>{1e-2, 1e-2, 1e-2}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="33" column="19" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a8fd173fecf98212fbe4c9671e3de1d34" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::density_</definition>
+        <argsstring></argsstring>
+        <name>density_</name>
+        <qualifiedname>phonos::BodyCoverVF::density_</qualifiedname>
+        <initializer>{1040}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="47" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1abf6d5412130a4bc5bee82c4de81763a3" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::shear_modulus_cover_</definition>
+        <argsstring></argsstring>
+        <name>shear_modulus_cover_</name>
+        <qualifiedname>phonos::BodyCoverVF::shear_modulus_cover_</qualifiedname>
+        <initializer>{500}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="47" column="16" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1ae81d583c46837303259f2cd007fbfdff" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::shear_modulus_muscle_</definition>
+        <argsstring></argsstring>
+        <name>shear_modulus_muscle_</name>
+        <qualifiedname>phonos::BodyCoverVF::shear_modulus_muscle_</qualifiedname>
+        <initializer>{1000}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="47" column="37" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1afc03d2eb7f8d51d683ca0151a7bf01c4" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::base_length_</definition>
+        <argsstring></argsstring>
+        <name>base_length_</name>
+        <qualifiedname>phonos::BodyCoverVF::base_length_</qualifiedname>
+        <initializer>{1.6e-2}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="50" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a5c637e32b9e31d785f6a4a0ab810d698" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::depth_mucosa_</definition>
+        <argsstring></argsstring>
+        <name>depth_mucosa_</name>
+        <qualifiedname>phonos::BodyCoverVF::depth_mucosa_</qualifiedname>
+        <initializer>{0.2e-2}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="51" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1aaaa193f511a920a4379e11c3b9702d4a" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::depth_ligament_</definition>
+        <argsstring></argsstring>
+        <name>depth_ligament_</name>
+        <qualifiedname>phonos::BodyCoverVF::depth_ligament_</qualifiedname>
+        <initializer>{0.2e-2}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="51" column="21" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="51" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a9d13bc73898d58b9d54701e09b496864" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::depth_muscle_</definition>
+        <argsstring></argsstring>
+        <name>depth_muscle_</name>
+        <qualifiedname>phonos::BodyCoverVF::depth_muscle_</qualifiedname>
+        <initializer>{0.4e-2}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="52" column="9" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a5424c98f9613eabb541744b38964b75b" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::base_thickness_</definition>
+        <argsstring></argsstring>
+        <name>base_thickness_</name>
+        <qualifiedname>phonos::BodyCoverVF::base_thickness_</qualifiedname>
+        <initializer>{3e-3}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="53" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="53" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a7eac5695be7706b837773daa4a1ba049" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::sigma_body_</definition>
+        <argsstring></argsstring>
+        <name>sigma_body_</name>
+        <qualifiedname>phonos::BodyCoverVF::sigma_body_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="76" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a3b5ac9bf3d186402246c534d8800dbf4" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::sigma_cover_</definition>
+        <argsstring></argsstring>
+        <name>sigma_cover_</name>
+        <qualifiedname>phonos::BodyCoverVF::sigma_cover_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="76" column="19" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a9470005c5886ac6f16e73d3e1ad6b75c" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::sigma_muscle_</definition>
+        <argsstring></argsstring>
+        <name>sigma_muscle_</name>
+        <qualifiedname>phonos::BodyCoverVF::sigma_muscle_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="77" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a108e9d48a2116adfd35bc9a9618c890b" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::sigma_muscle_passive_</definition>
+        <argsstring></argsstring>
+        <name>sigma_muscle_passive_</name>
+        <qualifiedname>phonos::BodyCoverVF::sigma_muscle_passive_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="77" column="21" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a90a8bd06b72b3a998c2cc0d913cd40f7" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::sigma_ligament_</definition>
+        <argsstring></argsstring>
+        <name>sigma_ligament_</name>
+        <qualifiedname>phonos::BodyCoverVF::sigma_ligament_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="77" column="43" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a808424a3a29ea4052d583d1e32a8dfcf" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::sigma_mucosa_</definition>
+        <argsstring></argsstring>
+        <name>sigma_mucosa_</name>
+        <qualifiedname>phonos::BodyCoverVF::sigma_mucosa_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="77" column="59" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1ae9c4e4ae07816c41401689d662e50bb2" prot="private" static="no" mutable="no">
+        <type>Eigen::DiagonalMatrix&lt; T, 3 &gt;</type>
+        <definition>Eigen::DiagonalMatrix&lt;T, 3&gt; phonos::BodyCoverVF&lt; T &gt;::masses_</definition>
+        <argsstring></argsstring>
+        <name>masses_</name>
+        <qualifiedname>phonos::BodyCoverVF::masses_</qualifiedname>
+        <initializer>{1e-5, 1e-5, 5e-5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="80" column="27" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1aa389eef836ec695d365e5bd77162784d" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; T, 3 &gt;</type>
+        <definition>Eigen::Vector&lt;T, 3&gt; phonos::BodyCoverVF&lt; T &gt;::rest_positions_</definition>
+        <argsstring></argsstring>
+        <name>rest_positions_</name>
+        <qualifiedname>phonos::BodyCoverVF::rest_positions_</qualifiedname>
+        <initializer>{1.8e-4, 1.79e-4, 3e-3}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="81" column="19" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a2d4b571a083d90b01c8a7c6df0553b19" prot="private" static="no" mutable="no">
+        <type>Eigen::DiagonalMatrix&lt; T, 4 &gt;</type>
+        <definition>Eigen::DiagonalMatrix&lt;T, 4&gt; phonos::BodyCoverVF&lt; T &gt;::stiffnesses_</definition>
+        <argsstring></argsstring>
+        <name>stiffnesses_</name>
+        <qualifiedname>phonos::BodyCoverVF::stiffnesses_</qualifiedname>
+        <initializer>{5, 3.5, 20, 0.5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="83" column="27" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="83" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a4295d988aec88f1c08d19a4030bd65ec" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::eta_stiffness_</definition>
+        <argsstring></argsstring>
+        <name>eta_stiffness_</name>
+        <qualifiedname>phonos::BodyCoverVF::eta_stiffness_</qualifiedname>
+        <initializer>{1e6}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="84" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="84" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1aed79953ce9c128d4d43d5fbc36f09af7" prot="private" static="no" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::xi_</definition>
+        <argsstring></argsstring>
+        <name>xi_</name>
+        <qualifiedname>phonos::BodyCoverVF::xi_</qualifiedname>
+        <initializer>{0.4}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="86" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1acbb8706e5ae53c61fb596effabb515f3" prot="private" static="no" mutable="no">
+        <type>Eigen::DiagonalMatrix&lt; T, 4 &gt;</type>
+        <definition>Eigen::DiagonalMatrix&lt;T, 4&gt; phonos::BodyCoverVF&lt; T &gt;::dissipation_coefficients_</definition>
+        <argsstring></argsstring>
+        <name>dissipation_coefficients_</name>
+        <qualifiedname>phonos::BodyCoverVF::dissipation_coefficients_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="87" column="27" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1ab2b2321ae9157d4a0aa0d58949d4d6f0" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::e1_mucosa_</definition>
+        <argsstring></argsstring>
+        <name>e1_mucosa_</name>
+        <qualifiedname>phonos::BodyCoverVF::e1_mucosa_</qualifiedname>
+        <initializer>{-0.5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="36" column="24" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a03bb0fb6d61b5fd6c24d1840e73f63f4" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::e2_mucosa_</definition>
+        <argsstring></argsstring>
+        <name>e2_mucosa_</name>
+        <qualifiedname>phonos::BodyCoverVF::e2_mucosa_</qualifiedname>
+        <initializer>{-0.35}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="36" column="35" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a9fdb67500b35cf05ac27726f96db5b71" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::sigma_0_mucosa_</definition>
+        <argsstring></argsstring>
+        <name>sigma_0_mucosa_</name>
+        <qualifiedname>phonos::BodyCoverVF::sigma_0_mucosa_</qualifiedname>
+        <initializer>{500}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="36" column="46" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1abb72e23951b85e3dbc6384b1f01ec4db" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::sigma_2_mucosa_</definition>
+        <argsstring></argsstring>
+        <name>sigma_2_mucosa_</name>
+        <qualifiedname>phonos::BodyCoverVF::sigma_2_mucosa_</qualifiedname>
+        <initializer>{30000}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="36" column="62" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="36" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a8a8ebe10a22c55634ec117e4b3acef43" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::C_mucosa_</definition>
+        <argsstring></argsstring>
+        <name>C_mucosa_</name>
+        <qualifiedname>phonos::BodyCoverVF::C_mucosa_</qualifiedname>
+        <initializer>{4.4}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="37" column="9" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="37" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a422ef101b17355d3b5dea1a4730c8452" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::e1_ligament_</definition>
+        <argsstring></argsstring>
+        <name>e1_ligament_</name>
+        <qualifiedname>phonos::BodyCoverVF::e1_ligament_</qualifiedname>
+        <initializer>{-0.5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="38" column="24" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a2be4365f7a50145e1e29f4304b1e297c" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::e2_ligament_</definition>
+        <argsstring></argsstring>
+        <name>e2_ligament_</name>
+        <qualifiedname>phonos::BodyCoverVF::e2_ligament_</qualifiedname>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="38" column="37" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a0145e6a797bb2666c031debba3cd19af" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::sigma_0_ligament_</definition>
+        <argsstring></argsstring>
+        <name>sigma_0_ligament_</name>
+        <qualifiedname>phonos::BodyCoverVF::sigma_0_ligament_</qualifiedname>
+        <initializer>{400}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="38" column="50" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a3df7e80f5b41503b0f327c228930990d" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::sigma_2_ligament_</definition>
+        <argsstring></argsstring>
+        <name>sigma_2_ligament_</name>
+        <qualifiedname>phonos::BodyCoverVF::sigma_2_ligament_</qualifiedname>
+        <initializer>{1393}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="38" column="68" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="38" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1af16ffafd102b69380d68dcd70f4a81fa" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::C_ligament_</definition>
+        <argsstring></argsstring>
+        <name>C_ligament_</name>
+        <qualifiedname>phonos::BodyCoverVF::C_ligament_</qualifiedname>
+        <initializer>{17}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="39" column="9" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="39" bodyend="39"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a6bab359ecd0a9b91f91eb33437f074ee" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::e1_ta_</definition>
+        <argsstring></argsstring>
+        <name>e1_ta_</name>
+        <qualifiedname>phonos::BodyCoverVF::e1_ta_</qualifiedname>
+        <initializer>{-0.5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="40" column="24" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1ae4ea624630b31377480aa209031ca4a2" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::e2_ta_</definition>
+        <argsstring></argsstring>
+        <name>e2_ta_</name>
+        <qualifiedname>phonos::BodyCoverVF::e2_ta_</qualifiedname>
+        <initializer>{-0.05}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="40" column="31" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a51a57d7e01a089c0e854377da3dd4cbc" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::sigma_0_ta_</definition>
+        <argsstring></argsstring>
+        <name>sigma_0_ta_</name>
+        <qualifiedname>phonos::BodyCoverVF::sigma_0_ta_</qualifiedname>
+        <initializer>{1000.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="40" column="38" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1ae32a251a1adb19e1719030d9b49b5075" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::sigma_2_ta_</definition>
+        <argsstring></argsstring>
+        <name>sigma_2_ta_</name>
+        <qualifiedname>phonos::BodyCoverVF::sigma_2_ta_</qualifiedname>
+        <initializer>{1500.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="40" column="50" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a16067f08c6bf2c652bad3ad3e82d8844" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::C_ta_</definition>
+        <argsstring></argsstring>
+        <name>C_ta_</name>
+        <qualifiedname>phonos::BodyCoverVF::C_ta_</qualifiedname>
+        <initializer>{6.5}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="40" column="62" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a4bab6206b726f12a66cc9f4ddbdf6549" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::sigma_max_ta_</definition>
+        <argsstring></argsstring>
+        <name>sigma_max_ta_</name>
+        <qualifiedname>phonos::BodyCoverVF::sigma_max_ta_</qualifiedname>
+        <initializer>{105000}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="41" column="9" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1aaad54e02de59ec9b50358b9fffab4ec8" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::e_ta_opt_</definition>
+        <argsstring></argsstring>
+        <name>e_ta_opt_</name>
+        <qualifiedname>phonos::BodyCoverVF::e_ta_opt_</qualifiedname>
+        <initializer>{0.4}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="41" column="23" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a6ab34dcf55283805e4fe96f9173677d1" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::b_ta_</definition>
+        <argsstring></argsstring>
+        <name>b_ta_</name>
+        <qualifiedname>phonos::BodyCoverVF::b_ta_</qualifiedname>
+        <initializer>{1.07}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="41" column="33" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1a81867b21f7cb428ace5be45d77f93b08" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::e_gain_</definition>
+        <argsstring></argsstring>
+        <name>e_gain_</name>
+        <qualifiedname>phonos::BodyCoverVF::e_gain_</qualifiedname>
+        <initializer>{0.2}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="44" column="24" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1af791637aaf6590a17e46010c2cff6802" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::e_torque_ratio_</definition>
+        <argsstring></argsstring>
+        <name>e_torque_ratio_</name>
+        <qualifiedname>phonos::BodyCoverVF::e_torque_ratio_</qualifiedname>
+        <initializer>{3}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="44" column="32" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1aa35ff55e61b355a57c8ada5bef0b9192" prot="private" static="yes" mutable="no">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::e_strain_factor</definition>
+        <argsstring></argsstring>
+        <name>e_strain_factor</name>
+        <qualifiedname>phonos::BodyCoverVF::e_strain_factor</qualifiedname>
+        <initializer>{0.2}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="44" column="48" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="44" bodyend="44"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classphonos_1_1_body_cover_v_f_1afc171d7f6845e482eae6fee48af3b759" prot="public" static="yes" mutable="no">
+        <type>const Eigen::Matrix&lt; T, 4, 3 &gt;</type>
+        <definition>const Eigen::Matrix&lt;T, 4, 3&gt; phonos::BodyCoverVF&lt; T &gt;::elongation_matrix_</definition>
+        <argsstring></argsstring>
+        <name>elongation_matrix_</name>
+        <qualifiedname>phonos::BodyCoverVF::elongation_matrix_</qualifiedname>
+        <initializer>                                                 =
+(Eigen::Matrix&lt;T, 4, 3&gt;() &lt;&lt; 1, 0, -1, 0, 1, -1, 0, 0, 1, 1, -1, 0).finished()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="91" column="39" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a5c0a4b190db6f33155ea8fa0ef8df269" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T phonos::BodyCoverVF&lt; T &gt;::PassiveStress</definition>
+        <argsstring>(const T &amp;sigma0, const T &amp;sigma2, const T &amp;e1, const T &amp;e2, const T &amp;C, const T &amp;e)</argsstring>
+        <name>PassiveStress</name>
+        <qualifiedname>phonos::BodyCoverVF::PassiveStress</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>sigma0</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>sigma2</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>e1</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>e2</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>C</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="56" column="14" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="56" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1aa902239b9ffdf9c072f381d3799799fc" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T phonos::BodyCoverVF&lt; T &gt;::PassiveStressMucosa</definition>
+        <argsstring>(const T &amp;e)</argsstring>
+        <name>PassiveStressMucosa</name>
+        <qualifiedname>phonos::BodyCoverVF::PassiveStressMucosa</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="66" column="14" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="66" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a5a0c0c9e82b43a06f54c17130257e925" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T phonos::BodyCoverVF&lt; T &gt;::PassiveStressLigament</definition>
+        <argsstring>(const T &amp;e)</argsstring>
+        <name>PassiveStressLigament</name>
+        <qualifiedname>phonos::BodyCoverVF::PassiveStressLigament</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="70" column="14" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1ac44355909679fec68152cb93569bca35" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>static T phonos::BodyCoverVF&lt; T &gt;::PassiveStressTA</definition>
+        <argsstring>(const T &amp;e)</argsstring>
+        <name>PassiveStressTA</name>
+        <qualifiedname>phonos::BodyCoverVF::PassiveStressTA</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="74" column="14" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1af1b3d29d11eb81de074972f936850efe" prot="public" static="yes" constexpr="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>static constexpr int phonos::BodyCoverVF&lt; T &gt;::getN</definition>
+        <argsstring>()</argsstring>
+        <name>getN</name>
+        <qualifiedname>phonos::BodyCoverVF::getN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="90" column="33" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="90" bodyend="90"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1aa13ba7e8fe9ce7ac83dbfaac5e167c55" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>phonos::BodyCoverVF&lt; T &gt;::BodyCoverVF</definition>
+        <argsstring>()</argsstring>
+        <name>BodyCoverVF</name>
+        <qualifiedname>phonos::BodyCoverVF::BodyCoverVF</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="93" column="5" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="93" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a5340c7b825a64fcd7f0adaf999bb25c8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::BodyCoverVF&lt; T &gt;::SetCricothyroidActivity</definition>
+        <argsstring>(const T &amp;activity)</argsstring>
+        <name>SetCricothyroidActivity</name>
+        <qualifiedname>phonos::BodyCoverVF::SetCricothyroidActivity</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>activity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="96" column="10" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1aba32b71f0c2a4e42183e9f66c3f84076" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::BodyCoverVF&lt; T &gt;::SetThyroarytenoidActivity</definition>
+        <argsstring>(const T &amp;activity)</argsstring>
+        <name>SetThyroarytenoidActivity</name>
+        <qualifiedname>phonos::BodyCoverVF::SetThyroarytenoidActivity</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>activity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="97" column="10" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a4c7bc87d7c47b40ff79ccd664f91fe6c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::BodyCoverVF&lt; T &gt;::SetCricoarytenoidActivity</definition>
+        <argsstring>(const T &amp;activity)</argsstring>
+        <name>SetCricoarytenoidActivity</name>
+        <qualifiedname>phonos::BodyCoverVF::SetCricoarytenoidActivity</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>activity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="98" column="10" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a4cc70b9577894216440e5ad0c3e7f912" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::BodyCoverVF&lt; T &gt;::ComputeParametersFromMuscularActivity</definition>
+        <argsstring>()</argsstring>
+        <name>ComputeParametersFromMuscularActivity</name>
+        <qualifiedname>phonos::BodyCoverVF::ComputeParametersFromMuscularActivity</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="100" column="10" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="100" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a15fa5d097b86eedb59e4a7bc68f58a11" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::BodyCoverVF&lt; T &gt;::FillDissipationCoefficients</definition>
+        <argsstring>()</argsstring>
+        <name>FillDissipationCoefficients</name>
+        <qualifiedname>phonos::BodyCoverVF::FillDissipationCoefficients</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="155" column="10" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="155" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a4519dde7aea4e1ab73a50af8b495d870" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Eigen::DiagonalMatrix&lt; T, 3 &gt;</type>
+        <definition>Eigen::DiagonalMatrix&lt; T, 3 &gt; phonos::BodyCoverVF&lt; T &gt;::masses</definition>
+        <argsstring>()</argsstring>
+        <name>masses</name>
+        <qualifiedname>phonos::BodyCoverVF::masses</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="164" column="27" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="164" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a55bdc3b0b6e33f54bc83d1a99bac4c97" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Eigen::Vector&lt; T, 3 &gt;</type>
+        <definition>Eigen::Vector&lt; T, 3 &gt; phonos::BodyCoverVF&lt; T &gt;::rest_positions</definition>
+        <argsstring>()</argsstring>
+        <name>rest_positions</name>
+        <qualifiedname>phonos::BodyCoverVF::rest_positions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="165" column="19" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="165" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a0dc8c7ecb6927eb94b65f85c5c1ea098" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Eigen::DiagonalMatrix&lt; T, 4 &gt;</type>
+        <definition>Eigen::DiagonalMatrix&lt; T, 4 &gt; phonos::BodyCoverVF&lt; T &gt;::dissipation_coefficients</definition>
+        <argsstring>()</argsstring>
+        <name>dissipation_coefficients</name>
+        <qualifiedname>phonos::BodyCoverVF::dissipation_coefficients</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="166" column="27" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="166" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a79496671bb06457729a3ee9cd0879f3b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Eigen::Vector&lt; T, 3 &gt;</type>
+        <definition>Eigen::Vector&lt; T, 3 &gt; phonos::BodyCoverVF&lt; T &gt;::lengths</definition>
+        <argsstring>()</argsstring>
+        <name>lengths</name>
+        <qualifiedname>phonos::BodyCoverVF::lengths</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="167" column="19" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="167" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a4303c6d2d713e8f6adc3cafd420916c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Eigen::Vector&lt; T, 3 &gt;</type>
+        <definition>Eigen::Vector&lt; T, 3 &gt; phonos::BodyCoverVF&lt; T &gt;::thicknesses</definition>
+        <argsstring>()</argsstring>
+        <name>thicknesses</name>
+        <qualifiedname>phonos::BodyCoverVF::thicknesses</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="168" column="19" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="168" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a0dabd16799e7f624fba692674549c2f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Eigen::DiagonalMatrix&lt; T, 4 &gt;</type>
+        <definition>Eigen::DiagonalMatrix&lt; T, 4 &gt; phonos::BodyCoverVF&lt; T &gt;::stiffnesses</definition>
+        <argsstring>()</argsstring>
+        <name>stiffnesses</name>
+        <qualifiedname>phonos::BodyCoverVF::stiffnesses</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="169" column="27" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="169" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a7af21d133456746984f537a7e36d5d27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>T</type>
+        <definition>T phonos::BodyCoverVF&lt; T &gt;::eta_stiffness</definition>
+        <argsstring>()</argsstring>
+        <name>eta_stiffness</name>
+        <qualifiedname>phonos::BodyCoverVF::eta_stiffness</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="170" column="7" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="170" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a55afff2d8a7ffb5b22cd697a37497a30" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::BodyCoverVF&lt; T &gt;::set_masses</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;masses)</argsstring>
+        <name>set_masses</name>
+        <qualifiedname>phonos::BodyCoverVF::set_masses</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>masses</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="173" column="10" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="173" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a45e4f333fc3dd1da2743c9983aa81fdb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::BodyCoverVF&lt; T &gt;::set_stiffnesses</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 4 &gt; &amp;stiffnesses)</argsstring>
+        <name>set_stiffnesses</name>
+        <qualifiedname>phonos::BodyCoverVF::set_stiffnesses</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 4 &gt; &amp;</type>
+          <declname>stiffnesses</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="174" column="10" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="174" bodyend="177"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1ae76fb692f9465af3125419a5cedc16d8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::BodyCoverVF&lt; T &gt;::set_eta_stiffness</definition>
+        <argsstring>(const T &amp;eta_stiffness)</argsstring>
+        <name>set_eta_stiffness</name>
+        <qualifiedname>phonos::BodyCoverVF::set_eta_stiffness</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>eta_stiffness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="178" column="10" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="178" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a3f0d2400fa16e303f88e33c8f2cf0500" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::BodyCoverVF&lt; T &gt;::set_rest_positions</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;rest_positions)</argsstring>
+        <name>set_rest_positions</name>
+        <qualifiedname>phonos::BodyCoverVF::set_rest_positions</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>rest_positions</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="179" column="10" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="179" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a4403468d977d8b99cc089d192e6c4751" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::BodyCoverVF&lt; T &gt;::set_length</definition>
+        <argsstring>(const T &amp;length)</argsstring>
+        <name>set_length</name>
+        <qualifiedname>phonos::BodyCoverVF::set_length</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="183" column="10" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="183" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a04f18aa450dfa68bd97c143c9a1a4b53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::BodyCoverVF&lt; T &gt;::set_thicknesses</definition>
+        <argsstring>(const Eigen::Vector&lt; T, 3 &gt; &amp;thicknesses)</argsstring>
+        <name>set_thicknesses</name>
+        <qualifiedname>phonos::BodyCoverVF::set_thicknesses</qualifiedname>
+        <param>
+          <type>const Eigen::Vector&lt; T, 3 &gt; &amp;</type>
+          <declname>thicknesses</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="184" column="10" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="184" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a822ecbeb73f641da062ef33ff16b3a13" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::BodyCoverVF&lt; T &gt;::set_gender</definition>
+        <argsstring>(Gender gender)</argsstring>
+        <name>set_gender</name>
+        <qualifiedname>phonos::BodyCoverVF::set_gender</qualifiedname>
+        <param>
+          <type>Gender</type>
+          <declname>gender</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="190" column="10" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="190" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_body_cover_v_f_1a0cfb59097ca5acd40a550d9f9be834b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Gender</type>
+        <definition>Gender phonos::BodyCoverVF&lt; T &gt;::get_gender</definition>
+        <argsstring>()</argsstring>
+        <name>get_gender</name>
+        <qualifiedname>phonos::BodyCoverVF::get_gender</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="208" column="12" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="208" bodyend="208"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/vocal_folds/body_cover_vf.h" line="17" column="1" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="17" bodyend="209"/>
+    <listofallmembers>
+      <member refid="classphonos_1_1_body_cover_v_f_1a7b9c816ed1eda0d309ab0674d2b111ad" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>alpha_ct_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a1258b364b4c73507b75c0c9d2eec8a93" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>alpha_lc_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1ae34fa07e8e029ccf4ad80d02c95147b5" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>alpha_ta_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a6ab34dcf55283805e4fe96f9173677d1" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>b_ta_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1afc03d2eb7f8d51d683ca0151a7bf01c4" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>base_length_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a5424c98f9613eabb541744b38964b75b" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>base_thickness_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1aa13ba7e8fe9ce7ac83dbfaac5e167c55" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>BodyCoverVF</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1af16ffafd102b69380d68dcd70f4a81fa" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>C_ligament_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a8a8ebe10a22c55634ec117e4b3acef43" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>C_mucosa_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a16067f08c6bf2c652bad3ad3e82d8844" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>C_ta_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a73000fa424d57953670261eacf7b3d4d" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>comp_striffness_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a4cc70b9577894216440e5ad0c3e7f912" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>ComputeParametersFromMuscularActivity</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a8fd173fecf98212fbe4c9671e3de1d34" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>density_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a86d945d20abf154098a5ccab39d4308e" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>depth_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1afbd0bbc5cb66ba16237f7969faf5265c" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>depth_body_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1ac734d393ffa20eb3e01c43332d5a11a0" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>depth_cover_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1aaaa193f511a920a4379e11c3b9702d4a" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>depth_ligament_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a5c637e32b9e31d785f6a4a0ab810d698" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>depth_mucosa_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a9d13bc73898d58b9d54701e09b496864" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>depth_muscle_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a0dc8c7ecb6927eb94b65f85c5c1ea098" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>dissipation_coefficients</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1acbb8706e5ae53c61fb596effabb515f3" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>dissipation_coefficients_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a422ef101b17355d3b5dea1a4730c8452" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>e1_ligament_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1ab2b2321ae9157d4a0aa0d58949d4d6f0" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>e1_mucosa_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a6bab359ecd0a9b91f91eb33437f074ee" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>e1_ta_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a2be4365f7a50145e1e29f4304b1e297c" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>e2_ligament_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a03bb0fb6d61b5fd6c24d1840e73f63f4" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>e2_mucosa_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1ae4ea624630b31377480aa209031ca4a2" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>e2_ta_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a81867b21f7cb428ace5be45d77f93b08" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>e_gain_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1aa35ff55e61b355a57c8ada5bef0b9192" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>e_strain_factor</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1aaad54e02de59ec9b50358b9fffab4ec8" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>e_ta_opt_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1af791637aaf6590a17e46010c2cff6802" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>e_torque_ratio_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a074d02de83d4cb74ca539656b989a40f" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>elongation_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1afc171d7f6845e482eae6fee48af3b759" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>elongation_matrix_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a7af21d133456746984f537a7e36d5d27" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>eta_stiffness</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a4295d988aec88f1c08d19a4030bd65ec" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>eta_stiffness_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a15fa5d097b86eedb59e4a7bc68f58a11" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>FillDissipationCoefficients</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a212f7875e3ff71b4915cae5d8305443c" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>gender_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a0cfb59097ca5acd40a550d9f9be834b1" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>get_gender</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1af1b3d29d11eb81de074972f936850efe" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>getN</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a79496671bb06457729a3ee9cd0879f3b" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>lengths</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a50f114e635f6c316ebec678d477e54a4" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>lengths_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a4519dde7aea4e1ab73a50af8b495d870" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>masses</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1ae9c4e4ae07816c41401689d662e50bb2" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>masses_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a5c0a4b190db6f33155ea8fa0ef8df269" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>PassiveStress</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a5a0c0c9e82b43a06f54c17130257e925" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>PassiveStressLigament</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1aa902239b9ffdf9c072f381d3799799fc" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>PassiveStressMucosa</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1ac44355909679fec68152cb93569bca35" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>PassiveStressTA</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a55bdc3b0b6e33f54bc83d1a99bac4c97" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>rest_positions</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1aa389eef836ec695d365e5bd77162784d" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>rest_positions_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1ae76fb692f9465af3125419a5cedc16d8" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>set_eta_stiffness</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a822ecbeb73f641da062ef33ff16b3a13" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>set_gender</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a4403468d977d8b99cc089d192e6c4751" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>set_length</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a55afff2d8a7ffb5b22cd697a37497a30" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>set_masses</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a3f0d2400fa16e303f88e33c8f2cf0500" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>set_rest_positions</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a45e4f333fc3dd1da2743c9983aa81fdb" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>set_stiffnesses</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a04f18aa450dfa68bd97c143c9a1a4b53" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>set_thicknesses</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a4c7bc87d7c47b40ff79ccd664f91fe6c" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>SetCricoarytenoidActivity</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a5340c7b825a64fcd7f0adaf999bb25c8" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>SetCricothyroidActivity</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1aba32b71f0c2a4e42183e9f66c3f84076" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>SetThyroarytenoidActivity</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a9a80e782eb6f7cbcbee156da4a6aaaa6" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>shear_mode_nodal_point_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1abf6d5412130a4bc5bee82c4de81763a3" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>shear_modulus_cover_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1ae81d583c46837303259f2cd007fbfdff" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>shear_modulus_muscle_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1aaa35539a8d7cfc4a01629d28da84f31b" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>shear_stiffness_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a0145e6a797bb2666c031debba3cd19af" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>sigma_0_ligament_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a9fdb67500b35cf05ac27726f96db5b71" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>sigma_0_mucosa_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a51a57d7e01a089c0e854377da3dd4cbc" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>sigma_0_ta_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a3df7e80f5b41503b0f327c228930990d" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>sigma_2_ligament_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1abb72e23951b85e3dbc6384b1f01ec4db" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>sigma_2_mucosa_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1ae32a251a1adb19e1719030d9b49b5075" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>sigma_2_ta_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a7eac5695be7706b837773daa4a1ba049" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>sigma_body_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a3b5ac9bf3d186402246c534d8800dbf4" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>sigma_cover_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a90a8bd06b72b3a998c2cc0d913cd40f7" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>sigma_ligament_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a4bab6206b726f12a66cc9f4ddbdf6549" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>sigma_max_ta_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a808424a3a29ea4052d583d1e32a8dfcf" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>sigma_mucosa_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a9470005c5886ac6f16e73d3e1ad6b75c" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>sigma_muscle_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a108e9d48a2116adfd35bc9a9618c890b" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>sigma_muscle_passive_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a0dabd16799e7f624fba692674549c2f6" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>stiffnesses</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a2d4b571a083d90b01c8a7c6df0553b19" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>stiffnesses_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a753a6a28a102c10d15924bccba885209" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>thickness_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a4303c6d2d713e8f6adc3cafd420916c6" prot="public" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>thicknesses</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1a3b84865625bf239c21228d468223f7d8" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>thicknesses_</name></member>
+      <member refid="classphonos_1_1_body_cover_v_f_1aed79953ce9c128d4d43d5fbc36f09af7" prot="private" virt="non-virtual"><scope>phonos::BodyCoverVF</scope><name>xi_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

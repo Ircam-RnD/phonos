@@ -1,0 +1,426 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacephonos_1_1vowels" kind="namespace" language="C++">
+    <compoundname>phonos::vowels</compoundname>
+    <innerclass refid="structphonos_1_1vowels_1_1_vowel" prot="public">phonos::vowels::Vowel</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="vowels_8h_1a0148fa3d02481fc3f472fd562ec3d926" prot="public" static="no" mutable="no">
+        <type>const std::array&lt; std::string, 16 &gt;</type>
+        <definition>const std::array&lt;std::string, 16&gt; phonos::vowels::vowelNames</definition>
+        <argsstring></argsstring>
+        <name>vowelNames</name>
+        <qualifiedname>phonos::vowels::vowelNames</qualifiedname>
+        <initializer>= {&quot;/a:/&quot;,
+                    &quot;/e:/&quot;,
+                    &quot;/i:/&quot;,
+                    &quot;/o:/&quot;,
+                    &quot;/u:/&quot;,
+                    &quot;/E:/&quot;,
+                    &quot;/ø:/&quot;,
+                    &quot;/y:/&quot;,
+                    &quot;/a/&quot;,
+                    &quot;/E/&quot;,
+                    &quot;/I/&quot;,
+                    &quot;/O/&quot;,
+                    &quot;/U/&quot;,
+                    &quot;/œ/&quot;,
+                    &quot;/Y/&quot;,
+                    &quot;/@/&quot;}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="19" column="25" bodyfile="include/vowels.h" bodystart="19" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1ac4ad67792956b72bb8db9f6a41ab74cb" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float phonos::vowels::minF0</definition>
+        <argsstring></argsstring>
+        <name>minF0</name>
+        <qualifiedname>phonos::vowels::minF0</qualifiedname>
+        <initializer>= 228</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="36" column="20" bodyfile="include/vowels.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a8f2fbde5e7fdc3ebf104c640d6f9e66d" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float phonos::vowels::minF1</definition>
+        <argsstring></argsstring>
+        <name>minF1</name>
+        <qualifiedname>phonos::vowels::minF1</qualifiedname>
+        <initializer>= 601</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="37" column="20" bodyfile="include/vowels.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a90c7125968a3e396f38945501e5e7467" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float phonos::vowels::maxF0</definition>
+        <argsstring></argsstring>
+        <name>maxF0</name>
+        <qualifiedname>phonos::vowels::maxF0</qualifiedname>
+        <initializer>= 710</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="39" column="20" bodyfile="include/vowels.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a3875c781c15e359e0df84a7255428d48" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float phonos::vowels::maxF1</definition>
+        <argsstring></argsstring>
+        <name>maxF1</name>
+        <qualifiedname>phonos::vowels::maxF1</qualifiedname>
+        <initializer>= 2200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="40" column="20" bodyfile="include/vowels.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a92334b0ff1739cca5fe6e3a5c6aaa8d8" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>phonos::vowels::a</qualifiedname>
+        <initializer>                 = {
+&quot;/a:/&quot;,
+{0.00011530000000000001, 0.0005755000000000001, 9.51e-05, 0.0006655000000000001, 0.0002706, 0.0002787},
+{0.018660000000000003, 0.028929999999999997, 0.08477, 0.14385, 0.17028, 0.17099},
+{0.418, 7.363, 0.852, 0.543},
+{702, 1246}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="42" column="20" bodyfile="include/vowels.h" bodystart="42" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1add80099d3d0675457ce983715336b125" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::e</definition>
+        <argsstring></argsstring>
+        <name>e</name>
+        <qualifiedname>phonos::vowels::e</qualifiedname>
+        <initializer>= {&quot;/e:/&quot;,
+   {0.0001474, 0.0007055, 4.78e-05, 0.0003199, 0.0003859, 0.0002485},
+   {0.00458, 0.030430000000000002, 0.1278, 0.17236, 0.17498999999999998, 0.18142},
+   {0.208, 0.833, 0.473, 0.586},
+   {323, 2132}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="49" column="20" bodyfile="include/vowels.h" bodystart="49" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1ac2a43d0df54b884ddc0e5f6f2c13b699" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <qualifiedname>phonos::vowels::i</qualifiedname>
+        <initializer>= {&quot;/i:/&quot;,
+   {0.00020459999999999999, 0.0008834, 2.7500000000000004e-05, 0.0004055, 0.0002929, 0.0003298},
+   {0.01644, 0.05625, 0.1345, 0.17323, 0.17936, 0.18136},
+   {2.391, 0.955, 0.298, 1.408},
+   {257, 2066}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="55" column="20" bodyfile="include/vowels.h" bodystart="55" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a9d536ca77a8a80217ab990d841064db2" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::o</definition>
+        <argsstring></argsstring>
+        <name>o</name>
+        <qualifiedname>phonos::vowels::o</qualifiedname>
+        <initializer>                 = {
+&quot;/o:/&quot;,
+{0.00019830000000000002, 0.0007530000000000001, 4.21e-05, 0.0014351000000000001, 0.00020870000000000003, 6.38e-05},
+{0.01059, 0.02839, 0.11405, 0.17574, 0.203451, 0.21425000000000002},
+{0.217, 0.722, 0.4, 0.736},
+{325, 601}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="61" column="20" bodyfile="include/vowels.h" bodystart="61" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a22fd919fd2a0ad3ae1ecb7d0bb0b59d4" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::u</definition>
+        <argsstring></argsstring>
+        <name>u</name>
+        <qualifiedname>phonos::vowels::u</qualifiedname>
+        <initializer>= {&quot;/u:/&quot;,
+   {0.0001904, 0.0008881000000000001, 7.82e-05, 0.0009436000000000001, 0.0002288, 4.23e-05},
+   {0.01278, 0.06448000000000001, 0.14457, 0.18572, 0.20002, 0.21519},
+   {4.252, 2.13, 1.043, 1.019},
+   {265, 751}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="68" column="20" bodyfile="include/vowels.h" bodystart="68" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a3abe6c847b0b9fba11537ba01e731f97" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::E</definition>
+        <argsstring></argsstring>
+        <name>E</name>
+        <qualifiedname>phonos::vowels::E</qualifiedname>
+        <initializer>= {&quot;/E:/&quot;,
+   {7.72e-05, 0.0003614, 0.0001316, 0.0002632, 0.0004133, 0.00043920000000000005},
+   {0.02477, 0.026469999999999997, 0.12300000000000001, 0.15279, 0.16851, 0.17422},
+   {1.066, 0.773, 1.635, 8.927},
+   {528, 1905}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="74" column="20" bodyfile="include/vowels.h" bodystart="74" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1af54ad9beca3a14029100da2ac87db4f4" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::oe</definition>
+        <argsstring></argsstring>
+        <name>oe</name>
+        <qualifiedname>phonos::vowels::oe</qualifiedname>
+        <initializer>= {&quot;/ø:/&quot;,
+   {0.000146, 0.0009609, 0.0001305, 0.00042740000000000003, 0.00022210000000000003, 6.2e-05},
+   {0.00895, 0.03122, 0.1439, 0.18767, 0.19100999999999999, 0.20538},
+   {0.324, 0.653, 0.873, 1.583},
+   {298, 1300}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="80" column="20" bodyfile="include/vowels.h" bodystart="80" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a6b595d66b3cc7f4ffdc24ec7dd48765a" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>phonos::vowels::y</qualifiedname>
+        <initializer>= {&quot;/y:/&quot;,
+   {0.0001776, 0.0011572, 5.97e-05, 0.00027410000000000005, 0.0001044, 3.4200000000000005e-05},
+   {0.0151, 0.06103, 0.15014, 0.18637, 0.19313, 0.20687999999999998},
+   {3.013, 0.935, 0.592, 0.918},
+   {228, 1657}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="86" column="20" bodyfile="include/vowels.h" bodystart="86" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1ad7c241fa90fe98011316ced808d99471" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::a_short</definition>
+        <argsstring></argsstring>
+        <name>a_short</name>
+        <qualifiedname>phonos::vowels::a_short</qualifiedname>
+        <initializer>= {&quot;/a/&quot;,
+   {6.850000000000001e-05, 0.0004311, 7.76e-05, 0.0008536, 0.0003637, 0.0003216},
+   {0.02319, 0.03247, 0.09551, 0.15677, 0.18042000000000002, 0.18420999999999998},
+   {1.268, 6.154, 1.593, 0.725},
+   {671, 1130}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="92" column="20" bodyfile="include/vowels.h" bodystart="92" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a654b18280c9612e7a43c6f810aae61f3" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::E_short</definition>
+        <argsstring></argsstring>
+        <name>E_short</name>
+        <qualifiedname>phonos::vowels::E_short</qualifiedname>
+        <initializer>                       = {
+&quot;/E/&quot;,
+{7.72e-05, 0.0003818, 0.0001325, 0.0003951, 0.0003283, 0.0004015},
+{0.027559999999999998, 0.02643, 0.08135999999999999, 0.16795000000000002, 0.17379999999999998, 0.17474},
+{1.276, 0.275, 0.508, 0.594},
+{523, 1805}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="98" column="20" bodyfile="include/vowels.h" bodystart="98" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a72dd3f4993e0e452978af4c01e35f818" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::I</definition>
+        <argsstring></argsstring>
+        <name>I</name>
+        <qualifiedname>phonos::vowels::I</qualifiedname>
+        <initializer>= {&quot;/I/&quot;,
+   {0.00019580000000000002, 0.0007822, 0.0001155, 0.0004364, 0.0003368, 0.0002681},
+   {0.01606, 0.06628, 0.12842, 0.16456, 0.17894, 0.18712},
+   {3.7, 2.747, 1.082, 0.629},
+   {355, 1756}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="105" column="20" bodyfile="include/vowels.h" bodystart="105" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a1f3246b1ac71e5c83cf82e53c02dbeda" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::O</definition>
+        <argsstring></argsstring>
+        <name>O</name>
+        <qualifiedname>phonos::vowels::O</qualifiedname>
+        <initializer>= {&quot;/O/&quot;,
+   {8.17e-05, 0.0004504, 5.0600000000000003e-05, 0.0010108, 0.00020800000000000001, 0.0001563},
+   {0.0, 0.02625, 0.10555999999999999, 0.17550000000000002, 0.19366, 0.20241},
+   {0.428, 0.941, 1.798, 0.808},
+   {463, 890}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="111" column="20" bodyfile="include/vowels.h" bodystart="111" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a1096a6d21bd6348bed404c7ff1840e90" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::U</definition>
+        <argsstring></argsstring>
+        <name>U</name>
+        <qualifiedname>phonos::vowels::U</qualifiedname>
+        <initializer>= {&quot;/U/&quot;,
+   {0.0001978, 0.0008708, 3.4699999999999996e-05, 0.0012732, 0.00015840000000000003, 8.16e-05},
+   {0.00863, 0.02098, 0.11086, 0.17442, 0.19684000000000001, 0.20848},
+   {0.515, 0.792, 0.925, 0.852},
+   {327, 997}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="117" column="20" bodyfile="include/vowels.h" bodystart="117" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a6d4d368bf0c9350a0e14f074357792a3" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::oe_short</definition>
+        <argsstring></argsstring>
+        <name>oe_short</name>
+        <qualifiedname>phonos::vowels::oe_short</qualifiedname>
+        <initializer>= {&quot;/œ/&quot;,
+   {0.00015260000000000002, 0.0007445, 0.0002493, 0.0005019, 0.0002929, 0.0001405},
+   {0.01634, 0.033690000000000005, 0.06158, 0.10767, 0.18042000000000002, 0.19012},
+   {0.791, 1.928, 5.605, 0.225},
+   {464, 1313}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="123" column="20" bodyfile="include/vowels.h" bodystart="123" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1ab70749ff2fa85e7799010de1c9cf866e" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <qualifiedname>phonos::vowels::Y</qualifiedname>
+        <initializer>= {&quot;/Y/&quot;,
+   {0.0001167, 0.0008247, 0.0001894, 0.0005053, 0.0002858, 8.16e-05},
+   {0.00594, 0.02773, 0.128, 0.16428, 0.18201, 0.19541},
+   {0.464, 0.905, 0.761, 0.581},
+   {372, 1366}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="129" column="20" bodyfile="include/vowels.h" bodystart="129" bodyend="133"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a7ccd2d75edab4b9dbcfbd4d3743716bd" prot="public" static="no" mutable="no">
+        <type>const <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref></type>
+        <definition>const Vowel phonos::vowels::schwa</definition>
+        <argsstring></argsstring>
+        <name>schwa</name>
+        <qualifiedname>phonos::vowels::schwa</qualifiedname>
+        <initializer>= {&quot;/@/&quot;,
+   {0.0001077, 0.0006256, 0.00014560000000000002, 0.0001773, 0.0002575, 0.0001405},
+   {0.0, 0.03074, 0.12783, 0.16725, 0.17407, 0.1856},
+   {0.208, 0.726, 2.679, 0.896},
+   {406, 1626}}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="135" column="20" bodyfile="include/vowels.h" bodystart="135" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="variable" id="vowels_8h_1a46a7891e72e7d585f8c2398c71086c5c" prot="public" static="no" mutable="no">
+        <type>const std::array&lt; <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">Vowel</ref>, 16 &gt;</type>
+        <definition>const std::array&lt;Vowel, 16&gt; phonos::vowels::vowels</definition>
+        <argsstring></argsstring>
+        <name>vowels</name>
+        <qualifiedname>phonos::vowels::vowels</qualifiedname>
+        <initializer>= {a, e, i, o, u, E, oe, y, a_short, E_short, I, O, U, oe_short, Y, schwa}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vowels.h" line="141" column="25" bodyfile="include/vowels.h" bodystart="141" bodyend="141"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/vowels.h" line="7" column="1"/>
+  </compounddef>
+</doxygen>

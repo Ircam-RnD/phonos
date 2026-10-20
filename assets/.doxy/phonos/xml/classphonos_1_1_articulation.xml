@@ -1,0 +1,255 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classphonos_1_1_articulation" kind="class" language="C++" prot="public">
+    <compoundname>phonos::Articulation</compoundname>
+    <innerclass refid="structphonos_1_1_articulation_1_1_reduced_set" prot="public">phonos::Articulation::ReducedSet</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classphonos_1_1_articulation_1ad78f4283cd39861f88294fc714a80132" prot="private" static="no" mutable="no">
+        <type><ref refid="structphonos_1_1_articulation_1_1_reduced_set" kindref="compound">ReducedSet</ref></type>
+        <definition>ReducedSet phonos::Articulation::reduced_set_</definition>
+        <argsstring></argsstring>
+        <name>reduced_set_</name>
+        <qualifiedname>phonos::Articulation::reduced_set_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/articulation.h" line="20" column="16" bodyfile="include/articulation.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classphonos_1_1_articulation_1a7259d98a791e8d2828ca61866f5e6f02" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>phonos::Articulation::Articulation</definition>
+        <argsstring>(vowels::Vowel const &amp;v=vowels::a)</argsstring>
+        <name>Articulation</name>
+        <qualifiedname>phonos::Articulation::Articulation</qualifiedname>
+        <param>
+          <type><ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">vowels::Vowel</ref> const &amp;</type>
+          <declname>v</declname>
+          <defval>vowels::a</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/articulation.h" line="23" column="5" bodyfile="include/articulation.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_articulation_1a759ea648e75564e39a557c01394edbe6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Articulation::SetFromVowel</definition>
+        <argsstring>(vowels::Vowel const &amp;v)</argsstring>
+        <name>SetFromVowel</name>
+        <qualifiedname>phonos::Articulation::SetFromVowel</qualifiedname>
+        <param>
+          <type><ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">vowels::Vowel</ref> const &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/articulation.h" line="25" column="10" bodyfile="include/articulation.h" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_articulation_1ac4f4a6924119df55ee669f11cc75e60b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Articulation::Interpolate2Vowels</definition>
+        <argsstring>(vowels::Vowel const &amp;v1, vowels::Vowel const &amp;v2, float alpha)</argsstring>
+        <name>Interpolate2Vowels</name>
+        <qualifiedname>phonos::Articulation::Interpolate2Vowels</qualifiedname>
+        <param>
+          <type><ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">vowels::Vowel</ref> const &amp;</type>
+          <declname>v1</declname>
+        </param>
+        <param>
+          <type><ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">vowels::Vowel</ref> const &amp;</type>
+          <declname>v2</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/articulation.h" line="32" column="10" bodyfile="include/articulation.h" bodystart="32" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_articulation_1a53af3d451ebc9d0848bc7ce3bedae51e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Articulation::InterpolateNVowels</definition>
+        <argsstring>(vowels::Vowel const *vs, float const *alphas, size_t const n)</argsstring>
+        <name>InterpolateNVowels</name>
+        <qualifiedname>phonos::Articulation::InterpolateNVowels</qualifiedname>
+        <param>
+          <type><ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">vowels::Vowel</ref> const *</type>
+          <declname>vs</declname>
+        </param>
+        <param>
+          <type>float const *</type>
+          <declname>alphas</declname>
+        </param>
+        <param>
+          <type>size_t const</type>
+          <declname>n</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/articulation.h" line="44" column="10" bodyfile="include/articulation.h" bodystart="44" bodyend="65"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_articulation_1ae60e823409b4ada8aa5ce4fe4a3faf43" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Articulation::FindClosestVowels</definition>
+        <argsstring>(float targetF0, float targetF1, size_t N, std::vector&lt; vowels::Vowel &gt; &amp;closest_vowels, std::vector&lt; float &gt; &amp;alphas)</argsstring>
+        <name>FindClosestVowels</name>
+        <qualifiedname>phonos::Articulation::FindClosestVowels</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>targetF0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>targetF1</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structphonos_1_1vowels_1_1_vowel" kindref="compound">vowels::Vowel</ref> &gt; &amp;</type>
+          <declname>closest_vowels</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>alphas</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/articulation.h" line="69" column="10" bodyfile="include/articulation.h" bodystart="69" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_articulation_1a5b5030268aa07f942710db8cc34142ce" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Articulation::SetFromFormants</definition>
+        <argsstring>(float targetF0, float targetF1, size_t N=3)</argsstring>
+        <name>SetFromFormants</name>
+        <qualifiedname>phonos::Articulation::SetFromFormants</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>targetF0</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>targetF1</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>N</declname>
+          <defval>3</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/articulation.h" line="129" column="10" bodyfile="include/articulation.h" bodystart="129" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_articulation_1a294c51a9cfde92b2044f98ce0dde4e60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void phonos::Articulation::getAreas</definition>
+        <argsstring>(T const *evaluation_positions, T *out, std::size_t const size)</argsstring>
+        <name>getAreas</name>
+        <qualifiedname>phonos::Articulation::getAreas</qualifiedname>
+        <param>
+          <type>T const *</type>
+          <declname>evaluation_positions</declname>
+        </param>
+        <param>
+          <type>T *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>std::size_t const</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/articulation.h" line="142" column="10" bodyfile="include/articulation.h" bodystart="142" bodyend="178"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_articulation_1aef836423391248278b9491e4a18c8873" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Articulation::setFromReducedSet</definition>
+        <argsstring>(ReducedSet reduced_set)</argsstring>
+        <name>setFromReducedSet</name>
+        <qualifiedname>phonos::Articulation::setFromReducedSet</qualifiedname>
+        <param>
+          <type><ref refid="structphonos_1_1_articulation_1_1_reduced_set" kindref="compound">ReducedSet</ref></type>
+          <declname>reduced_set</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/articulation.h" line="180" column="10" bodyfile="include/articulation.h" bodystart="180" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_articulation_1afd56056b979f3dcc44179ce6fc65e843" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structphonos_1_1_articulation_1_1_reduced_set" kindref="compound">ReducedSet</ref></type>
+        <definition>ReducedSet phonos::Articulation::get_reduced_set</definition>
+        <argsstring>()</argsstring>
+        <name>get_reduced_set</name>
+        <qualifiedname>phonos::Articulation::get_reduced_set</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/articulation.h" line="182" column="23" bodyfile="include/articulation.h" bodystart="182" bodyend="182"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/articulation.h" line="12" column="1" bodyfile="include/articulation.h" bodystart="12" bodyend="183"/>
+    <listofallmembers>
+      <member refid="classphonos_1_1_articulation_1a7259d98a791e8d2828ca61866f5e6f02" prot="public" virt="non-virtual"><scope>phonos::Articulation</scope><name>Articulation</name></member>
+      <member refid="classphonos_1_1_articulation_1ae60e823409b4ada8aa5ce4fe4a3faf43" prot="public" virt="non-virtual"><scope>phonos::Articulation</scope><name>FindClosestVowels</name></member>
+      <member refid="classphonos_1_1_articulation_1afd56056b979f3dcc44179ce6fc65e843" prot="public" virt="non-virtual"><scope>phonos::Articulation</scope><name>get_reduced_set</name></member>
+      <member refid="classphonos_1_1_articulation_1a294c51a9cfde92b2044f98ce0dde4e60" prot="public" virt="non-virtual"><scope>phonos::Articulation</scope><name>getAreas</name></member>
+      <member refid="classphonos_1_1_articulation_1ac4f4a6924119df55ee669f11cc75e60b" prot="public" virt="non-virtual"><scope>phonos::Articulation</scope><name>Interpolate2Vowels</name></member>
+      <member refid="classphonos_1_1_articulation_1a53af3d451ebc9d0848bc7ce3bedae51e" prot="public" virt="non-virtual"><scope>phonos::Articulation</scope><name>InterpolateNVowels</name></member>
+      <member refid="classphonos_1_1_articulation_1ad78f4283cd39861f88294fc714a80132" prot="private" virt="non-virtual"><scope>phonos::Articulation</scope><name>reduced_set_</name></member>
+      <member refid="classphonos_1_1_articulation_1a5b5030268aa07f942710db8cc34142ce" prot="public" virt="non-virtual"><scope>phonos::Articulation</scope><name>SetFromFormants</name></member>
+      <member refid="classphonos_1_1_articulation_1aef836423391248278b9491e4a18c8873" prot="public" virt="non-virtual"><scope>phonos::Articulation</scope><name>setFromReducedSet</name></member>
+      <member refid="classphonos_1_1_articulation_1a759ea648e75564e39a557c01394edbe6" prot="public" virt="non-virtual"><scope>phonos::Articulation</scope><name>SetFromVowel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

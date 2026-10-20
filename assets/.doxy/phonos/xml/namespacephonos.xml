@@ -1,0 +1,575 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="namespacephonos" kind="namespace" language="C++">
+    <compoundname>phonos</compoundname>
+    <innerclass refid="classphonos_1_1_articulation" prot="public">phonos::Articulation</innerclass>
+    <innerclass refid="classphonos_1_1_bow" prot="public">phonos::Bow</innerclass>
+    <innerclass refid="classphonos_1_1_duffing" prot="public">phonos::Duffing</innerclass>
+    <innerclass refid="classphonos_1_1_noise_generator" prot="public">phonos::NoiseGenerator</innerclass>
+    <innerclass refid="classphonos_1_1_single_reed" prot="public">phonos::SingleReed</innerclass>
+    <innerclass refid="classphonos_1_1_biquad" prot="public">phonos::Biquad</innerclass>
+    <innerclass refid="classphonos_1_1_body_cover_pair" prot="public">phonos::BodyCoverPair</innerclass>
+    <innerclass refid="classphonos_1_1_body_cover_v_f" prot="public">phonos::BodyCoverVF</innerclass>
+    <innerclass refid="classphonos_1_1_v_f_pair_example" prot="public">phonos::VFPairExample</innerclass>
+    <innerclass refid="classphonos_1_1_voice" prot="public">phonos::Voice</innerclass>
+    <innerclass refid="classphonos_1_1_webster_f_d_t_d" prot="public">phonos::WebsterFDTD</innerclass>
+    <innernamespace refid="namespacephonos_1_1vowels">phonos::vowels</innernamespace>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="_bow_8h_1aa57b93054ba8471791a2574c64277262" prot="public" static="no" strong="no">
+        <type></type>
+        <name>BowMode</name>
+        <qualifiedname>phonos::BowMode</qualifiedname>
+        <enumvalue id="_bow_8h_1aa57b93054ba8471791a2574c64277262a55b7c8110907d838616eec947b3321f7" prot="public">
+          <name>kMatusiak</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bow_8h_1aa57b93054ba8471791a2574c64277262ad86e33f6b5be82beba5372ca43729287" prot="public">
+          <name>kVigue</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_bow_8h_1aa57b93054ba8471791a2574c64277262a2028b7b4c24a658c79855b64a9c73384" prot="public">
+          <name>kTerrien</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/Bow.h" line="7" column="1" bodyfile="include/Bow.h" bodystart="7" bodyend="7"/>
+      </memberdef>
+      <memberdef kind="enum" id="noise__generator_8h_1aab11cf9246c9cae0678523d7cac3203c" prot="public" static="no" strong="no">
+        <type></type>
+        <name>NoiseColor</name>
+        <qualifiedname>phonos::NoiseColor</qualifiedname>
+        <enumvalue id="noise__generator_8h_1aab11cf9246c9cae0678523d7cac3203ca78674e027bd78bdf22af426cc9c49bb0" prot="public">
+          <name>White</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="noise__generator_8h_1aab11cf9246c9cae0678523d7cac3203cadd89e67c4c0e7dc2960673eef4a2f59c" prot="public">
+          <name>Pink</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/noise_generator.h" line="10" column="1" bodyfile="include/noise_generator.h" bodystart="10" bodyend="10"/>
+      </memberdef>
+      <memberdef kind="enum" id="biquad_8h_1ab5d5a9465cbc4f2b305d780164f478b5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>BiquadMode</name>
+        <qualifiedname>phonos::BiquadMode</qualifiedname>
+        <enumvalue id="biquad_8h_1ab5d5a9465cbc4f2b305d780164f478b5a57ea6d57777c48a4d615ee38068714a7" prot="public">
+          <name>kLowPass</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="biquad_8h_1ab5d5a9465cbc4f2b305d780164f478b5ab1bc84c0bcd359882348f866099f0a8b" prot="public">
+          <name>kHighPass</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="biquad_8h_1ab5d5a9465cbc4f2b305d780164f478b5a86895d8e6facb4c75071c0ca119c968e" prot="public">
+          <name>kBandPass</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="biquad_8h_1ab5d5a9465cbc4f2b305d780164f478b5a17f1d29792c2b92e740f1e5e9a83b871" prot="public">
+          <name>kNotch</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="biquad_8h_1ab5d5a9465cbc4f2b305d780164f478b5ae9ce65f4b21a09bd26d2f8a66fd3a4c0" prot="public">
+          <name>kPeak</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="biquad_8h_1ab5d5a9465cbc4f2b305d780164f478b5a9700dedf1926fcf016b53c4efcb664c6" prot="public">
+          <name>kLowShelf</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="biquad_8h_1ab5d5a9465cbc4f2b305d780164f478b5ad7bbd8de1c0f9ad3b7c7e0dffa6f90bd" prot="public">
+          <name>kHighShelf</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="8" column="1" bodyfile="include/utility/biquad.h" bodystart="8" bodyend="8"/>
+      </memberdef>
+      <memberdef kind="enum" id="body__cover__pair_8h_1ad64435bd7827a426ff6ec397793fc991" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FoldIdentifier</name>
+        <qualifiedname>phonos::FoldIdentifier</qualifiedname>
+        <enumvalue id="body__cover__pair_8h_1ad64435bd7827a426ff6ec397793fc991ac7b79cd1ddf90b44eec98ee36da39a51" prot="public">
+          <name>kRight</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="body__cover__pair_8h_1ad64435bd7827a426ff6ec397793fc991abeac25b175b83290156820100bbc28cd" prot="public">
+          <name>kLeft</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="body__cover__pair_8h_1ad64435bd7827a426ff6ec397793fc991a5827029f61f589daf96cec342f7a0f49" prot="public">
+          <name>kBoth</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_pair.h" line="14" column="1" bodyfile="include/vocal_folds/body_cover_pair.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="enum" id="body__cover__vf_8h_1afc0be4b1a552c1533413a4cb2842dbb8" prot="public" static="no" strong="no">
+        <type></type>
+        <name>Gender</name>
+        <qualifiedname>phonos::Gender</qualifiedname>
+        <enumvalue id="body__cover__vf_8h_1afc0be4b1a552c1533413a4cb2842dbb8aa02cf0952741d1bc1d6f8eff88dbe612" prot="public">
+          <name>MALE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="body__cover__vf_8h_1afc0be4b1a552c1533413a4cb2842dbb8ad78f77f3aab22c0114f37f721a7edee8" prot="public">
+          <name>FEMALE</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/vocal_folds/body_cover_vf.h" line="10" column="1" bodyfile="include/vocal_folds/body_cover_vf.h" bodystart="10" bodyend="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="audiowrite_8h_1a4f61af075ef10498de04b38e8fd86eec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WriteWav</definition>
+        <argsstring>(const std::string &amp;path, const std::vector&lt; float &gt; &amp;samples, int sampleRate)</argsstring>
+        <name>WriteWav</name>
+        <qualifiedname>phonos::WriteWav</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>samples</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>sampleRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/audiowrite.h" line="9" column="6" bodyfile="include/utility/audiowrite.h" bodystart="9" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="eigen__utility_8h_1a47c3b0e0c3ba838a3b7b3125909e8953" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Derived</type>
+          </param>
+          <param>
+            <type>typename ftype</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto phonos::ClipEigen</definition>
+        <argsstring>(Eigen::Ref&lt; const Eigen::ArrayX&lt; Derived &gt; &gt; array, const ftype &amp;min, const ftype &amp;max)</argsstring>
+        <name>ClipEigen</name>
+        <qualifiedname>phonos::ClipEigen</qualifiedname>
+        <param>
+          <type>Eigen::Ref&lt; const Eigen::ArrayX&lt; Derived &gt; &gt;</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/eigen_utility.h" line="8" column="6" bodyfile="include/utility/eigen_utility.h" bodystart="8" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="function" id="eigen__utility_8h_1ab708b4cfe99b0a3cabe5be5f8581fcde" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Derived</type>
+          </param>
+          <param>
+            <type>typename ftype</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto phonos::ClipEigen</definition>
+        <argsstring>(const Eigen::ArrayBase&lt; Derived &gt; &amp;array, const ftype &amp;min, const ftype &amp;max)</argsstring>
+        <name>ClipEigen</name>
+        <qualifiedname>phonos::ClipEigen</qualifiedname>
+        <param>
+          <type>const Eigen::ArrayBase&lt; Derived &gt; &amp;</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>min</declname>
+        </param>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>max</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/eigen_utility.h" line="14" column="6" bodyfile="include/utility/eigen_utility.h" bodystart="14" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="eigen__utility_8h_1a8d492d36f7b678c969feae219c40c5cb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Derived1</type>
+          </param>
+          <param>
+            <type>typename Derived2</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto phonos::SafeSetEigen</definition>
+        <argsstring>(Eigen::ArrayBase&lt; Derived1 &gt; &amp;array, Eigen::Ref&lt; const Eigen::ArrayX&lt; Derived2 &gt; &gt; array2)</argsstring>
+        <name>SafeSetEigen</name>
+        <qualifiedname>phonos::SafeSetEigen</qualifiedname>
+        <param>
+          <type>Eigen::ArrayBase&lt; Derived1 &gt; &amp;</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>Eigen::Ref&lt; const Eigen::ArrayX&lt; Derived2 &gt; &gt;</type>
+          <declname>array2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/eigen_utility.h" line="20" column="6" bodyfile="include/utility/eigen_utility.h" bodystart="20" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="eigen__utility_8h_1ab407e1a76bd0d84b73d5db1cc20c4266" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename Derived1</type>
+          </param>
+          <param>
+            <type>typename Derived2</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto phonos::SafeSetEigen</definition>
+        <argsstring>(Eigen::ArrayBase&lt; Derived1 &gt; &amp;array, const Eigen::ArrayBase&lt; Derived2 &gt; &amp;array2)</argsstring>
+        <name>SafeSetEigen</name>
+        <qualifiedname>phonos::SafeSetEigen</qualifiedname>
+        <param>
+          <type>Eigen::ArrayBase&lt; Derived1 &gt; &amp;</type>
+          <declname>array</declname>
+        </param>
+        <param>
+          <type>const Eigen::ArrayBase&lt; Derived2 &gt; &amp;</type>
+          <declname>array2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/eigen_utility.h" line="27" column="6" bodyfile="include/utility/eigen_utility.h" bodystart="27" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="maths_8h_1a54b9fe7ee57290e4295d1264ade3a238" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void phonos::normalize_vector</definition>
+        <argsstring>(std::vector&lt; T &gt; &amp;vec)</argsstring>
+        <name>normalize_vector</name>
+        <qualifiedname>phonos::normalize_vector</qualifiedname>
+        <param>
+          <type>std::vector&lt; T &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/maths.h" line="6" column="6" bodyfile="include/utility/maths.h" bodystart="6" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="maths_8h_1ad6e10cb955eb3de0bd341a243d7fe4de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int phonos::sgn</definition>
+        <argsstring>(T val)</argsstring>
+        <name>sgn</name>
+        <qualifiedname>phonos::sgn</qualifiedname>
+        <param>
+          <type>T</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/maths.h" line="20" column="5" bodyfile="include/utility/maths.h" bodystart="20" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="smoothing_8h_1abee062959159cf28975561d4613cb079" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename derived</type>
+          </param>
+          <param>
+            <type>typename ftype</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto phonos::smoothRampMatrix</definition>
+        <argsstring>(const Eigen::MatrixBase&lt; derived &gt; &amp;x, ftype epsilon=1)</argsstring>
+        <name>smoothRampMatrix</name>
+        <qualifiedname>phonos::smoothRampMatrix</qualifiedname>
+        <param>
+          <type>const Eigen::MatrixBase&lt; derived &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>epsilon</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/smoothing.h" line="8" column="6" bodyfile="include/utility/smoothing.h" bodystart="8" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="smoothing_8h_1a455f6b724c4ad30adee653ddac43ea0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ftype</type>
+          </param>
+        </templateparamlist>
+        <type>ftype</type>
+        <definition>ftype phonos::softplus</definition>
+        <argsstring>(const ftype &amp;x, ftype epsilon=1, ftype threshold=40)</argsstring>
+        <name>softplus</name>
+        <qualifiedname>phonos::softplus</qualifiedname>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>epsilon</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>threshold</declname>
+          <defval>40</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/smoothing.h" line="15" column="7" bodyfile="include/utility/smoothing.h" bodystart="15" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="smoothing_8h_1ab59ef2bae64d895d2637af2415b04a77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename ftype</type>
+          </param>
+        </templateparamlist>
+        <type>ftype</type>
+        <definition>ftype phonos::softplusDerivative</definition>
+        <argsstring>(const ftype &amp;x, ftype epsilon=1, ftype threshold=40)</argsstring>
+        <name>softplusDerivative</name>
+        <qualifiedname>phonos::softplusDerivative</qualifiedname>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>epsilon</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>threshold</declname>
+          <defval>40</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/smoothing.h" line="25" column="7" bodyfile="include/utility/smoothing.h" bodystart="25" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="smoothing_8h_1a676996f281bb932e4d0b99137550f7c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename derived</type>
+          </param>
+          <param>
+            <type>typename ftype</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto phonos::softplusMatrix</definition>
+        <argsstring>(const Eigen::MatrixBase&lt; derived &gt; &amp;x, ftype epsilon=1, ftype threshold=40)</argsstring>
+        <name>softplusMatrix</name>
+        <qualifiedname>phonos::softplusMatrix</qualifiedname>
+        <param>
+          <type>const Eigen::MatrixBase&lt; derived &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>epsilon</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>threshold</declname>
+          <defval>40</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/smoothing.h" line="35" column="6" bodyfile="include/utility/smoothing.h" bodystart="35" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="smoothing_8h_1a7f4d81f9c02b4e394ba1d3ca7814ceaf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename derived</type>
+          </param>
+          <param>
+            <type>typename ftype</type>
+          </param>
+        </templateparamlist>
+        <type>auto</type>
+        <definition>auto phonos::softplusDerivativeMatrix</definition>
+        <argsstring>(const Eigen::MatrixBase&lt; derived &gt; &amp;x, ftype epsilon=1, ftype threshold=40)</argsstring>
+        <name>softplusDerivativeMatrix</name>
+        <qualifiedname>phonos::softplusDerivativeMatrix</qualifiedname>
+        <param>
+          <type>const Eigen::MatrixBase&lt; derived &gt; &amp;</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>epsilon</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>threshold</declname>
+          <defval>40</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/smoothing.h" line="41" column="6" bodyfile="include/utility/smoothing.h" bodystart="41" bodyend="46"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="src/duffing.cpp" line="3" column="1"/>
+  </compounddef>
+</doxygen>

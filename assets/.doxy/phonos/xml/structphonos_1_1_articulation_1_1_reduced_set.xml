@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structphonos_1_1_articulation_1_1_reduced_set" kind="struct" language="C++" prot="public">
+    <compoundname>phonos::Articulation::ReducedSet</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structphonos_1_1_articulation_1_1_reduced_set_1aca797ea5186138fadb2a2ef655a409be" prot="public" static="no" mutable="no">
+        <type>std::array&lt; float, 6 &gt;</type>
+        <definition>std::array&lt;float, 6&gt; phonos::Articulation::ReducedSet::areas</definition>
+        <argsstring></argsstring>
+        <name>areas</name>
+        <qualifiedname>phonos::Articulation::ReducedSet::areas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/articulation.h" line="15" column="20" bodyfile="include/articulation.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structphonos_1_1_articulation_1_1_reduced_set_1a4b558bd4747900f7f1eec7b4d86f404b" prot="public" static="no" mutable="no">
+        <type>std::array&lt; float, 6 &gt;</type>
+        <definition>std::array&lt;float, 6&gt; phonos::Articulation::ReducedSet::positions</definition>
+        <argsstring></argsstring>
+        <name>positions</name>
+        <qualifiedname>phonos::Articulation::ReducedSet::positions</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/articulation.h" line="15" column="26" bodyfile="include/articulation.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structphonos_1_1_articulation_1_1_reduced_set_1a90fc6e84fb2bdf3b5c53307da9f249e1" prot="public" static="no" mutable="no">
+        <type>std::array&lt; float, 4 &gt;</type>
+        <definition>std::array&lt;float, 4&gt; phonos::Articulation::ReducedSet::etas</definition>
+        <argsstring></argsstring>
+        <name>etas</name>
+        <qualifiedname>phonos::Articulation::ReducedSet::etas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/articulation.h" line="16" column="20" bodyfile="include/articulation.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/articulation.h" line="14" column="5" bodyfile="include/articulation.h" bodystart="14" bodyend="17"/>
+    <listofallmembers>
+      <member refid="structphonos_1_1_articulation_1_1_reduced_set_1aca797ea5186138fadb2a2ef655a409be" prot="public" virt="non-virtual"><scope>phonos::Articulation::ReducedSet</scope><name>areas</name></member>
+      <member refid="structphonos_1_1_articulation_1_1_reduced_set_1a90fc6e84fb2bdf3b5c53307da9f249e1" prot="public" virt="non-virtual"><scope>phonos::Articulation::ReducedSet</scope><name>etas</name></member>
+      <member refid="structphonos_1_1_articulation_1_1_reduced_set_1a4b558bd4747900f7f1eec7b4d86f404b" prot="public" virt="non-virtual"><scope>phonos::Articulation::ReducedSet</scope><name>positions</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

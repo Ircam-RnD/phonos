@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structphonos_1_1_webster_f_d_t_d_1_1_poles_residues" kind="struct" language="C++" prot="public">
+    <compoundname>phonos::WebsterFDTD::PolesResidues</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structphonos_1_1_webster_f_d_t_d_1_1_poles_residues_1a49f3ddb6e3d78b7c38c4cc5820199e2c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::complex&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::complex&lt;double&gt; &gt; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::PolesResidues::poles</definition>
+        <argsstring></argsstring>
+        <name>poles</name>
+        <qualifiedname>phonos::WebsterFDTD::PolesResidues::poles</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="25" column="21" bodyfile="include/websterFDTD.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structphonos_1_1_webster_f_d_t_d_1_1_poles_residues_1ace836d35457392a27a16f3deb6a3d1b2" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::complex&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::complex&lt;double&gt; &gt; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::PolesResidues::impedanceResidues</definition>
+        <argsstring></argsstring>
+        <name>impedanceResidues</name>
+        <qualifiedname>phonos::WebsterFDTD::PolesResidues::impedanceResidues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="26" column="21" bodyfile="include/websterFDTD.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structphonos_1_1_webster_f_d_t_d_1_1_poles_residues_1a70547994d6f5f83cad4a8024dc0b92c7" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::complex&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::complex&lt;double&gt; &gt; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::PolesResidues::tranferFunctionFlowResidues</definition>
+        <argsstring></argsstring>
+        <name>tranferFunctionFlowResidues</name>
+        <qualifiedname>phonos::WebsterFDTD::PolesResidues::tranferFunctionFlowResidues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="27" column="21" bodyfile="include/websterFDTD.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structphonos_1_1_webster_f_d_t_d_1_1_poles_residues_1af5fdfa0d475bc1c1b896ea585c8fd434" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::complex&lt; double &gt; &gt;</type>
+        <definition>std::vector&lt;std::complex&lt;double&gt; &gt; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::PolesResidues::tranferFunctionPressureResidues</definition>
+        <argsstring></argsstring>
+        <name>tranferFunctionPressureResidues</name>
+        <qualifiedname>phonos::WebsterFDTD::PolesResidues::tranferFunctionPressureResidues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="28" column="21" bodyfile="include/websterFDTD.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/websterFDTD.h" line="24" column="5" bodyfile="include/websterFDTD.h" bodystart="24" bodyend="29"/>
+    <listofallmembers>
+      <member refid="structphonos_1_1_webster_f_d_t_d_1_1_poles_residues_1ace836d35457392a27a16f3deb6a3d1b2" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD::PolesResidues</scope><name>impedanceResidues</name></member>
+      <member refid="structphonos_1_1_webster_f_d_t_d_1_1_poles_residues_1a49f3ddb6e3d78b7c38c4cc5820199e2c" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD::PolesResidues</scope><name>poles</name></member>
+      <member refid="structphonos_1_1_webster_f_d_t_d_1_1_poles_residues_1a70547994d6f5f83cad4a8024dc0b92c7" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD::PolesResidues</scope><name>tranferFunctionFlowResidues</name></member>
+      <member refid="structphonos_1_1_webster_f_d_t_d_1_1_poles_residues_1af5fdfa0d475bc1c1b896ea585c8fd434" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD::PolesResidues</scope><name>tranferFunctionPressureResidues</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

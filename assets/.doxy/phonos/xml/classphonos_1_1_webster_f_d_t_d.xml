@@ -1,0 +1,2245 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classphonos_1_1_webster_f_d_t_d" kind="class" language="C++" prot="public">
+    <compoundname>phonos::WebsterFDTD</compoundname>
+    <innerclass refid="structphonos_1_1_webster_f_d_t_d_1_1_frequency_response" prot="public">phonos::WebsterFDTD::FrequencyResponse</innerclass>
+    <innerclass refid="structphonos_1_1_webster_f_d_t_d_1_1_poles_residues" prot="public">phonos::WebsterFDTD::PolesResidues</innerclass>
+    <templateparamlist>
+      <param>
+        <type>typename ftype</type>
+      </param>
+      <param>
+        <type>int</type>
+        <declname>kMaxN</declname>
+        <defname>kMaxN</defname>
+        <defval>50</defval>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="classphonos_1_1_webster_f_d_t_d_1a9aa6f8978aa1cb13715d713d3b59ae1c" prot="private" static="no">
+        <type>Eigen::Array&lt; ftype, kMaxN, 1 &gt;</type>
+        <definition>using phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ArrayN = Eigen::Array&lt;ftype, kMaxN, 1&gt;</definition>
+        <argsstring></argsstring>
+        <name>ArrayN</name>
+        <qualifiedname>phonos::WebsterFDTD::ArrayN</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="35" column="5" bodyfile="include/websterFDTD.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="classphonos_1_1_webster_f_d_t_d_1a29611f45c700fc709781530bc73866f0" prot="private" static="no">
+        <type>Eigen::Array&lt; ftype, kMaxN - 1, 1 &gt;</type>
+        <definition>using phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ArrayNm1 = Eigen::Array&lt;ftype, kMaxN - 1, 1&gt;</definition>
+        <argsstring></argsstring>
+        <name>ArrayNm1</name>
+        <qualifiedname>phonos::WebsterFDTD::ArrayNm1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="37" column="5" bodyfile="include/websterFDTD.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a7eb03c6bb12985a93df50cb0e5da7b71" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::c0_</definition>
+        <argsstring></argsstring>
+        <name>c0_</name>
+        <qualifiedname>phonos::WebsterFDTD::c0_</qualifiedname>
+        <initializer>{340}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="40" column="11" bodyfile="include/websterFDTD.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a52c55d5b26f8786ea1d2ea7349def7eb" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::rho0_</definition>
+        <argsstring></argsstring>
+        <name>rho0_</name>
+        <qualifiedname>phonos::WebsterFDTD::rho0_</qualifiedname>
+        <initializer>{1.2}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="40" column="15" bodyfile="include/websterFDTD.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a6db51155abddd54870dbab1582297197" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::l0_</definition>
+        <argsstring></argsstring>
+        <name>l0_</name>
+        <qualifiedname>phonos::WebsterFDTD::l0_</qualifiedname>
+        <initializer>{17e-2}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="40" column="21" bodyfile="include/websterFDTD.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a8e974ea0dbdfcc0a9fb09a9bb1597b23" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::c02_</definition>
+        <argsstring></argsstring>
+        <name>c02_</name>
+        <qualifiedname>phonos::WebsterFDTD::c02_</qualifiedname>
+        <initializer>{0.0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="40" column="25" bodyfile="include/websterFDTD.h" bodystart="40" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a5139694f2e8231213dc09cefbbef6a3c" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::lip_radius</definition>
+        <argsstring></argsstring>
+        <name>lip_radius</name>
+        <qualifiedname>phonos::WebsterFDTD::lip_radius</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="41" column="11" bodyfile="include/websterFDTD.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a4b00fea93f49e08688ba709f43b9a524" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::L_rad_</definition>
+        <argsstring></argsstring>
+        <name>L_rad_</name>
+        <qualifiedname>phonos::WebsterFDTD::L_rad_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="41" column="22" bodyfile="include/websterFDTD.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1aaa675e3f9eb9227ef6ac5d963fbe0c3c" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::R_rad_</definition>
+        <argsstring></argsstring>
+        <name>R_rad_</name>
+        <qualifiedname>phonos::WebsterFDTD::R_rad_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="41" column="29" bodyfile="include/websterFDTD.h" bodystart="41" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a4c58dde0b1409007c75b46b50062dd73" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::wall_area_mass_</definition>
+        <argsstring></argsstring>
+        <name>wall_area_mass_</name>
+        <qualifiedname>phonos::WebsterFDTD::wall_area_mass_</qualifiedname>
+        <initializer>{15}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="42" column="11" bodyfile="include/websterFDTD.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1aa3cef715bb62c621a7cb91c40a1a3ea1" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::wall_area_stiffness_</definition>
+        <argsstring></argsstring>
+        <name>wall_area_stiffness_</name>
+        <qualifiedname>phonos::WebsterFDTD::wall_area_stiffness_</qualifiedname>
+        <initializer>{3e6}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="42" column="27" bodyfile="include/websterFDTD.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a99a7c685d4b4b39d1be947e25a4dd7e8" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::wall_area_damping_</definition>
+        <argsstring></argsstring>
+        <name>wall_area_damping_</name>
+        <qualifiedname>phonos::WebsterFDTD::wall_area_damping_</qualifiedname>
+        <initializer>{16000}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="42" column="48" bodyfile="include/websterFDTD.h" bodystart="42" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a1a26601eb9f0b1652e5bd8476a5489f4" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::radiation_</definition>
+        <argsstring></argsstring>
+        <name>radiation_</name>
+        <qualifiedname>phonos::WebsterFDTD::radiation_</qualifiedname>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="45" column="10" bodyfile="include/websterFDTD.h" bodystart="45" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a1a2f8cce2fe3e5a498f9de07198f67b0" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::yielding_walls_</definition>
+        <argsstring></argsstring>
+        <name>yielding_walls_</name>
+        <qualifiedname>phonos::WebsterFDTD::yielding_walls_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="46" column="10" bodyfile="include/websterFDTD.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1ad431356a7bbd70ea9e2ad862c3aae9b1" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::time_varying_geometry_</definition>
+        <argsstring></argsstring>
+        <name>time_varying_geometry_</name>
+        <qualifiedname>phonos::WebsterFDTD::time_varying_geometry_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="47" column="10" bodyfile="include/websterFDTD.h" bodystart="47" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1aa415aa45d9a1f248607f1b4954ae733a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::pumped_flow_</definition>
+        <argsstring></argsstring>
+        <name>pumped_flow_</name>
+        <qualifiedname>phonos::WebsterFDTD::pumped_flow_</qualifiedname>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="48" column="9" bodyfile="include/websterFDTD.h" bodystart="48" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1acc6d35239bbc8e520efaf377563c51b1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::N_update_geometry_</definition>
+        <argsstring></argsstring>
+        <name>N_update_geometry_</name>
+        <qualifiedname>phonos::WebsterFDTD::N_update_geometry_</qualifiedname>
+        <initializer>{1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="49" column="9" bodyfile="include/websterFDTD.h" bodystart="49" bodyend="49"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a5106707cff4ad18953b6a3c89fc8dcb4" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::update_counter_geometry_</definition>
+        <argsstring></argsstring>
+        <name>update_counter_geometry_</name>
+        <qualifiedname>phonos::WebsterFDTD::update_counter_geometry_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="50" column="9" bodyfile="include/websterFDTD.h" bodystart="50" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1ac506c5a8d8754b31b5617bb45ecfaffe" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::S_direct_</definition>
+        <argsstring></argsstring>
+        <name>S_direct_</name>
+        <qualifiedname>phonos::WebsterFDTD::S_direct_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="52" column="12" bodyfile="include/websterFDTD.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a1146dadf811f034b2f474b253ea837be" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::S_target_</definition>
+        <argsstring></argsstring>
+        <name>S_target_</name>
+        <qualifiedname>phonos::WebsterFDTD::S_target_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="52" column="22" bodyfile="include/websterFDTD.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a098a8a61eb91885c355db58a9dcd4c71" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::S_direct_last_</definition>
+        <argsstring></argsstring>
+        <name>S_direct_last_</name>
+        <qualifiedname>phonos::WebsterFDTD::S_direct_last_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="52" column="32" bodyfile="include/websterFDTD.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1ae458c4a217878f107c1eea7ba0371b80" prot="private" static="no" mutable="no">
+        <type>ArrayNm1</type>
+        <definition>ArrayNm1 phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::S_dual_</definition>
+        <argsstring></argsstring>
+        <name>S_dual_</name>
+        <qualifiedname>phonos::WebsterFDTD::S_dual_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="53" column="14" bodyfile="include/websterFDTD.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a0fcf526a39fcd38d7371b032e086463a" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::S_primal_</definition>
+        <argsstring></argsstring>
+        <name>S_primal_</name>
+        <qualifiedname>phonos::WebsterFDTD::S_primal_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="54" column="12" bodyfile="include/websterFDTD.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a774ccf620ace781b31866a32bf4ace2d" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::S_primal_last_</definition>
+        <argsstring></argsstring>
+        <name>S_primal_last_</name>
+        <qualifiedname>phonos::WebsterFDTD::S_primal_last_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="54" column="22" bodyfile="include/websterFDTD.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1af9af467e14504b98e707a031badcb6ab" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::d_S_primal_</definition>
+        <argsstring></argsstring>
+        <name>d_S_primal_</name>
+        <qualifiedname>phonos::WebsterFDTD::d_S_primal_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="54" column="37" bodyfile="include/websterFDTD.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a6f18ccac9af6da392ed77d46fac61427" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::gamma_primal_</definition>
+        <argsstring></argsstring>
+        <name>gamma_primal_</name>
+        <qualifiedname>phonos::WebsterFDTD::gamma_primal_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="55" column="12" bodyfile="include/websterFDTD.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1aeb8655bce872cf3cac9acc31dcb4f99b" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::dt_</definition>
+        <argsstring></argsstring>
+        <name>dt_</name>
+        <qualifiedname>phonos::WebsterFDTD::dt_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="58" column="11" bodyfile="include/websterFDTD.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a29cd653f07618f7f80a7eb6b9c535003" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::sr_</definition>
+        <argsstring></argsstring>
+        <name>sr_</name>
+        <qualifiedname>phonos::WebsterFDTD::sr_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="58" column="15" bodyfile="include/websterFDTD.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1ae1c74b19a9af3b6327fa69224b4e78a6" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::h_</definition>
+        <argsstring></argsstring>
+        <name>h_</name>
+        <qualifiedname>phonos::WebsterFDTD::h_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="58" column="19" bodyfile="include/websterFDTD.h" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a0c4b0fe78265bffef29a7deb48e5dabe" prot="private" static="no" mutable="no">
+        <type>ArrayNm1</type>
+        <definition>ArrayNm1 phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::x_dual_</definition>
+        <argsstring></argsstring>
+        <name>x_dual_</name>
+        <qualifiedname>phonos::WebsterFDTD::x_dual_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="59" column="14" bodyfile="include/websterFDTD.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1ad34383672b98112500498229a0b627dc" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::x_primal_</definition>
+        <argsstring></argsstring>
+        <name>x_primal_</name>
+        <qualifiedname>phonos::WebsterFDTD::x_primal_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="60" column="12" bodyfile="include/websterFDTD.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a1e62e0255316b34da0e06219ffa6223a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::N_</definition>
+        <argsstring></argsstring>
+        <name>N_</name>
+        <qualifiedname>phonos::WebsterFDTD::N_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="61" column="9" bodyfile="include/websterFDTD.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a2c65526838aeda452c671e05f5955a56" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::flip_</definition>
+        <argsstring></argsstring>
+        <name>flip_</name>
+        <qualifiedname>phonos::WebsterFDTD::flip_</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="64" column="10" bodyfile="include/websterFDTD.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a321512b066f7f34074d1a4d097fb6358" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::rho_buf_[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>rho_buf_</name>
+        <qualifiedname>phonos::WebsterFDTD::rho_buf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="66" column="12" bodyfile="include/websterFDTD.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a79a5df19ae3feaad499913117b2dbf7b" prot="private" static="no" mutable="no">
+        <type>ArrayNm1</type>
+        <definition>ArrayNm1 phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::vel_buf_[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>vel_buf_</name>
+        <qualifiedname>phonos::WebsterFDTD::vel_buf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="67" column="14" bodyfile="include/websterFDTD.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1ae56f4d1986394bffa15e54ba34d2e8cc" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::wall_momentum_buf_[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>wall_momentum_buf_</name>
+        <qualifiedname>phonos::WebsterFDTD::wall_momentum_buf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="68" column="12" bodyfile="include/websterFDTD.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a978a12280f01f37815c388d938398b93" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::wall_displacement_buf_[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>wall_displacement_buf_</name>
+        <qualifiedname>phonos::WebsterFDTD::wall_displacement_buf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="69" column="12" bodyfile="include/websterFDTD.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a3f0f54f11835ec979c38c34445ea6d77" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::radiation_flow_buf_[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>radiation_flow_buf_</name>
+        <qualifiedname>phonos::WebsterFDTD::radiation_flow_buf_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="70" column="11" bodyfile="include/websterFDTD.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a2373f8dcdad614b2eaffe918baa9d2f6" prot="private" static="no" mutable="no">
+        <type>std::array&lt; <ref refid="classphonos_1_1_biquad" kindref="compound">Biquad</ref>, kMaxN+1 &gt;</type>
+        <definition>std::array&lt;Biquad, kMaxN + 1&gt; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::lp_filters_</definition>
+        <argsstring></argsstring>
+        <name>lp_filters_</name>
+        <qualifiedname>phonos::WebsterFDTD::lp_filters_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="84" column="16" bodyfile="include/websterFDTD.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1accb9453859c8909353c034b5084b8264" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::lpf_frequency_</definition>
+        <argsstring></argsstring>
+        <name>lpf_frequency_</name>
+        <qualifiedname>phonos::WebsterFDTD::lpf_frequency_</qualifiedname>
+        <initializer>{10.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="85" column="11" bodyfile="include/websterFDTD.h" bodystart="85" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1adbdc04be7bff7ed6b776c7def6865a3f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::N_lpf_</definition>
+        <argsstring></argsstring>
+        <name>N_lpf_</name>
+        <qualifiedname>phonos::WebsterFDTD::N_lpf_</qualifiedname>
+        <initializer>{kMaxN + 1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="86" column="9" bodyfile="include/websterFDTD.h" bodystart="86" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a1d89632038fbda1e253404c44389e083" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::intermediary_</definition>
+        <argsstring></argsstring>
+        <name>intermediary_</name>
+        <qualifiedname>phonos::WebsterFDTD::intermediary_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="89" column="12" bodyfile="include/websterFDTD.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a575aea2d1261f2b00ffb34ed7383a916" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::d_plus_v_</definition>
+        <argsstring></argsstring>
+        <name>d_plus_v_</name>
+        <qualifiedname>phonos::WebsterFDTD::d_plus_v_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="90" column="12" bodyfile="include/websterFDTD.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1ae2d3baff721b1e7da368ad6566c59489" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::A_</definition>
+        <argsstring></argsstring>
+        <name>A_</name>
+        <qualifiedname>phonos::WebsterFDTD::A_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="90" column="22" bodyfile="include/websterFDTD.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a5be8953797f7b4ded6919eec80f79e38" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::B_</definition>
+        <argsstring></argsstring>
+        <name>B_</name>
+        <qualifiedname>phonos::WebsterFDTD::B_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="90" column="25" bodyfile="include/websterFDTD.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a0a9beedc79ab7e0add2f02af3a181d72" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::D_</definition>
+        <argsstring></argsstring>
+        <name>D_</name>
+        <qualifiedname>phonos::WebsterFDTD::D_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="90" column="28" bodyfile="include/websterFDTD.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a0fbbc0e6de4b26f8e6c4838205a539b5" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::E_</definition>
+        <argsstring></argsstring>
+        <name>E_</name>
+        <qualifiedname>phonos::WebsterFDTD::E_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="90" column="31" bodyfile="include/websterFDTD.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a5f7417e5eeefefe02e48348b60396b93" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::A_walls_</definition>
+        <argsstring></argsstring>
+        <name>A_walls_</name>
+        <qualifiedname>phonos::WebsterFDTD::A_walls_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="90" column="34" bodyfile="include/websterFDTD.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a7004d69fcd49c52c67727380e4977ee4" prot="private" static="no" mutable="no">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::B_walls_</definition>
+        <argsstring></argsstring>
+        <name>B_walls_</name>
+        <qualifiedname>phonos::WebsterFDTD::B_walls_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="90" column="43" bodyfile="include/websterFDTD.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1ab33139bc3624d895ed6a9ef38fcf85e7" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::F_</definition>
+        <argsstring></argsstring>
+        <name>F_</name>
+        <qualifiedname>phonos::WebsterFDTD::F_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="91" column="11" bodyfile="include/websterFDTD.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1ae12a98cc5510af96f9de71bdc1adb39c" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::G_</definition>
+        <argsstring></argsstring>
+        <name>G_</name>
+        <qualifiedname>phonos::WebsterFDTD::G_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="91" column="14" bodyfile="include/websterFDTD.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a6c6c9a1bc1c54140a7bb1071c43dd073" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::vel_coeff_</definition>
+        <argsstring></argsstring>
+        <name>vel_coeff_</name>
+        <qualifiedname>phonos::WebsterFDTD::vel_coeff_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="92" column="11" bodyfile="include/websterFDTD.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1aa73e5bf326cdc0cfec110ff8d084a18d" prot="private" static="no" mutable="no">
+        <type>ArrayNm1</type>
+        <definition>ArrayNm1 phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::C_top_</definition>
+        <argsstring></argsstring>
+        <name>C_top_</name>
+        <qualifiedname>phonos::WebsterFDTD::C_top_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="93" column="14" bodyfile="include/websterFDTD.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1ac2b531818f55a836cdcd6a8e96e649c3" prot="private" static="no" mutable="no">
+        <type>ArrayNm1</type>
+        <definition>ArrayNm1 phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::C_low_</definition>
+        <argsstring></argsstring>
+        <name>C_low_</name>
+        <qualifiedname>phonos::WebsterFDTD::C_low_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="93" column="21" bodyfile="include/websterFDTD.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a3f011874d7238b34c0c09708d5716519" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::kinetic_energy_fluid_[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>kinetic_energy_fluid_</name>
+        <qualifiedname>phonos::WebsterFDTD::kinetic_energy_fluid_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="105" column="11" bodyfile="include/websterFDTD.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a9ff472ead7161327a2283fdfb8e0d286" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::potential_energy_fluid_[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>potential_energy_fluid_</name>
+        <qualifiedname>phonos::WebsterFDTD::potential_energy_fluid_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="105" column="33" bodyfile="include/websterFDTD.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1aecab38816fa09f4584da03ae1cd42095" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::kinetic_energy_walls_[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>kinetic_energy_walls_</name>
+        <qualifiedname>phonos::WebsterFDTD::kinetic_energy_walls_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="105" column="57" bodyfile="include/websterFDTD.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a3e7dcdbb2cd27da8be6c2c02498eadd6" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::potential_energy_walls_[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>potential_energy_walls_</name>
+        <qualifiedname>phonos::WebsterFDTD::potential_energy_walls_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="105" column="79" bodyfile="include/websterFDTD.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a77fafadad4e40d884faff0751fd09f95" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::kinetic_energy_radiation_[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>kinetic_energy_radiation_</name>
+        <qualifiedname>phonos::WebsterFDTD::kinetic_energy_radiation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="106" column="9" bodyfile="include/websterFDTD.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a73a15dc3b5ce4154f8c3c227cf6248a2" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::P_diss_walls_</definition>
+        <argsstring></argsstring>
+        <name>P_diss_walls_</name>
+        <qualifiedname>phonos::WebsterFDTD::P_diss_walls_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="107" column="11" bodyfile="include/websterFDTD.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a4a655b1c15b3d02e86a4fc5a35f15e73" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::P_diss_radiation_</definition>
+        <argsstring></argsstring>
+        <name>P_diss_radiation_</name>
+        <qualifiedname>phonos::WebsterFDTD::P_diss_radiation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="107" column="25" bodyfile="include/websterFDTD.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a918ca072c344c41198f9a02ae4729d11" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::P_diss_tot_</definition>
+        <argsstring></argsstring>
+        <name>P_diss_tot_</name>
+        <qualifiedname>phonos::WebsterFDTD::P_diss_tot_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="107" column="43" bodyfile="include/websterFDTD.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a8ce9337d0b4705de5fc640a334479f88" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::P_in_</definition>
+        <argsstring></argsstring>
+        <name>P_in_</name>
+        <qualifiedname>phonos::WebsterFDTD::P_in_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="108" column="11" bodyfile="include/websterFDTD.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a22749a6db902be61eb781b42a212bcb9" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::P_stored_fluid_</definition>
+        <argsstring></argsstring>
+        <name>P_stored_fluid_</name>
+        <qualifiedname>phonos::WebsterFDTD::P_stored_fluid_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="109" column="11" bodyfile="include/websterFDTD.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1aee6890a6f642413ad2c421765337ffdb" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::P_stored_fluid_kinetic_</definition>
+        <argsstring></argsstring>
+        <name>P_stored_fluid_kinetic_</name>
+        <qualifiedname>phonos::WebsterFDTD::P_stored_fluid_kinetic_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="109" column="27" bodyfile="include/websterFDTD.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1afbf95754ea75d48d90922bcfc0fd4c65" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::P_stored_fluid_potential_</definition>
+        <argsstring></argsstring>
+        <name>P_stored_fluid_potential_</name>
+        <qualifiedname>phonos::WebsterFDTD::P_stored_fluid_potential_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="109" column="51" bodyfile="include/websterFDTD.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a99888f6d311875b74011e0de8080bed4" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::P_stored_walls_</definition>
+        <argsstring></argsstring>
+        <name>P_stored_walls_</name>
+        <qualifiedname>phonos::WebsterFDTD::P_stored_walls_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="110" column="11" bodyfile="include/websterFDTD.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a11757d3be08d70eeab7ad269c7f260d5" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::P_stored_walls_kinetic_</definition>
+        <argsstring></argsstring>
+        <name>P_stored_walls_kinetic_</name>
+        <qualifiedname>phonos::WebsterFDTD::P_stored_walls_kinetic_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="110" column="27" bodyfile="include/websterFDTD.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a89f8e626a44d0d2460c413a543984ed3" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::P_stored_walls_potential_</definition>
+        <argsstring></argsstring>
+        <name>P_stored_walls_potential_</name>
+        <qualifiedname>phonos::WebsterFDTD::P_stored_walls_potential_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="110" column="51" bodyfile="include/websterFDTD.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a39d66b481ac88d67dd9dc0e18ce3265c" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::P_stored_radiation_</definition>
+        <argsstring></argsstring>
+        <name>P_stored_radiation_</name>
+        <qualifiedname>phonos::WebsterFDTD::P_stored_radiation_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="111" column="11" bodyfile="include/websterFDTD.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1ac75b4a886568917937f2fcd442578103" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::P_stored_tot_</definition>
+        <argsstring></argsstring>
+        <name>P_stored_tot_</name>
+        <qualifiedname>phonos::WebsterFDTD::P_stored_tot_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="111" column="31" bodyfile="include/websterFDTD.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a07ed2de7f1a472c14e11ffd9592f8ec8" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::P_tot_</definition>
+        <argsstring></argsstring>
+        <name>P_tot_</name>
+        <qualifiedname>phonos::WebsterFDTD::P_tot_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="112" column="11" bodyfile="include/websterFDTD.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_webster_f_d_t_d_1a3ab9a9331e2cfbd974456371204cc2cf" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::compute_powers_</definition>
+        <argsstring></argsstring>
+        <name>compute_powers_</name>
+        <qualifiedname>phonos::WebsterFDTD::compute_powers_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="114" column="10" bodyfile="include/websterFDTD.h" bodystart="114" bodyend="114"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a4970348f332eccd0141e71965af0ac62" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::rho_now_ac</definition>
+        <argsstring>()</argsstring>
+        <name>rho_now_ac</name>
+        <qualifiedname>phonos::WebsterFDTD::rho_now_ac</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="72" column="10" bodyfile="include/websterFDTD.h" bodystart="72" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a34f39bbac468d5606ada4b9860ccce3e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::rho_next_ac</definition>
+        <argsstring>()</argsstring>
+        <name>rho_next_ac</name>
+        <qualifiedname>phonos::WebsterFDTD::rho_next_ac</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="73" column="10" bodyfile="include/websterFDTD.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a928bf5118cc1da7d748d9f90bc5503f5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::vel_now_ac</definition>
+        <argsstring>()</argsstring>
+        <name>vel_now_ac</name>
+        <qualifiedname>phonos::WebsterFDTD::vel_now_ac</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="74" column="10" bodyfile="include/websterFDTD.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1ae9a6f26497168274291d240222f7f8e3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::vel_next_ac</definition>
+        <argsstring>()</argsstring>
+        <name>vel_next_ac</name>
+        <qualifiedname>phonos::WebsterFDTD::vel_next_ac</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="75" column="10" bodyfile="include/websterFDTD.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a767ee3634fee3c2f926624773a8e30b5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::wall_momentum_now_ac</definition>
+        <argsstring>()</argsstring>
+        <name>wall_momentum_now_ac</name>
+        <qualifiedname>phonos::WebsterFDTD::wall_momentum_now_ac</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="76" column="10" bodyfile="include/websterFDTD.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1abe7e494706801175bddde1d9eb34da93" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::wall_momentum_next_ac</definition>
+        <argsstring>()</argsstring>
+        <name>wall_momentum_next_ac</name>
+        <qualifiedname>phonos::WebsterFDTD::wall_momentum_next_ac</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="77" column="10" bodyfile="include/websterFDTD.h" bodystart="77" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a9fb6f7be2c78eb127d8e0f58ae8dbd93" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::wall_displacement_now_ac</definition>
+        <argsstring>()</argsstring>
+        <name>wall_displacement_now_ac</name>
+        <qualifiedname>phonos::WebsterFDTD::wall_displacement_now_ac</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="78" column="10" bodyfile="include/websterFDTD.h" bodystart="78" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a8d556ff0e872994d302f05af667215b8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::wall_displacement_next_ac</definition>
+        <argsstring>()</argsstring>
+        <name>wall_displacement_next_ac</name>
+        <qualifiedname>phonos::WebsterFDTD::wall_displacement_next_ac</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="79" column="10" bodyfile="include/websterFDTD.h" bodystart="79" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1ae257f37d4014e3ef845db7b74d459ddd" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::radiation_flow_now_ac</definition>
+        <argsstring>()</argsstring>
+        <name>radiation_flow_now_ac</name>
+        <qualifiedname>phonos::WebsterFDTD::radiation_flow_now_ac</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="80" column="10" bodyfile="include/websterFDTD.h" bodystart="80" bodyend="80"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a6a9076e151584fca4ec880034d91e034" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>auto &amp;</type>
+        <definition>auto &amp; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::radiation_flow_next_ac</definition>
+        <argsstring>()</argsstring>
+        <name>radiation_flow_next_ac</name>
+        <qualifiedname>phonos::WebsterFDTD::radiation_flow_next_ac</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="81" column="10" bodyfile="include/websterFDTD.h" bodystart="81" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a595b1a7c37fac7ef9a87b677295c406e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::SetNStability</definition>
+        <argsstring>()</argsstring>
+        <name>SetNStability</name>
+        <qualifiedname>phonos::WebsterFDTD::SetNStability</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="96" column="10" bodyfile="src/websterFDTD.cpp" bodystart="94" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a9e9ffd5a64fb5cff361f703dbda953d0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ComputeDiscreteGeometry</definition>
+        <argsstring>()</argsstring>
+        <name>ComputeDiscreteGeometry</name>
+        <qualifiedname>phonos::WebsterFDTD::ComputeDiscreteGeometry</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="97" column="10" bodyfile="src/websterFDTD.cpp" bodystart="134" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a75554e2f49545d174607b37a3f0eb44a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::UpdateRadiationParameters</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateRadiationParameters</name>
+        <qualifiedname>phonos::WebsterFDTD::UpdateRadiationParameters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="98" column="10" bodyfile="src/websterFDTD.cpp" bodystart="153" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a8c2d8c9731ecf94ee2027a0de0276cd4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::UpdateCoefficients</definition>
+        <argsstring>()</argsstring>
+        <name>UpdateCoefficients</name>
+        <qualifiedname>phonos::WebsterFDTD::UpdateCoefficients</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="99" column="10" bodyfile="src/websterFDTD.cpp" bodystart="163" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a6d92c15e98aae78dbb708aa4b0115f65" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::filterSdirectTarget</definition>
+        <argsstring>()</argsstring>
+        <name>filterSdirectTarget</name>
+        <qualifiedname>phonos::WebsterFDTD::filterSdirectTarget</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="101" column="10" bodyfile="src/websterFDTD.cpp" bodystart="610" bodyend="615"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a25f17918e7f7f1ac54f8a046a1a55c97" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::set_N_lpf</definition>
+        <argsstring>(int num)</argsstring>
+        <name>set_N_lpf</name>
+        <qualifiedname>phonos::WebsterFDTD::set_N_lpf</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>num</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="102" column="10" bodyfile="src/websterFDTD.cpp" bodystart="568" bodyend="574"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a365b6dd448280c981eb8e2e412a79bcc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ComputePowers</definition>
+        <argsstring>(ftype inputFlow, ftype outputFlow)</argsstring>
+        <name>ComputePowers</name>
+        <qualifiedname>phonos::WebsterFDTD::ComputePowers</qualifiedname>
+        <param>
+          <type>ftype</type>
+          <declname>inputFlow</declname>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>outputFlow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="115" column="10" bodyfile="src/websterFDTD.cpp" bodystart="325" bodyend="367"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a1c6ad0371651a0fc2314121f5ba3c76c" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::BuildLaplaceStateSpace</definition>
+        <argsstring>(Eigen::MatrixXd &amp;matinternal, Eigen::VectorXd &amp;Sxu, Eigen::RowVectorXd &amp;matoutZ, Eigen::RowVectorXd &amp;matoutTFFlow, Eigen::RowVectorXd &amp;matoutTFPressure) const</argsstring>
+        <name>BuildLaplaceStateSpace</name>
+        <qualifiedname>phonos::WebsterFDTD::BuildLaplaceStateSpace</qualifiedname>
+        <param>
+          <type>Eigen::MatrixXd &amp;</type>
+          <declname>matinternal</declname>
+        </param>
+        <param>
+          <type>Eigen::VectorXd &amp;</type>
+          <declname>Sxu</declname>
+        </param>
+        <param>
+          <type>Eigen::RowVectorXd &amp;</type>
+          <declname>matoutZ</declname>
+        </param>
+        <param>
+          <type>Eigen::RowVectorXd &amp;</type>
+          <declname>matoutTFFlow</declname>
+        </param>
+        <param>
+          <type>Eigen::RowVectorXd &amp;</type>
+          <declname>matoutTFPressure</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="117" column="10" bodyfile="src/websterFDTD.cpp" bodystart="370" bodyend="495"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a3c370bce50538cfb489a918e3d911c8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::WebsterFDTD</definition>
+        <argsstring>(ftype sampleRate, ftype length=ftype(17e-2), Articulation *art=nullptr)</argsstring>
+        <name>WebsterFDTD</name>
+        <qualifiedname>phonos::WebsterFDTD::WebsterFDTD</qualifiedname>
+        <param>
+          <type>ftype</type>
+          <declname>sampleRate</declname>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>length</declname>
+          <defval>ftype(17e-2)</defval>
+        </param>
+        <param>
+          <type><ref refid="classphonos_1_1_articulation" kindref="compound">Articulation</ref> *</type>
+          <declname>art</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="124" column="5" bodyfile="src/websterFDTD.cpp" bodystart="8" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a78be20742537ba3ede6d95a015bb431d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::DspSetup</definition>
+        <argsstring>(ftype sampleRate, Articulation *art=nullptr)</argsstring>
+        <name>DspSetup</name>
+        <qualifiedname>phonos::WebsterFDTD::DspSetup</qualifiedname>
+        <param>
+          <type>ftype</type>
+          <declname>sampleRate</declname>
+        </param>
+        <param>
+          <type><ref refid="classphonos_1_1_articulation" kindref="compound">Articulation</ref> *</type>
+          <declname>art</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="127" column="10" bodyfile="src/websterFDTD.cpp" bodystart="16" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a61ca7c51fa68cd522cd9abbc42e818c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename intype</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::SetTargetGeometry</definition>
+        <argsstring>(intype const *in, std::size_t const size)</argsstring>
+        <name>SetTargetGeometry</name>
+        <qualifiedname>phonos::WebsterFDTD::SetTargetGeometry</qualifiedname>
+        <param>
+          <type>intype const *</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>std::size_t const</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="131" column="10" bodyfile="include/websterFDTD.h" bodystart="131" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a09099de601ad5e8d09858703ab5326b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::SetTargetGeometryFromArticulation</definition>
+        <argsstring>(Articulation articulation, bool force_direct=false)</argsstring>
+        <name>SetTargetGeometryFromArticulation</name>
+        <qualifiedname>phonos::WebsterFDTD::SetTargetGeometryFromArticulation</qualifiedname>
+        <param>
+          <type><ref refid="classphonos_1_1_articulation" kindref="compound">Articulation</ref></type>
+          <declname>articulation</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>force_direct</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="145" column="10" bodyfile="src/websterFDTD.cpp" bodystart="110" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1ab9b2fe571c8283938bd71a7b4c77896f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::SetConstantSection</definition>
+        <argsstring>(ftype section)</argsstring>
+        <name>SetConstantSection</name>
+        <qualifiedname>phonos::WebsterFDTD::SetConstantSection</qualifiedname>
+        <param>
+          <type>ftype</type>
+          <declname>section</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="146" column="10" bodyfile="src/websterFDTD.cpp" bodystart="122" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a79e114889b08b8f6680dcdcb0d6a3d1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::set_lp_frequency</definition>
+        <argsstring>(int index, ftype freq)</argsstring>
+        <name>set_lp_frequency</name>
+        <qualifiedname>phonos::WebsterFDTD::set_lp_frequency</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="149" column="10" bodyfile="src/websterFDTD.cpp" bodystart="577" bodyend="582"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1ae4a50e54dbebd6880708f66a2d581bff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::set_lp_Q</definition>
+        <argsstring>(int index, ftype Q)</argsstring>
+        <name>set_lp_Q</name>
+        <qualifiedname>phonos::WebsterFDTD::set_lp_Q</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>Q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="150" column="10" bodyfile="src/websterFDTD.cpp" bodystart="585" bodyend="590"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a63091ac3c0b3382833212c9d0caec04a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::set_lp_frequencies</definition>
+        <argsstring>(ftype freq)</argsstring>
+        <name>set_lp_frequencies</name>
+        <qualifiedname>phonos::WebsterFDTD::set_lp_frequencies</qualifiedname>
+        <param>
+          <type>ftype</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="151" column="10" bodyfile="src/websterFDTD.cpp" bodystart="593" bodyend="599"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a7b9af840f98e89fd738846b5f8c9e2ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::set_lp_Qs</definition>
+        <argsstring>(ftype Q)</argsstring>
+        <name>set_lp_Qs</name>
+        <qualifiedname>phonos::WebsterFDTD::set_lp_Qs</qualifiedname>
+        <param>
+          <type>ftype</type>
+          <declname>Q</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="152" column="10" bodyfile="src/websterFDTD.cpp" bodystart="602" bodyend="607"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1ace5a63374f19a4573b0de9a3e6e6a9de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::Process</definition>
+        <argsstring>(ftype inputFlow, ftype outputFlow=0)</argsstring>
+        <name>Process</name>
+        <qualifiedname>phonos::WebsterFDTD::Process</qualifiedname>
+        <param>
+          <type>ftype</type>
+          <declname>inputFlow</declname>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>outputFlow</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="155" column="10" bodyfile="src/websterFDTD.cpp" bodystart="200" bodyend="303"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a904d72af67858d8ad8255987ba39667a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::tuple&lt; ftype, ftype &gt;</type>
+        <definition>std::tuple&lt; ftype, ftype &gt; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::GetIOLinearDependencyCoefficients</definition>
+        <argsstring>()</argsstring>
+        <name>GetIOLinearDependencyCoefficients</name>
+        <qualifiedname>phonos::WebsterFDTD::GetIOLinearDependencyCoefficients</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="157" column="16" bodyfile="src/websterFDTD.cpp" bodystart="306" bodyend="322"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1ad7c204490d4417a1f8a80f34aa420230" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ReadInputPressure</definition>
+        <argsstring>()</argsstring>
+        <name>ReadInputPressure</name>
+        <qualifiedname>phonos::WebsterFDTD::ReadInputPressure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="160" column="18" bodyfile="include/websterFDTD.h" bodystart="160" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a21cd4a0eb817f427d0c43c2f85527027" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ReadRadiatedPressure</definition>
+        <argsstring>()</argsstring>
+        <name>ReadRadiatedPressure</name>
+        <qualifiedname>phonos::WebsterFDTD::ReadRadiatedPressure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="161" column="18" bodyfile="include/websterFDTD.h" bodystart="161" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a0e83ee07027508346fd9e88f61939547" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayN</type>
+        <definition>ArrayN phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ReadCurrentDensityDistribution</definition>
+        <argsstring>()</argsstring>
+        <name>ReadCurrentDensityDistribution</name>
+        <qualifiedname>phonos::WebsterFDTD::ReadCurrentDensityDistribution</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="163" column="19" bodyfile="include/websterFDTD.h" bodystart="163" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1af6a02d068a701394e014166470fe63e3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ArrayNm1</type>
+        <definition>ArrayNm1 phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ReadCurrentVelocityDistribution</definition>
+        <argsstring>()</argsstring>
+        <name>ReadCurrentVelocityDistribution</name>
+        <qualifiedname>phonos::WebsterFDTD::ReadCurrentVelocityDistribution</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="164" column="21" bodyfile="include/websterFDTD.h" bodystart="164" bodyend="164"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a7d12a50d1bd90ef313c7d592838a77a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ReadPowerTotal</definition>
+        <argsstring>()</argsstring>
+        <name>ReadPowerTotal</name>
+        <qualifiedname>phonos::WebsterFDTD::ReadPowerTotal</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="167" column="18" bodyfile="include/websterFDTD.h" bodystart="167" bodyend="167"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1adecf900bf764a3a05480d31cba6b4fb2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ReadPowerStoredFluid</definition>
+        <argsstring>()</argsstring>
+        <name>ReadPowerStoredFluid</name>
+        <qualifiedname>phonos::WebsterFDTD::ReadPowerStoredFluid</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="168" column="18" bodyfile="include/websterFDTD.h" bodystart="168" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1aadab6be055f1c468cdf4f2863ae6bf4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ReadPowerStoredFluidKinetic</definition>
+        <argsstring>()</argsstring>
+        <name>ReadPowerStoredFluidKinetic</name>
+        <qualifiedname>phonos::WebsterFDTD::ReadPowerStoredFluidKinetic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="169" column="18" bodyfile="include/websterFDTD.h" bodystart="169" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a8e19ff870da8c066bd83c2584aed6f42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ReadPowerStoredFluidPotential</definition>
+        <argsstring>()</argsstring>
+        <name>ReadPowerStoredFluidPotential</name>
+        <qualifiedname>phonos::WebsterFDTD::ReadPowerStoredFluidPotential</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="170" column="18" bodyfile="include/websterFDTD.h" bodystart="170" bodyend="170"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a1ca8a152737ed6969c6c9dce15289096" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ReadPowerStoredWalls</definition>
+        <argsstring>()</argsstring>
+        <name>ReadPowerStoredWalls</name>
+        <qualifiedname>phonos::WebsterFDTD::ReadPowerStoredWalls</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="171" column="18" bodyfile="include/websterFDTD.h" bodystart="171" bodyend="171"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a34fe5068e09c4621dac0f5cc5aca3cec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ReadPowerStoredRadiation</definition>
+        <argsstring>()</argsstring>
+        <name>ReadPowerStoredRadiation</name>
+        <qualifiedname>phonos::WebsterFDTD::ReadPowerStoredRadiation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="172" column="18" bodyfile="include/websterFDTD.h" bodystart="172" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a7b8c8050ccbf0448120f6883fe410919" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ReadPowerDissipatedWalls</definition>
+        <argsstring>()</argsstring>
+        <name>ReadPowerDissipatedWalls</name>
+        <qualifiedname>phonos::WebsterFDTD::ReadPowerDissipatedWalls</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="173" column="18" bodyfile="include/websterFDTD.h" bodystart="173" bodyend="173"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a0a53c8e14d0a30db6089b8ffd3ddec2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ReadPowerDissipatedRadiation</definition>
+        <argsstring>()</argsstring>
+        <name>ReadPowerDissipatedRadiation</name>
+        <qualifiedname>phonos::WebsterFDTD::ReadPowerDissipatedRadiation</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="174" column="18" bodyfile="include/websterFDTD.h" bodystart="174" bodyend="174"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a52e1b3c6027ec412780a7bfc145b8757" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ReadPowerExchanged</definition>
+        <argsstring>()</argsstring>
+        <name>ReadPowerExchanged</name>
+        <qualifiedname>phonos::WebsterFDTD::ReadPowerExchanged</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="175" column="18" bodyfile="include/websterFDTD.h" bodystart="175" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a088f5ee13ee01baa6891fe7dd9ff2109" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structphonos_1_1_webster_f_d_t_d_1_1_poles_residues" kindref="compound">PolesResidues</ref></type>
+        <definition>WebsterFDTD&lt; ftype, kMaxN &gt;::PolesResidues phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ComputePolesResidues</definition>
+        <argsstring>()</argsstring>
+        <name>ComputePolesResidues</name>
+        <qualifiedname>phonos::WebsterFDTD::ComputePolesResidues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="178" column="19" bodyfile="src/websterFDTD.cpp" bodystart="498" bodyend="530"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1af43bd898d83959587f1c0c296077990b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structphonos_1_1_webster_f_d_t_d_1_1_frequency_response" kindref="compound">FrequencyResponse</ref> &gt;</type>
+        <definition>std::vector&lt; typename WebsterFDTD&lt; ftype, kMaxN &gt;::FrequencyResponse &gt; phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::ComputeFrequencyResponse</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;frequenciesHz)</argsstring>
+        <name>ComputeFrequencyResponse</name>
+        <qualifiedname>phonos::WebsterFDTD::ComputeFrequencyResponse</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>frequenciesHz</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="179" column="17" bodyfile="src/websterFDTD.cpp" bodystart="533" bodyend="565"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a1ff807bc190bca1760b577fe95b4939e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::get_N</definition>
+        <argsstring>()</argsstring>
+        <name>get_N</name>
+        <qualifiedname>phonos::WebsterFDTD::get_N</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="182" column="24" bodyfile="include/websterFDTD.h" bodystart="182" bodyend="182"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a7d1a875d6227bedf2762501768e940dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::get_c0</definition>
+        <argsstring>()</argsstring>
+        <name>get_c0</name>
+        <qualifiedname>phonos::WebsterFDTD::get_c0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="183" column="18" bodyfile="include/websterFDTD.h" bodystart="183" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a5ec33458d071dbf456247f8f59e61c4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::get_rho0</definition>
+        <argsstring>()</argsstring>
+        <name>get_rho0</name>
+        <qualifiedname>phonos::WebsterFDTD::get_rho0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="184" column="18" bodyfile="include/websterFDTD.h" bodystart="184" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a326f56f9f90706c3a7066ac5ff7da265" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::get_l0</definition>
+        <argsstring>()</argsstring>
+        <name>get_l0</name>
+        <qualifiedname>phonos::WebsterFDTD::get_l0</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="185" column="18" bodyfile="include/websterFDTD.h" bodystart="185" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a72a2bc4140c78d1f13b1418a97b99146" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::get_wall_area_mass</definition>
+        <argsstring>()</argsstring>
+        <name>get_wall_area_mass</name>
+        <qualifiedname>phonos::WebsterFDTD::get_wall_area_mass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="186" column="18" bodyfile="include/websterFDTD.h" bodystart="186" bodyend="186"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1ad752d812f2020177a9a3cf15f498f052" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::get_wall_area_damping</definition>
+        <argsstring>()</argsstring>
+        <name>get_wall_area_damping</name>
+        <qualifiedname>phonos::WebsterFDTD::get_wall_area_damping</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="187" column="18" bodyfile="include/websterFDTD.h" bodystart="187" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a76e5e01687bb085af5ddcc7843e737dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::get_lpf_frequency</definition>
+        <argsstring>()</argsstring>
+        <name>get_lpf_frequency</name>
+        <qualifiedname>phonos::WebsterFDTD::get_lpf_frequency</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="188" column="18" bodyfile="include/websterFDTD.h" bodystart="188" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a5396fd888845844c8bc97aab66bbcdab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::getTargetGeometry</definition>
+        <argsstring>(ftype *out, const size_t N)</argsstring>
+        <name>getTargetGeometry</name>
+        <qualifiedname>phonos::WebsterFDTD::getTargetGeometry</qualifiedname>
+        <param>
+          <type>ftype *</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const size_t</type>
+          <declname>N</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="190" column="10" bodyfile="include/websterFDTD.h" bodystart="190" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a73c384723684a94440e1171c4ec0af5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::set_radiation</definition>
+        <argsstring>(const bool isRadiating)</argsstring>
+        <name>set_radiation</name>
+        <qualifiedname>phonos::WebsterFDTD::set_radiation</qualifiedname>
+        <param>
+          <type>const bool</type>
+          <declname>isRadiating</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="200" column="17" bodyfile="include/websterFDTD.h" bodystart="200" bodyend="204"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a1a415a90300080880d19c7630bcf8a91" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::set_yielding_walls</definition>
+        <argsstring>(const bool isYielding)</argsstring>
+        <name>set_yielding_walls</name>
+        <qualifiedname>phonos::WebsterFDTD::set_yielding_walls</qualifiedname>
+        <param>
+          <type>const bool</type>
+          <declname>isYielding</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="205" column="17" bodyfile="include/websterFDTD.h" bodystart="205" bodyend="209"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1ac4b583eed2c81f1bc8fc0dc94fea6ece" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::set_time_varying_geometry</definition>
+        <argsstring>(const bool isVarying)</argsstring>
+        <name>set_time_varying_geometry</name>
+        <qualifiedname>phonos::WebsterFDTD::set_time_varying_geometry</qualifiedname>
+        <param>
+          <type>const bool</type>
+          <declname>isVarying</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="210" column="17" bodyfile="include/websterFDTD.h" bodystart="210" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a54e274a589d7fdc3e16410383d92dfa9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::set_N_update_geometry</definition>
+        <argsstring>(const int NUpdateGeometry)</argsstring>
+        <name>set_N_update_geometry</name>
+        <qualifiedname>phonos::WebsterFDTD::set_N_update_geometry</qualifiedname>
+        <param>
+          <type>const int</type>
+          <declname>NUpdateGeometry</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="211" column="17" bodyfile="include/websterFDTD.h" bodystart="211" bodyend="218"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a4332dfb6b6ac7fe685dd733fd24b1534" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::set_c0</definition>
+        <argsstring>(const ftype sound_velocity)</argsstring>
+        <name>set_c0</name>
+        <qualifiedname>phonos::WebsterFDTD::set_c0</qualifiedname>
+        <param>
+          <type>const ftype</type>
+          <declname>sound_velocity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="219" column="10" bodyfile="include/websterFDTD.h" bodystart="219" bodyend="223"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a338708ba7a9af8d2e531b0c1215ccb2e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::set_pumped_flow</definition>
+        <argsstring>(const bool pumpedFlow)</argsstring>
+        <name>set_pumped_flow</name>
+        <qualifiedname>phonos::WebsterFDTD::set_pumped_flow</qualifiedname>
+        <param>
+          <type>const bool</type>
+          <declname>pumpedFlow</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="224" column="17" bodyfile="include/websterFDTD.h" bodystart="224" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1ab68154b31dad5add640624b6d4c395ba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::set_l0</definition>
+        <argsstring>(const ftype length)</argsstring>
+        <name>set_l0</name>
+        <qualifiedname>phonos::WebsterFDTD::set_l0</qualifiedname>
+        <param>
+          <type>const ftype</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="235" column="10" bodyfile="include/websterFDTD.h" bodystart="235" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1afa398e18f598daa0bd414cd7c9d95eb4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::set_rho0</definition>
+        <argsstring>(const ftype rest_density)</argsstring>
+        <name>set_rho0</name>
+        <qualifiedname>phonos::WebsterFDTD::set_rho0</qualifiedname>
+        <param>
+          <type>const ftype</type>
+          <declname>rest_density</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="240" column="10" bodyfile="include/websterFDTD.h" bodystart="240" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a6807b76513db103eb51548148e318116" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::set_compute_powers</definition>
+        <argsstring>(const bool compute_powers)</argsstring>
+        <name>set_compute_powers</name>
+        <qualifiedname>phonos::WebsterFDTD::set_compute_powers</qualifiedname>
+        <param>
+          <type>const bool</type>
+          <declname>compute_powers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="246" column="10" bodyfile="include/websterFDTD.h" bodystart="246" bodyend="246"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_webster_f_d_t_d_1a294bd40d6cae66f6a98fac1fd29d5274" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::WebsterFDTD&lt; ftype, kMaxN &gt;::initializeFilters</definition>
+        <argsstring>()</argsstring>
+        <name>initializeFilters</name>
+        <qualifiedname>phonos::WebsterFDTD::initializeFilters</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/websterFDTD.h" line="247" column="10" bodyfile="src/websterFDTD.cpp" bodystart="618" bodyend="628"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/websterFDTD.h" line="17" column="1" bodyfile="include/websterFDTD.h" bodystart="17" bodyend="248"/>
+    <listofallmembers>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ae2d3baff721b1e7da368ad6566c59489" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>A_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a5f7417e5eeefefe02e48348b60396b93" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>A_walls_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a9aa6f8978aa1cb13715d713d3b59ae1c" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ArrayN</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a29611f45c700fc709781530bc73866f0" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ArrayNm1</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a5be8953797f7b4ded6919eec80f79e38" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>B_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a7004d69fcd49c52c67727380e4977ee4" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>B_walls_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a1c6ad0371651a0fc2314121f5ba3c76c" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>BuildLaplaceStateSpace</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a8e974ea0dbdfcc0a9fb09a9bb1597b23" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>c02_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a7eb03c6bb12985a93df50cb0e5da7b71" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>c0_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ac2b531818f55a836cdcd6a8e96e649c3" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>C_low_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1aa73e5bf326cdc0cfec110ff8d084a18d" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>C_top_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a3ab9a9331e2cfbd974456371204cc2cf" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>compute_powers_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a9e9ffd5a64fb5cff361f703dbda953d0" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ComputeDiscreteGeometry</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1af43bd898d83959587f1c0c296077990b" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ComputeFrequencyResponse</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a088f5ee13ee01baa6891fe7dd9ff2109" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ComputePolesResidues</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a365b6dd448280c981eb8e2e412a79bcc" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ComputePowers</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a0a9beedc79ab7e0add2f02af3a181d72" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>D_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a575aea2d1261f2b00ffb34ed7383a916" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>d_plus_v_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1af9af467e14504b98e707a031badcb6ab" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>d_S_primal_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a78be20742537ba3ede6d95a015bb431d" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>DspSetup</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1aeb8655bce872cf3cac9acc31dcb4f99b" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>dt_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a0fbbc0e6de4b26f8e6c4838205a539b5" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>E_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ab33139bc3624d895ed6a9ef38fcf85e7" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>F_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a6d92c15e98aae78dbb708aa4b0115f65" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>filterSdirectTarget</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a2c65526838aeda452c671e05f5955a56" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>flip_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ae12a98cc5510af96f9de71bdc1adb39c" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>G_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a6f18ccac9af6da392ed77d46fac61427" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>gamma_primal_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a7d1a875d6227bedf2762501768e940dd" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>get_c0</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a326f56f9f90706c3a7066ac5ff7da265" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>get_l0</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a76e5e01687bb085af5ddcc7843e737dc" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>get_lpf_frequency</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a1ff807bc190bca1760b577fe95b4939e" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>get_N</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a5ec33458d071dbf456247f8f59e61c4b" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>get_rho0</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ad752d812f2020177a9a3cf15f498f052" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>get_wall_area_damping</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a72a2bc4140c78d1f13b1418a97b99146" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>get_wall_area_mass</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a904d72af67858d8ad8255987ba39667a" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>GetIOLinearDependencyCoefficients</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a5396fd888845844c8bc97aab66bbcdab" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>getTargetGeometry</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ae1c74b19a9af3b6327fa69224b4e78a6" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>h_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a294bd40d6cae66f6a98fac1fd29d5274" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>initializeFilters</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a1d89632038fbda1e253404c44389e083" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>intermediary_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a3f011874d7238b34c0c09708d5716519" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>kinetic_energy_fluid_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a77fafadad4e40d884faff0751fd09f95" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>kinetic_energy_radiation_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1aecab38816fa09f4584da03ae1cd42095" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>kinetic_energy_walls_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a6db51155abddd54870dbab1582297197" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>l0_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a4b00fea93f49e08688ba709f43b9a524" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>L_rad_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a5139694f2e8231213dc09cefbbef6a3c" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>lip_radius</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a2373f8dcdad614b2eaffe918baa9d2f6" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>lp_filters_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1accb9453859c8909353c034b5084b8264" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>lpf_frequency_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a1e62e0255316b34da0e06219ffa6223a" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>N_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1adbdc04be7bff7ed6b776c7def6865a3f" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>N_lpf_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1acc6d35239bbc8e520efaf377563c51b1" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>N_update_geometry_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a4a655b1c15b3d02e86a4fc5a35f15e73" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>P_diss_radiation_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a918ca072c344c41198f9a02ae4729d11" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>P_diss_tot_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a73a15dc3b5ce4154f8c3c227cf6248a2" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>P_diss_walls_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a8ce9337d0b4705de5fc640a334479f88" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>P_in_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a22749a6db902be61eb781b42a212bcb9" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>P_stored_fluid_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1aee6890a6f642413ad2c421765337ffdb" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>P_stored_fluid_kinetic_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1afbf95754ea75d48d90922bcfc0fd4c65" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>P_stored_fluid_potential_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a39d66b481ac88d67dd9dc0e18ce3265c" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>P_stored_radiation_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ac75b4a886568917937f2fcd442578103" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>P_stored_tot_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a99888f6d311875b74011e0de8080bed4" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>P_stored_walls_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a11757d3be08d70eeab7ad269c7f260d5" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>P_stored_walls_kinetic_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a89f8e626a44d0d2460c413a543984ed3" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>P_stored_walls_potential_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a07ed2de7f1a472c14e11ffd9592f8ec8" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>P_tot_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a9ff472ead7161327a2283fdfb8e0d286" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>potential_energy_fluid_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a3e7dcdbb2cd27da8be6c2c02498eadd6" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>potential_energy_walls_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ace5a63374f19a4573b0de9a3e6e6a9de" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>Process</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1aa415aa45d9a1f248607f1b4954ae733a" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>pumped_flow_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1aaa675e3f9eb9227ef6ac5d963fbe0c3c" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>R_rad_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a1a26601eb9f0b1652e5bd8476a5489f4" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>radiation_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a3f0f54f11835ec979c38c34445ea6d77" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>radiation_flow_buf_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a6a9076e151584fca4ec880034d91e034" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>radiation_flow_next_ac</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ae257f37d4014e3ef845db7b74d459ddd" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>radiation_flow_now_ac</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a0e83ee07027508346fd9e88f61939547" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ReadCurrentDensityDistribution</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1af6a02d068a701394e014166470fe63e3" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ReadCurrentVelocityDistribution</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ad7c204490d4417a1f8a80f34aa420230" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ReadInputPressure</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a0a53c8e14d0a30db6089b8ffd3ddec2e" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ReadPowerDissipatedRadiation</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a7b8c8050ccbf0448120f6883fe410919" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ReadPowerDissipatedWalls</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a52e1b3c6027ec412780a7bfc145b8757" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ReadPowerExchanged</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1adecf900bf764a3a05480d31cba6b4fb2" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ReadPowerStoredFluid</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1aadab6be055f1c468cdf4f2863ae6bf4b" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ReadPowerStoredFluidKinetic</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a8e19ff870da8c066bd83c2584aed6f42" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ReadPowerStoredFluidPotential</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a34fe5068e09c4621dac0f5cc5aca3cec" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ReadPowerStoredRadiation</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a1ca8a152737ed6969c6c9dce15289096" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ReadPowerStoredWalls</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a7d12a50d1bd90ef313c7d592838a77a7" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ReadPowerTotal</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a21cd4a0eb817f427d0c43c2f85527027" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>ReadRadiatedPressure</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a52c55d5b26f8786ea1d2ea7349def7eb" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>rho0_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a321512b066f7f34074d1a4d097fb6358" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>rho_buf_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a34f39bbac468d5606ada4b9860ccce3e" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>rho_next_ac</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a4970348f332eccd0141e71965af0ac62" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>rho_now_ac</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ac506c5a8d8754b31b5617bb45ecfaffe" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>S_direct_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a098a8a61eb91885c355db58a9dcd4c71" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>S_direct_last_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ae458c4a217878f107c1eea7ba0371b80" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>S_dual_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a0fcf526a39fcd38d7371b032e086463a" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>S_primal_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a774ccf620ace781b31866a32bf4ace2d" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>S_primal_last_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a1146dadf811f034b2f474b253ea837be" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>S_target_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a4332dfb6b6ac7fe685dd733fd24b1534" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>set_c0</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a6807b76513db103eb51548148e318116" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>set_compute_powers</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ab68154b31dad5add640624b6d4c395ba" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>set_l0</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a63091ac3c0b3382833212c9d0caec04a" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>set_lp_frequencies</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a79e114889b08b8f6680dcdcb0d6a3d1a" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>set_lp_frequency</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ae4a50e54dbebd6880708f66a2d581bff" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>set_lp_Q</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a7b9af840f98e89fd738846b5f8c9e2ee" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>set_lp_Qs</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a25f17918e7f7f1ac54f8a046a1a55c97" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>set_N_lpf</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a54e274a589d7fdc3e16410383d92dfa9" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>set_N_update_geometry</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a338708ba7a9af8d2e531b0c1215ccb2e" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>set_pumped_flow</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a73c384723684a94440e1171c4ec0af5a" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>set_radiation</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1afa398e18f598daa0bd414cd7c9d95eb4" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>set_rho0</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ac4b583eed2c81f1bc8fc0dc94fea6ece" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>set_time_varying_geometry</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a1a415a90300080880d19c7630bcf8a91" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>set_yielding_walls</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ab9b2fe571c8283938bd71a7b4c77896f" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>SetConstantSection</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a595b1a7c37fac7ef9a87b677295c406e" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>SetNStability</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a61ca7c51fa68cd522cd9abbc42e818c6" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>SetTargetGeometry</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a09099de601ad5e8d09858703ab5326b8" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>SetTargetGeometryFromArticulation</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a29cd653f07618f7f80a7eb6b9c535003" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>sr_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ad431356a7bbd70ea9e2ad862c3aae9b1" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>time_varying_geometry_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a5106707cff4ad18953b6a3c89fc8dcb4" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>update_counter_geometry_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a8c2d8c9731ecf94ee2027a0de0276cd4" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>UpdateCoefficients</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a75554e2f49545d174607b37a3f0eb44a" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>UpdateRadiationParameters</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a79a5df19ae3feaad499913117b2dbf7b" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>vel_buf_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a6c6c9a1bc1c54140a7bb1071c43dd073" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>vel_coeff_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ae9a6f26497168274291d240222f7f8e3" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>vel_next_ac</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a928bf5118cc1da7d748d9f90bc5503f5" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>vel_now_ac</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a99a7c685d4b4b39d1be947e25a4dd7e8" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>wall_area_damping_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a4c58dde0b1409007c75b46b50062dd73" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>wall_area_mass_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1aa3cef715bb62c621a7cb91c40a1a3ea1" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>wall_area_stiffness_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a978a12280f01f37815c388d938398b93" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>wall_displacement_buf_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a8d556ff0e872994d302f05af667215b8" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>wall_displacement_next_ac</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a9fb6f7be2c78eb127d8e0f58ae8dbd93" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>wall_displacement_now_ac</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ae56f4d1986394bffa15e54ba34d2e8cc" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>wall_momentum_buf_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1abe7e494706801175bddde1d9eb34da93" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>wall_momentum_next_ac</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a767ee3634fee3c2f926624773a8e30b5" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>wall_momentum_now_ac</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a3c370bce50538cfb489a918e3d911c8f" prot="public" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>WebsterFDTD</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a0c4b0fe78265bffef29a7deb48e5dabe" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>x_dual_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1ad34383672b98112500498229a0b627dc" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>x_primal_</name></member>
+      <member refid="classphonos_1_1_webster_f_d_t_d_1a1a2f8cce2fe3e5a498f9de07198f67b0" prot="private" virt="non-virtual"><scope>phonos::WebsterFDTD</scope><name>yielding_walls_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

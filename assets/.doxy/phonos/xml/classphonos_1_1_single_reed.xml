@@ -1,0 +1,1505 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classphonos_1_1_single_reed" kind="class" language="C++" prot="public">
+    <compoundname>phonos::SingleReed</compoundname>
+    <templateparamlist>
+      <param>
+        <type>typename ftype</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a1b9e46460750d9217d2c08a945f47853" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::mass_</definition>
+        <argsstring></argsstring>
+        <name>mass_</name>
+        <qualifiedname>phonos::SingleReed::mass_</qualifiedname>
+        <initializer>{3.37e-6}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="22" column="11" bodyfile="include/single_reed.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a548667548150a18cbbdef8492be17d7c" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::stiffness_</definition>
+        <argsstring></argsstring>
+        <name>stiffness_</name>
+        <qualifiedname>phonos::SingleReed::stiffness_</qualifiedname>
+        <initializer>{1821}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="22" column="17" bodyfile="include/single_reed.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a831423de1be74ebfaf2f7095aed6b569" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::damping_</definition>
+        <argsstring></argsstring>
+        <name>damping_</name>
+        <qualifiedname>phonos::SingleReed::damping_</qualifiedname>
+        <initializer>{1500}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="22" column="28" bodyfile="include/single_reed.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a302ce0ec05599b82a5191f49db55203b" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::width_</definition>
+        <argsstring></argsstring>
+        <name>width_</name>
+        <qualifiedname>phonos::SingleReed::width_</qualifiedname>
+        <initializer>{1e-2}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="22" column="37" bodyfile="include/single_reed.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a2a02c75381574f02ab67080b0b57994c" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::surface_</definition>
+        <argsstring></argsstring>
+        <name>surface_</name>
+        <qualifiedname>phonos::SingleReed::surface_</qualifiedname>
+        <initializer>{1.46e-4}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="22" column="44" bodyfile="include/single_reed.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1afa5429f9ac29595b58802a712269cf6b" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::lay_position_</definition>
+        <argsstring></argsstring>
+        <name>lay_position_</name>
+        <qualifiedname>phonos::SingleReed::lay_position_</qualifiedname>
+        <initializer>{4e-4}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="23" column="9" bodyfile="include/single_reed.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1ab481aa14daf7ae76c88b1a0391ec1216" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::contact_stiffness_</definition>
+        <argsstring></argsstring>
+        <name>contact_stiffness_</name>
+        <qualifiedname>phonos::SingleReed::contact_stiffness_</qualifiedname>
+        <initializer>{1e13}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="24" column="11" bodyfile="include/single_reed.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a8cb0e8f40f0ff8a51ed0ff674753f632" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::alpha_contact_stiffness_</definition>
+        <argsstring></argsstring>
+        <name>alpha_contact_stiffness_</name>
+        <qualifiedname>phonos::SingleReed::alpha_contact_stiffness_</qualifiedname>
+        <initializer>{1.3}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="24" column="30" bodyfile="include/single_reed.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a99d4c3fd85ac0ab927c1ee9c1630c965" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::rho_0_</definition>
+        <argsstring></argsstring>
+        <name>rho_0_</name>
+        <qualifiedname>phonos::SingleReed::rho_0_</qualifiedname>
+        <initializer>{1.2}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="25" column="11" bodyfile="include/single_reed.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a27d966aabfac467a5213d9c41e81ff2a" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::c_0_</definition>
+        <argsstring></argsstring>
+        <name>c_0_</name>
+        <qualifiedname>phonos::SingleReed::c_0_</qualifiedname>
+        <initializer>{340}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="25" column="18" bodyfile="include/single_reed.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a6ecc67d54df47b9760851bfd29e636e3" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::kt_</definition>
+        <argsstring></argsstring>
+        <name>kt_</name>
+        <qualifiedname>phonos::SingleReed::kt_</qualifiedname>
+        <initializer>{1.3}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="25" column="23" bodyfile="include/single_reed.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1adaf8c5e8b4c857eef832d601c3e84950" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::dissipation_coefficient_</definition>
+        <argsstring></argsstring>
+        <name>dissipation_coefficient_</name>
+        <qualifiedname>phonos::SingleReed::dissipation_coefficient_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="28" column="11" bodyfile="include/single_reed.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a190fb017759572eef59e09d533c3a7f8" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::opening_</definition>
+        <argsstring></argsstring>
+        <name>opening_</name>
+        <qualifiedname>phonos::SingleReed::opening_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="29" column="11" bodyfile="include/single_reed.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1aec932bba3d3f82989b82bfb48b914255" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::interpenetration_</definition>
+        <argsstring></argsstring>
+        <name>interpenetration_</name>
+        <qualifiedname>phonos::SingleReed::interpenetration_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="29" column="20" bodyfile="include/single_reed.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a7eb1a32ddf1da33449b37aee76c102bc" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::interpenetration_derivative_</definition>
+        <argsstring></argsstring>
+        <name>interpenetration_derivative_</name>
+        <qualifiedname>phonos::SingleReed::interpenetration_derivative_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="30" column="11" bodyfile="include/single_reed.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1abdafbcb5d49ca68fc00cc3641f7d29d7" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::g_sav_</definition>
+        <argsstring></argsstring>
+        <name>g_sav_</name>
+        <qualifiedname>phonos::SingleReed::g_sav_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="32" column="11" bodyfile="include/single_reed.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a6d6c45ed2027202a480fec9a0a41c13c" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::E_nl_</definition>
+        <argsstring></argsstring>
+        <name>E_nl_</name>
+        <qualifiedname>phonos::SingleReed::E_nl_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="32" column="18" bodyfile="include/single_reed.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a4ed65fd4ca608016cad32e5db6ed8306" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::F_nl_</definition>
+        <argsstring></argsstring>
+        <name>F_nl_</name>
+        <qualifiedname>phonos::SingleReed::F_nl_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="32" column="24" bodyfile="include/single_reed.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1ad668bb7d6aaf7a6045d147f69ed94518" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::mean_flow_</definition>
+        <argsstring></argsstring>
+        <name>mean_flow_</name>
+        <qualifiedname>phonos::SingleReed::mean_flow_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="34" column="11" bodyfile="include/single_reed.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a216aa5dd4cc2e437450ca8a8cd376df9" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::R_k_</definition>
+        <argsstring></argsstring>
+        <name>R_k_</name>
+        <qualifiedname>phonos::SingleReed::R_k_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="34" column="22" bodyfile="include/single_reed.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1aaae79f73ead9126e36dd09bcc40139ec" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::a_resonator_</definition>
+        <argsstring></argsstring>
+        <name>a_resonator_</name>
+        <qualifiedname>phonos::SingleReed::a_resonator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="36" column="11" bodyfile="include/single_reed.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1af4ce21e5a6f0e2a514b143c0405e46a4" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::b_resonator_</definition>
+        <argsstring></argsstring>
+        <name>b_resonator_</name>
+        <qualifiedname>phonos::SingleReed::b_resonator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="36" column="24" bodyfile="include/single_reed.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1ad4e2cc5de7da4254193c55bd9aa532be" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::C0_feedback_</definition>
+        <argsstring></argsstring>
+        <name>C0_feedback_</name>
+        <qualifiedname>phonos::SingleReed::C0_feedback_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="37" column="11" bodyfile="include/single_reed.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1af8249b22523f5732712343769afa650a" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::C1_feedback_</definition>
+        <argsstring></argsstring>
+        <name>C1_feedback_</name>
+        <qualifiedname>phonos::SingleReed::C1_feedback_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="37" column="24" bodyfile="include/single_reed.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1ada7cc42b2f6136bd8b7a9f138fcadf4c" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::rhs_</definition>
+        <argsstring></argsstring>
+        <name>rhs_</name>
+        <qualifiedname>phonos::SingleReed::rhs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="39" column="11" bodyfile="include/single_reed.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1aee8384bb10418def969731f251ad4bad" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::smoothed_is_opened_</definition>
+        <argsstring></argsstring>
+        <name>smoothed_is_opened_</name>
+        <qualifiedname>phonos::SingleReed::smoothed_is_opened_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="41" column="11" bodyfile="include/single_reed.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a848641dc92b3f348541a93243a16ec53" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, 2 &gt;</type>
+        <definition>Eigen::Vector&lt;ftype, 2&gt; phonos::SingleReed&lt; ftype &gt;::p_</definition>
+        <argsstring></argsstring>
+        <name>p_</name>
+        <qualifiedname>phonos::SingleReed::p_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="44" column="19" bodyfile="include/single_reed.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1ab15de253d1c4b36909df5d09b7e3874e" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, 2 &gt;</type>
+        <definition>Eigen::Vector&lt;ftype, 2&gt; phonos::SingleReed&lt; ftype &gt;::q_</definition>
+        <argsstring></argsstring>
+        <name>q_</name>
+        <qualifiedname>phonos::SingleReed::q_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="44" column="22" bodyfile="include/single_reed.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a462125b5e0bfe5bd0835d6a14be7d1d0" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, 2 &gt;</type>
+        <definition>Eigen::Vector&lt;ftype, 2&gt; phonos::SingleReed&lt; ftype &gt;::r_</definition>
+        <argsstring></argsstring>
+        <name>r_</name>
+        <qualifiedname>phonos::SingleReed::r_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="44" column="25" bodyfile="include/single_reed.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a543a1b63d710bd2a71a3dd06c4475bf7" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::p_inter_</definition>
+        <argsstring></argsstring>
+        <name>p_inter_</name>
+        <qualifiedname>phonos::SingleReed::p_inter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="45" column="11" bodyfile="include/single_reed.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a7b739b2b9e656c25f9437dc33d464280" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::q_inter_</definition>
+        <argsstring></argsstring>
+        <name>q_inter_</name>
+        <qualifiedname>phonos::SingleReed::q_inter_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="45" column="20" bodyfile="include/single_reed.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a4c0b3ebdd98a3f0a55df99879e6d2d61" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t phonos::SingleReed&lt; ftype &gt;::idx_now_</definition>
+        <argsstring></argsstring>
+        <name>idx_now_</name>
+        <qualifiedname>phonos::SingleReed::idx_now_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="46" column="17" bodyfile="include/single_reed.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1ae339d98de8401acd12877326720e8a68" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t phonos::SingleReed&lt; ftype &gt;::idx_next_</definition>
+        <argsstring></argsstring>
+        <name>idx_next_</name>
+        <qualifiedname>phonos::SingleReed::idx_next_</qualifiedname>
+        <initializer>{1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="46" column="26" bodyfile="include/single_reed.h" bodystart="46" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1af2a003a457db39a0d9a2012ebfda1235" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, 2 &gt;</type>
+        <definition>Eigen::Vector&lt;ftype, 2&gt; phonos::SingleReed&lt; ftype &gt;::Psub_</definition>
+        <argsstring></argsstring>
+        <name>Psub_</name>
+        <qualifiedname>phonos::SingleReed::Psub_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="48" column="19" bodyfile="include/single_reed.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a48301c8c1b3c5b945659af488bcb6afd" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, 2 &gt;</type>
+        <definition>Eigen::Vector&lt;ftype, 2&gt; phonos::SingleReed&lt; ftype &gt;::Psub_centered_</definition>
+        <argsstring></argsstring>
+        <name>Psub_centered_</name>
+        <qualifiedname>phonos::SingleReed::Psub_centered_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="48" column="25" bodyfile="include/single_reed.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a9435546be8d49d1982999c5fc6498a0a" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::Psup_</definition>
+        <argsstring></argsstring>
+        <name>Psup_</name>
+        <qualifiedname>phonos::SingleReed::Psup_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="49" column="11" bodyfile="include/single_reed.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a9ec8dd7e661ccd63087fb0bef33f31c3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool phonos::SingleReed&lt; ftype &gt;::compute_powers_</definition>
+        <argsstring></argsstring>
+        <name>compute_powers_</name>
+        <qualifiedname>phonos::SingleReed::compute_powers_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="52" column="10" bodyfile="include/single_reed.h" bodystart="52" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1af74f5e828a2f5fb6afa77376ca032b2a" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, 2 &gt;</type>
+        <definition>Eigen::Vector&lt;ftype, 2&gt; phonos::SingleReed&lt; ftype &gt;::kinetic_energy_</definition>
+        <argsstring></argsstring>
+        <name>kinetic_energy_</name>
+        <qualifiedname>phonos::SingleReed::kinetic_energy_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="53" column="19" bodyfile="include/single_reed.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1ab8871700135340533a14dbe349ec4392" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, 2 &gt;</type>
+        <definition>Eigen::Vector&lt;ftype, 2&gt; phonos::SingleReed&lt; ftype &gt;::potential_energy_</definition>
+        <argsstring></argsstring>
+        <name>potential_energy_</name>
+        <qualifiedname>phonos::SingleReed::potential_energy_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="53" column="35" bodyfile="include/single_reed.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a630e1bf4296616f384f794450e92ec1b" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::dissipated_power_</definition>
+        <argsstring></argsstring>
+        <name>dissipated_power_</name>
+        <qualifiedname>phonos::SingleReed::dissipated_power_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="54" column="11" bodyfile="include/single_reed.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a00b38f6d8e2e08b05b993beb34c69687" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::dissipated_power_flow_</definition>
+        <argsstring></argsstring>
+        <name>dissipated_power_flow_</name>
+        <qualifiedname>phonos::SingleReed::dissipated_power_flow_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="54" column="29" bodyfile="include/single_reed.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1ad9ca25c3d83e986c9c3e1e34fbda5e13" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::dissipated_power_reed_</definition>
+        <argsstring></argsstring>
+        <name>dissipated_power_reed_</name>
+        <qualifiedname>phonos::SingleReed::dissipated_power_reed_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="54" column="52" bodyfile="include/single_reed.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1ad67366e772dbdc33463cecb87dc0a944" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::external_power_</definition>
+        <argsstring></argsstring>
+        <name>external_power_</name>
+        <qualifiedname>phonos::SingleReed::external_power_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="55" column="11" bodyfile="include/single_reed.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1af77d0e35e0093a3a278476c2d3e351f3" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::external_power_sub_</definition>
+        <argsstring></argsstring>
+        <name>external_power_sub_</name>
+        <qualifiedname>phonos::SingleReed::external_power_sub_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="55" column="27" bodyfile="include/single_reed.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1aac2e9f2077dfc178cd413d3caad87dcb" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::external_power_sup_</definition>
+        <argsstring></argsstring>
+        <name>external_power_sup_</name>
+        <qualifiedname>phonos::SingleReed::external_power_sup_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="55" column="47" bodyfile="include/single_reed.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1aba21f6543134707839eb116ce162bf9d" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::stored_power_</definition>
+        <argsstring></argsstring>
+        <name>stored_power_</name>
+        <qualifiedname>phonos::SingleReed::stored_power_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="56" column="11" bodyfile="include/single_reed.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1acdae751efe193e6994217956224976b4" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::stored_power_potential_</definition>
+        <argsstring></argsstring>
+        <name>stored_power_potential_</name>
+        <qualifiedname>phonos::SingleReed::stored_power_potential_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="56" column="25" bodyfile="include/single_reed.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a604e49f4ec99f882ab51fda875c30e7f" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::stored_power_kinetic_</definition>
+        <argsstring></argsstring>
+        <name>stored_power_kinetic_</name>
+        <qualifiedname>phonos::SingleReed::stored_power_kinetic_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="56" column="49" bodyfile="include/single_reed.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1aca122419a558c0aca0dbe9cd70966997" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::mouth_flow_</definition>
+        <argsstring></argsstring>
+        <name>mouth_flow_</name>
+        <qualifiedname>phonos::SingleReed::mouth_flow_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="59" column="11" bodyfile="include/single_reed.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a01ce39ebb181d59eee0b10d071f17ed7" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::resonator_flow_</definition>
+        <argsstring></argsstring>
+        <name>resonator_flow_</name>
+        <qualifiedname>phonos::SingleReed::resonator_flow_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="59" column="23" bodyfile="include/single_reed.h" bodystart="59" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1ac162fb2a26931cf196ac8000cdc152a5" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classphonos_1_1_webster_f_d_t_d" kindref="compound">WebsterFDTD</ref>&lt; ftype, 300 &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;WebsterFDTD&lt;ftype, 300&gt; &gt; phonos::SingleReed&lt; ftype &gt;::resonator_</definition>
+        <argsstring></argsstring>
+        <name>resonator_</name>
+        <qualifiedname>phonos::SingleReed::resonator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="60" column="21" bodyfile="include/single_reed.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a795bb6e54f86feaa43da0b7b84f1a4aa" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::sr_</definition>
+        <argsstring></argsstring>
+        <name>sr_</name>
+        <qualifiedname>phonos::SingleReed::sr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="63" column="11" bodyfile="include/single_reed.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a74cd5fc0dfe8c127798bfed575e01605" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::dt_</definition>
+        <argsstring></argsstring>
+        <name>dt_</name>
+        <qualifiedname>phonos::SingleReed::dt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="63" column="15" bodyfile="include/single_reed.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1ac565fcaf7b827a6482b31483099a8c2c" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::epsilon_smooth_</definition>
+        <argsstring></argsstring>
+        <name>epsilon_smooth_</name>
+        <qualifiedname>phonos::SingleReed::epsilon_smooth_</qualifiedname>
+        <initializer>{1e-7}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="64" column="11" bodyfile="include/single_reed.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a9813acb1afe6134829dec59bce2ddb5d" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::epsilon_smooth_P_</definition>
+        <argsstring></argsstring>
+        <name>epsilon_smooth_P_</name>
+        <qualifiedname>phonos::SingleReed::epsilon_smooth_P_</qualifiedname>
+        <initializer>{10}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="64" column="27" bodyfile="include/single_reed.h" bodystart="64" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a4bbda0dc02733a174033626ffb584833" prot="private" static="no" mutable="no">
+        <type><ref refid="classphonos_1_1_noise_generator" kindref="compound">NoiseGenerator</ref></type>
+        <definition>NoiseGenerator phonos::SingleReed&lt; ftype &gt;::noise_generator_</definition>
+        <argsstring></argsstring>
+        <name>noise_generator_</name>
+        <qualifiedname>phonos::SingleReed::noise_generator_</qualifiedname>
+        <initializer>= <ref refid="classphonos_1_1_noise_generator" kindref="compound">NoiseGenerator</ref>(NoiseColor::Pink)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="72" column="20" bodyfile="include/single_reed.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1ac867dfa483358957d4e6522c67dd66a5" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float phonos::SingleReed&lt; ftype &gt;::noise_ratio_</definition>
+        <argsstring></argsstring>
+        <name>noise_ratio_</name>
+        <qualifiedname>phonos::SingleReed::noise_ratio_</qualifiedname>
+        <initializer>{0.f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="73" column="11" bodyfile="include/single_reed.h" bodystart="73" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_single_reed_1a961306b2423f2b38fafd54b44cb3b887" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::noise_flow_</definition>
+        <argsstring></argsstring>
+        <name>noise_flow_</name>
+        <qualifiedname>phonos::SingleReed::noise_flow_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="74" column="11" bodyfile="include/single_reed.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a387fd3057a5383512ca756e5bf17c1b2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::SingleReed&lt; ftype &gt;::fillOpeningAndInterpenetration</definition>
+        <argsstring>()</argsstring>
+        <name>fillOpeningAndInterpenetration</name>
+        <qualifiedname>phonos::SingleReed::fillOpeningAndInterpenetration</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="67" column="10" bodyfile="src/single_reed.cpp" bodystart="47" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a22c7fa9abdf14a23b2d42163bd770131" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::SingleReed&lt; ftype &gt;::computeRk</definition>
+        <argsstring>()</argsstring>
+        <name>computeRk</name>
+        <qualifiedname>phonos::SingleReed::computeRk</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="68" column="10" bodyfile="src/single_reed.cpp" bodystart="67" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a13ee342b553a43878f399f4abada2648" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::SingleReed&lt; ftype &gt;::computegSAV</definition>
+        <argsstring>()</argsstring>
+        <name>computegSAV</name>
+        <qualifiedname>phonos::SingleReed::computegSAV</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="69" column="10" bodyfile="src/single_reed.cpp" bodystart="80" bodyend="125"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a7af9b7ddcc1775823807bf24fe171fd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>phonos::SingleReed&lt; ftype &gt;::SingleReed</definition>
+        <argsstring>(float samplerate)</argsstring>
+        <name>SingleReed</name>
+        <qualifiedname>phonos::SingleReed::SingleReed</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>samplerate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="77" column="5" bodyfile="src/single_reed.cpp" bodystart="8" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a6d3289631a940d76a944511db2d552a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::SingleReed&lt; ftype &gt;::DspSetup</definition>
+        <argsstring>(float samplerate)</argsstring>
+        <name>DspSetup</name>
+        <qualifiedname>phonos::SingleReed::DspSetup</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>samplerate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="79" column="10" bodyfile="src/single_reed.cpp" bodystart="28" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a83534607b1a5b677c05812ec60817b09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::SingleReed&lt; ftype &gt;::Process</definition>
+        <argsstring>(float Pin)</argsstring>
+        <name>Process</name>
+        <qualifiedname>phonos::SingleReed::Process</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>Pin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="81" column="10" bodyfile="src/single_reed.cpp" bodystart="128" bodyend="193"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1ad79d10870f0dff1441124df36fe237d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::ReadDisplacement</definition>
+        <argsstring>()</argsstring>
+        <name>ReadDisplacement</name>
+        <qualifiedname>phonos::SingleReed::ReadDisplacement</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="83" column="18" bodyfile="include/single_reed.h" bodystart="83" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a7a8703d7b0084766b593816fb53dc8bd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::ReadEffectiveOpening</definition>
+        <argsstring>()</argsstring>
+        <name>ReadEffectiveOpening</name>
+        <qualifiedname>phonos::SingleReed::ReadEffectiveOpening</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="89" column="18" bodyfile="include/single_reed.h" bodystart="89" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a97a54ec3b4e8a028d457973d6449689f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::ReadRadiatedPressure</definition>
+        <argsstring>()</argsstring>
+        <name>ReadRadiatedPressure</name>
+        <qualifiedname>phonos::SingleReed::ReadRadiatedPressure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="91" column="18" bodyfile="include/single_reed.h" bodystart="91" bodyend="91"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a9d8c2851fa64b1dd0f41a8342d09f642" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::ReadAuxiliaryVariable</definition>
+        <argsstring>()</argsstring>
+        <name>ReadAuxiliaryVariable</name>
+        <qualifiedname>phonos::SingleReed::ReadAuxiliaryVariable</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="92" column="18" bodyfile="include/single_reed.h" bodystart="92" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a8975fd2750f333b1f02296b88813de65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::ReadMeanMouthpieceFlow</definition>
+        <argsstring>()</argsstring>
+        <name>ReadMeanMouthpieceFlow</name>
+        <qualifiedname>phonos::SingleReed::ReadMeanMouthpieceFlow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="95" column="18" bodyfile="include/single_reed.h" bodystart="95" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1aeb9528db183eb41fdeb00721f99b14b1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::ReadMouthpieceFlow</definition>
+        <argsstring>()</argsstring>
+        <name>ReadMouthpieceFlow</name>
+        <qualifiedname>phonos::SingleReed::ReadMouthpieceFlow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="96" column="18" bodyfile="include/single_reed.h" bodystart="96" bodyend="96"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1abe20bd96eb6b4c118fee6b264e312201" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::ReadPressureDrop</definition>
+        <argsstring>()</argsstring>
+        <name>ReadPressureDrop</name>
+        <qualifiedname>phonos::SingleReed::ReadPressureDrop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="97" column="18" bodyfile="include/single_reed.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1afc0fe03f2b89cd20e8d354dbbdbb28f3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::getCurrentState</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentState</name>
+        <qualifiedname>phonos::SingleReed::getCurrentState</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="98" column="18" bodyfile="include/single_reed.h" bodystart="98" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a0763773e3c471b0c4e5ac56a4384b06b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::tuple&lt; ftype, ftype, ftype &gt;</type>
+        <definition>std::tuple&lt; ftype, ftype, ftype &gt; phonos::SingleReed&lt; ftype &gt;::getCurrentDissipatedPowers</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentDissipatedPowers</name>
+        <qualifiedname>phonos::SingleReed::getCurrentDissipatedPowers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="101" column="16" bodyfile="include/single_reed.h" bodystart="101" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a555745577d12a3d9f3864e02cbd0bb68" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::tuple&lt; ftype, ftype, ftype &gt;</type>
+        <definition>std::tuple&lt; ftype, ftype, ftype &gt; phonos::SingleReed&lt; ftype &gt;::getCurrentExchangedPowers</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentExchangedPowers</name>
+        <qualifiedname>phonos::SingleReed::getCurrentExchangedPowers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="105" column="16" bodyfile="include/single_reed.h" bodystart="105" bodyend="108"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a2faaef46f6fab7e3ace8fb32c23b637c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::tuple&lt; ftype, ftype, ftype &gt;</type>
+        <definition>std::tuple&lt; ftype, ftype, ftype &gt; phonos::SingleReed&lt; ftype &gt;::getCurrentStoredPowers</definition>
+        <argsstring>()</argsstring>
+        <name>getCurrentStoredPowers</name>
+        <qualifiedname>phonos::SingleReed::getCurrentStoredPowers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="109" column="16" bodyfile="include/single_reed.h" bodystart="109" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a588311d733fdca13f3f74a31e47600b2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::SingleReed&lt; ftype &gt;::set_mass</definition>
+        <argsstring>(const ftype &amp;mass)</argsstring>
+        <name>set_mass</name>
+        <qualifiedname>phonos::SingleReed::set_mass</qualifiedname>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>mass</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="115" column="10" bodyfile="include/single_reed.h" bodystart="115" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a7301bfe0bad75fdc78ccdc9bdfcd8153" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::SingleReed&lt; ftype &gt;::set_stiffness</definition>
+        <argsstring>(const ftype &amp;stiffness)</argsstring>
+        <name>set_stiffness</name>
+        <qualifiedname>phonos::SingleReed::set_stiffness</qualifiedname>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>stiffness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="120" column="10" bodyfile="include/single_reed.h" bodystart="120" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a9204c6087cfbbda6dc411c07655248d7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::SingleReed&lt; ftype &gt;::set_damping</definition>
+        <argsstring>(const ftype &amp;damping)</argsstring>
+        <name>set_damping</name>
+        <qualifiedname>phonos::SingleReed::set_damping</qualifiedname>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>damping</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="121" column="10" bodyfile="include/single_reed.h" bodystart="121" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a4e3d32876913c92295d5045418e9f7a8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::SingleReed&lt; ftype &gt;::set_lay_position</definition>
+        <argsstring>(const ftype &amp;lay_position)</argsstring>
+        <name>set_lay_position</name>
+        <qualifiedname>phonos::SingleReed::set_lay_position</qualifiedname>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>lay_position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="126" column="10" bodyfile="include/single_reed.h" bodystart="126" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a153d65ba7066ebe1fb222b726499f6c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::SingleReed&lt; ftype &gt;::set_width</definition>
+        <argsstring>(const ftype &amp;width)</argsstring>
+        <name>set_width</name>
+        <qualifiedname>phonos::SingleReed::set_width</qualifiedname>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="130" column="10" bodyfile="include/single_reed.h" bodystart="130" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1aa69f35de828dd6857a10c7313ab0c2a1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::SingleReed&lt; ftype &gt;::set_surface</definition>
+        <argsstring>(const ftype &amp;surface)</argsstring>
+        <name>set_surface</name>
+        <qualifiedname>phonos::SingleReed::set_surface</qualifiedname>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>surface</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="131" column="10" bodyfile="include/single_reed.h" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a24fa9c0893537306bb4991740aa074fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::SingleReed&lt; ftype &gt;::set_contact_stiffness</definition>
+        <argsstring>(const ftype &amp;contact_stiffness)</argsstring>
+        <name>set_contact_stiffness</name>
+        <qualifiedname>phonos::SingleReed::set_contact_stiffness</qualifiedname>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>contact_stiffness</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="132" column="10" bodyfile="include/single_reed.h" bodystart="132" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a1e8483f53942fc2f4447b59d8fd284dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::SingleReed&lt; ftype &gt;::set_epsilon_smooth</definition>
+        <argsstring>(const ftype &amp;epsilon_smooth)</argsstring>
+        <name>set_epsilon_smooth</name>
+        <qualifiedname>phonos::SingleReed::set_epsilon_smooth</qualifiedname>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>epsilon_smooth</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="136" column="10" bodyfile="include/single_reed.h" bodystart="136" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a6762f2984d9e78e300ca3eb419e5ae12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::SingleReed&lt; ftype &gt;::set_noise_ratio</definition>
+        <argsstring>(const ftype &amp;noise_ratio)</argsstring>
+        <name>set_noise_ratio</name>
+        <qualifiedname>phonos::SingleReed::set_noise_ratio</qualifiedname>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>noise_ratio</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="140" column="10" bodyfile="include/single_reed.h" bodystart="140" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a77b2e8392bef84be0e986fd7a7943faf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::get_mass</definition>
+        <argsstring>()</argsstring>
+        <name>get_mass</name>
+        <qualifiedname>phonos::SingleReed::get_mass</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="143" column="11" bodyfile="include/single_reed.h" bodystart="143" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1ab9aee3a7243f5a6ce39ee01731558dc0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::get_stiffness</definition>
+        <argsstring>()</argsstring>
+        <name>get_stiffness</name>
+        <qualifiedname>phonos::SingleReed::get_stiffness</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="144" column="11" bodyfile="include/single_reed.h" bodystart="144" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a7d9ba7fed84e02a1546ae268fb3865b0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::get_damping</definition>
+        <argsstring>()</argsstring>
+        <name>get_damping</name>
+        <qualifiedname>phonos::SingleReed::get_damping</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="145" column="11" bodyfile="include/single_reed.h" bodystart="145" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a42934b1f8447027f0b0f49c6b610dead" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::get_width</definition>
+        <argsstring>()</argsstring>
+        <name>get_width</name>
+        <qualifiedname>phonos::SingleReed::get_width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="146" column="11" bodyfile="include/single_reed.h" bodystart="146" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a6bcaf9f222a7d1779a4d96ae48b36b38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::get_surface</definition>
+        <argsstring>()</argsstring>
+        <name>get_surface</name>
+        <qualifiedname>phonos::SingleReed::get_surface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="147" column="11" bodyfile="include/single_reed.h" bodystart="147" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a8f9019ef22fb87b7f2f609628f8a6566" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::get_lay_position</definition>
+        <argsstring>()</argsstring>
+        <name>get_lay_position</name>
+        <qualifiedname>phonos::SingleReed::get_lay_position</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="148" column="11" bodyfile="include/single_reed.h" bodystart="148" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a169f925d174c45e7e12203aabc5f8322" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::get_contact_stiffness</definition>
+        <argsstring>()</argsstring>
+        <name>get_contact_stiffness</name>
+        <qualifiedname>phonos::SingleReed::get_contact_stiffness</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="149" column="11" bodyfile="include/single_reed.h" bodystart="149" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a89d9dfef9b0e0d8efe68f70fdae9bfeb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::get_epsilon_smooth</definition>
+        <argsstring>()</argsstring>
+        <name>get_epsilon_smooth</name>
+        <qualifiedname>phonos::SingleReed::get_epsilon_smooth</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="150" column="11" bodyfile="include/single_reed.h" bodystart="150" bodyend="150"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1aa0a8d4b4559cac9d20cadb5a9523a7df" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::SingleReed&lt; ftype &gt;::get_noise_ratio</definition>
+        <argsstring>()</argsstring>
+        <name>get_noise_ratio</name>
+        <qualifiedname>phonos::SingleReed::get_noise_ratio</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="151" column="11" bodyfile="include/single_reed.h" bodystart="151" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_single_reed_1a307961d2fc971786ec0daa0f12a61b3d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classphonos_1_1_webster_f_d_t_d" kindref="compound">WebsterFDTD</ref>&lt; ftype, 300 &gt; &gt;</type>
+        <definition>std::shared_ptr&lt; WebsterFDTD&lt; ftype, 300 &gt; &gt; phonos::SingleReed&lt; ftype &gt;::get_resonator</definition>
+        <argsstring>()</argsstring>
+        <name>get_resonator</name>
+        <qualifiedname>phonos::SingleReed::get_resonator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/single_reed.h" line="153" column="21" bodyfile="include/single_reed.h" bodystart="153" bodyend="153"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/single_reed.h" line="19" column="1" bodyfile="include/single_reed.h" bodystart="19" bodyend="154"/>
+    <listofallmembers>
+      <member refid="classphonos_1_1_single_reed_1aaae79f73ead9126e36dd09bcc40139ec" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>a_resonator_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a8cb0e8f40f0ff8a51ed0ff674753f632" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>alpha_contact_stiffness_</name></member>
+      <member refid="classphonos_1_1_single_reed_1af4ce21e5a6f0e2a514b143c0405e46a4" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>b_resonator_</name></member>
+      <member refid="classphonos_1_1_single_reed_1ad4e2cc5de7da4254193c55bd9aa532be" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>C0_feedback_</name></member>
+      <member refid="classphonos_1_1_single_reed_1af8249b22523f5732712343769afa650a" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>C1_feedback_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a27d966aabfac467a5213d9c41e81ff2a" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>c_0_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a9ec8dd7e661ccd63087fb0bef33f31c3" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>compute_powers_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a13ee342b553a43878f399f4abada2648" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>computegSAV</name></member>
+      <member refid="classphonos_1_1_single_reed_1a22c7fa9abdf14a23b2d42163bd770131" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>computeRk</name></member>
+      <member refid="classphonos_1_1_single_reed_1ab481aa14daf7ae76c88b1a0391ec1216" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>contact_stiffness_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a831423de1be74ebfaf2f7095aed6b569" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>damping_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a630e1bf4296616f384f794450e92ec1b" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>dissipated_power_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a00b38f6d8e2e08b05b993beb34c69687" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>dissipated_power_flow_</name></member>
+      <member refid="classphonos_1_1_single_reed_1ad9ca25c3d83e986c9c3e1e34fbda5e13" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>dissipated_power_reed_</name></member>
+      <member refid="classphonos_1_1_single_reed_1adaf8c5e8b4c857eef832d601c3e84950" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>dissipation_coefficient_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a6d3289631a940d76a944511db2d552a0" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>DspSetup</name></member>
+      <member refid="classphonos_1_1_single_reed_1a74cd5fc0dfe8c127798bfed575e01605" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>dt_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a6d6c45ed2027202a480fec9a0a41c13c" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>E_nl_</name></member>
+      <member refid="classphonos_1_1_single_reed_1ac565fcaf7b827a6482b31483099a8c2c" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>epsilon_smooth_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a9813acb1afe6134829dec59bce2ddb5d" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>epsilon_smooth_P_</name></member>
+      <member refid="classphonos_1_1_single_reed_1ad67366e772dbdc33463cecb87dc0a944" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>external_power_</name></member>
+      <member refid="classphonos_1_1_single_reed_1af77d0e35e0093a3a278476c2d3e351f3" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>external_power_sub_</name></member>
+      <member refid="classphonos_1_1_single_reed_1aac2e9f2077dfc178cd413d3caad87dcb" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>external_power_sup_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a4ed65fd4ca608016cad32e5db6ed8306" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>F_nl_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a387fd3057a5383512ca756e5bf17c1b2" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>fillOpeningAndInterpenetration</name></member>
+      <member refid="classphonos_1_1_single_reed_1abdafbcb5d49ca68fc00cc3641f7d29d7" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>g_sav_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a169f925d174c45e7e12203aabc5f8322" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>get_contact_stiffness</name></member>
+      <member refid="classphonos_1_1_single_reed_1a7d9ba7fed84e02a1546ae268fb3865b0" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>get_damping</name></member>
+      <member refid="classphonos_1_1_single_reed_1a89d9dfef9b0e0d8efe68f70fdae9bfeb" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>get_epsilon_smooth</name></member>
+      <member refid="classphonos_1_1_single_reed_1a8f9019ef22fb87b7f2f609628f8a6566" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>get_lay_position</name></member>
+      <member refid="classphonos_1_1_single_reed_1a77b2e8392bef84be0e986fd7a7943faf" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>get_mass</name></member>
+      <member refid="classphonos_1_1_single_reed_1aa0a8d4b4559cac9d20cadb5a9523a7df" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>get_noise_ratio</name></member>
+      <member refid="classphonos_1_1_single_reed_1a307961d2fc971786ec0daa0f12a61b3d" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>get_resonator</name></member>
+      <member refid="classphonos_1_1_single_reed_1ab9aee3a7243f5a6ce39ee01731558dc0" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>get_stiffness</name></member>
+      <member refid="classphonos_1_1_single_reed_1a6bcaf9f222a7d1779a4d96ae48b36b38" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>get_surface</name></member>
+      <member refid="classphonos_1_1_single_reed_1a42934b1f8447027f0b0f49c6b610dead" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>get_width</name></member>
+      <member refid="classphonos_1_1_single_reed_1a0763773e3c471b0c4e5ac56a4384b06b" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>getCurrentDissipatedPowers</name></member>
+      <member refid="classphonos_1_1_single_reed_1a555745577d12a3d9f3864e02cbd0bb68" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>getCurrentExchangedPowers</name></member>
+      <member refid="classphonos_1_1_single_reed_1afc0fe03f2b89cd20e8d354dbbdbb28f3" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>getCurrentState</name></member>
+      <member refid="classphonos_1_1_single_reed_1a2faaef46f6fab7e3ace8fb32c23b637c" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>getCurrentStoredPowers</name></member>
+      <member refid="classphonos_1_1_single_reed_1ae339d98de8401acd12877326720e8a68" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>idx_next_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a4c0b3ebdd98a3f0a55df99879e6d2d61" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>idx_now_</name></member>
+      <member refid="classphonos_1_1_single_reed_1aec932bba3d3f82989b82bfb48b914255" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>interpenetration_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a7eb1a32ddf1da33449b37aee76c102bc" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>interpenetration_derivative_</name></member>
+      <member refid="classphonos_1_1_single_reed_1af74f5e828a2f5fb6afa77376ca032b2a" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>kinetic_energy_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a6ecc67d54df47b9760851bfd29e636e3" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>kt_</name></member>
+      <member refid="classphonos_1_1_single_reed_1afa5429f9ac29595b58802a712269cf6b" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>lay_position_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a1b9e46460750d9217d2c08a945f47853" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>mass_</name></member>
+      <member refid="classphonos_1_1_single_reed_1ad668bb7d6aaf7a6045d147f69ed94518" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>mean_flow_</name></member>
+      <member refid="classphonos_1_1_single_reed_1aca122419a558c0aca0dbe9cd70966997" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>mouth_flow_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a961306b2423f2b38fafd54b44cb3b887" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>noise_flow_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a4bbda0dc02733a174033626ffb584833" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>noise_generator_</name></member>
+      <member refid="classphonos_1_1_single_reed_1ac867dfa483358957d4e6522c67dd66a5" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>noise_ratio_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a190fb017759572eef59e09d533c3a7f8" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>opening_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a848641dc92b3f348541a93243a16ec53" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>p_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a543a1b63d710bd2a71a3dd06c4475bf7" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>p_inter_</name></member>
+      <member refid="classphonos_1_1_single_reed_1ab8871700135340533a14dbe349ec4392" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>potential_energy_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a83534607b1a5b677c05812ec60817b09" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>Process</name></member>
+      <member refid="classphonos_1_1_single_reed_1af2a003a457db39a0d9a2012ebfda1235" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>Psub_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a48301c8c1b3c5b945659af488bcb6afd" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>Psub_centered_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a9435546be8d49d1982999c5fc6498a0a" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>Psup_</name></member>
+      <member refid="classphonos_1_1_single_reed_1ab15de253d1c4b36909df5d09b7e3874e" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>q_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a7b739b2b9e656c25f9437dc33d464280" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>q_inter_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a462125b5e0bfe5bd0835d6a14be7d1d0" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>r_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a216aa5dd4cc2e437450ca8a8cd376df9" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>R_k_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a9d8c2851fa64b1dd0f41a8342d09f642" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>ReadAuxiliaryVariable</name></member>
+      <member refid="classphonos_1_1_single_reed_1ad79d10870f0dff1441124df36fe237d1" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>ReadDisplacement</name></member>
+      <member refid="classphonos_1_1_single_reed_1a7a8703d7b0084766b593816fb53dc8bd" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>ReadEffectiveOpening</name></member>
+      <member refid="classphonos_1_1_single_reed_1a8975fd2750f333b1f02296b88813de65" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>ReadMeanMouthpieceFlow</name></member>
+      <member refid="classphonos_1_1_single_reed_1aeb9528db183eb41fdeb00721f99b14b1" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>ReadMouthpieceFlow</name></member>
+      <member refid="classphonos_1_1_single_reed_1abe20bd96eb6b4c118fee6b264e312201" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>ReadPressureDrop</name></member>
+      <member refid="classphonos_1_1_single_reed_1a97a54ec3b4e8a028d457973d6449689f" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>ReadRadiatedPressure</name></member>
+      <member refid="classphonos_1_1_single_reed_1ac162fb2a26931cf196ac8000cdc152a5" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>resonator_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a01ce39ebb181d59eee0b10d071f17ed7" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>resonator_flow_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a99d4c3fd85ac0ab927c1ee9c1630c965" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>rho_0_</name></member>
+      <member refid="classphonos_1_1_single_reed_1ada7cc42b2f6136bd8b7a9f138fcadf4c" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>rhs_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a24fa9c0893537306bb4991740aa074fd" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>set_contact_stiffness</name></member>
+      <member refid="classphonos_1_1_single_reed_1a9204c6087cfbbda6dc411c07655248d7" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>set_damping</name></member>
+      <member refid="classphonos_1_1_single_reed_1a1e8483f53942fc2f4447b59d8fd284dd" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>set_epsilon_smooth</name></member>
+      <member refid="classphonos_1_1_single_reed_1a4e3d32876913c92295d5045418e9f7a8" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>set_lay_position</name></member>
+      <member refid="classphonos_1_1_single_reed_1a588311d733fdca13f3f74a31e47600b2" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>set_mass</name></member>
+      <member refid="classphonos_1_1_single_reed_1a6762f2984d9e78e300ca3eb419e5ae12" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>set_noise_ratio</name></member>
+      <member refid="classphonos_1_1_single_reed_1a7301bfe0bad75fdc78ccdc9bdfcd8153" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>set_stiffness</name></member>
+      <member refid="classphonos_1_1_single_reed_1aa69f35de828dd6857a10c7313ab0c2a1" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>set_surface</name></member>
+      <member refid="classphonos_1_1_single_reed_1a153d65ba7066ebe1fb222b726499f6c3" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>set_width</name></member>
+      <member refid="classphonos_1_1_single_reed_1a7af9b7ddcc1775823807bf24fe171fd3" prot="public" virt="non-virtual"><scope>phonos::SingleReed</scope><name>SingleReed</name></member>
+      <member refid="classphonos_1_1_single_reed_1aee8384bb10418def969731f251ad4bad" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>smoothed_is_opened_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a795bb6e54f86feaa43da0b7b84f1a4aa" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>sr_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a548667548150a18cbbdef8492be17d7c" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>stiffness_</name></member>
+      <member refid="classphonos_1_1_single_reed_1aba21f6543134707839eb116ce162bf9d" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>stored_power_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a604e49f4ec99f882ab51fda875c30e7f" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>stored_power_kinetic_</name></member>
+      <member refid="classphonos_1_1_single_reed_1acdae751efe193e6994217956224976b4" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>stored_power_potential_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a2a02c75381574f02ab67080b0b57994c" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>surface_</name></member>
+      <member refid="classphonos_1_1_single_reed_1a302ce0ec05599b82a5191f49db55203b" prot="private" virt="non-virtual"><scope>phonos::SingleReed</scope><name>width_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

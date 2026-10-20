@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classphonos_1_1_noise_generator" kind="class" language="C++" prot="public">
+    <compoundname>phonos::NoiseGenerator</compoundname>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classphonos_1_1_noise_generator_1abd226796be9567768d63e494bddc4374" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t phonos::NoiseGenerator::kNumStreams</definition>
+        <argsstring></argsstring>
+        <name>kNumStreams</name>
+        <qualifiedname>phonos::NoiseGenerator::kNumStreams</qualifiedname>
+        <initializer>= 16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/noise_generator.h" line="14" column="31" bodyfile="include/noise_generator.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classphonos_1_1_noise_generator_1a264c4ebc01f673ddefdd7335410f1ea6" prot="private" static="no" mutable="no">
+        <type>NoiseColor</type>
+        <definition>NoiseColor phonos::NoiseGenerator::color_</definition>
+        <argsstring></argsstring>
+        <name>color_</name>
+        <qualifiedname>phonos::NoiseGenerator::color_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/noise_generator.h" line="16" column="16" bodyfile="include/noise_generator.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_noise_generator_1ace6db38a06c7eaaf9151c776b7981f48" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t phonos::NoiseGenerator::counter_</definition>
+        <argsstring></argsstring>
+        <name>counter_</name>
+        <qualifiedname>phonos::NoiseGenerator::counter_</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/noise_generator.h" line="18" column="14" bodyfile="include/noise_generator.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_noise_generator_1ad11633e0c1e75f3ed0f09064aa3b1773" prot="private" static="no" mutable="no">
+        <type>std::array&lt; float, kNumStreams &gt;</type>
+        <definition>std::array&lt;float, kNumStreams&gt; phonos::NoiseGenerator::state_</definition>
+        <argsstring></argsstring>
+        <name>state_</name>
+        <qualifiedname>phonos::NoiseGenerator::state_</qualifiedname>
+        <initializer>{}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/noise_generator.h" line="20" column="16" bodyfile="include/noise_generator.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_noise_generator_1a89d0a89e19b9201abcd30b2ad57c0822" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float phonos::NoiseGenerator::running_sum_</definition>
+        <argsstring></argsstring>
+        <name>running_sum_</name>
+        <qualifiedname>phonos::NoiseGenerator::running_sum_</qualifiedname>
+        <initializer>= 0.0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/noise_generator.h" line="21" column="11" bodyfile="include/noise_generator.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_noise_generator_1a8a81f0ea379a74644facddc4cc5468a1" prot="private" static="no" mutable="no">
+        <type>std::mt19937</type>
+        <definition>std::mt19937 phonos::NoiseGenerator::rng_</definition>
+        <argsstring></argsstring>
+        <name>rng_</name>
+        <qualifiedname>phonos::NoiseGenerator::rng_</qualifiedname>
+        <initializer>{std::random_device{}()}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/noise_generator.h" line="23" column="18" bodyfile="include/noise_generator.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_noise_generator_1a74e486d02ef4244800479678fcb29777" prot="private" static="no" mutable="no">
+        <type>std::uniform_real_distribution&lt; float &gt;</type>
+        <definition>std::uniform_real_distribution&lt;float&gt; phonos::NoiseGenerator::dist_</definition>
+        <argsstring></argsstring>
+        <name>dist_</name>
+        <qualifiedname>phonos::NoiseGenerator::dist_</qualifiedname>
+        <initializer>{-1.0f, 1.0f}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/noise_generator.h" line="24" column="36" bodyfile="include/noise_generator.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classphonos_1_1_noise_generator_1aa43c7fb7f1d6b7a09c83dc90708f543e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float phonos::NoiseGenerator::GenerateWhite</definition>
+        <argsstring>()</argsstring>
+        <name>GenerateWhite</name>
+        <qualifiedname>phonos::NoiseGenerator::GenerateWhite</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/noise_generator.h" line="26" column="11" bodyfile="include/noise_generator.h" bodystart="26" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classphonos_1_1_noise_generator_1a49c3b5f28f0725a9687a50934ca6edea" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>phonos::NoiseGenerator::NoiseGenerator</definition>
+        <argsstring>(NoiseColor color=NoiseColor::Pink)</argsstring>
+        <name>NoiseGenerator</name>
+        <qualifiedname>phonos::NoiseGenerator::NoiseGenerator</qualifiedname>
+        <param>
+          <type>NoiseColor</type>
+          <declname>color</declname>
+          <defval>NoiseColor::Pink</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/noise_generator.h" line="29" column="14" bodyfile="include/noise_generator.h" bodystart="29" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_noise_generator_1ace6b43719be96f90abe5d00aa86cd834" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float phonos::NoiseGenerator::Process</definition>
+        <argsstring>()</argsstring>
+        <name>Process</name>
+        <qualifiedname>phonos::NoiseGenerator::Process</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/noise_generator.h" line="39" column="11" bodyfile="include/noise_generator.h" bodystart="39" bodyend="57"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/noise_generator.h" line="12" column="1" bodyfile="include/noise_generator.h" bodystart="12" bodyend="58"/>
+    <listofallmembers>
+      <member refid="classphonos_1_1_noise_generator_1a264c4ebc01f673ddefdd7335410f1ea6" prot="private" virt="non-virtual"><scope>phonos::NoiseGenerator</scope><name>color_</name></member>
+      <member refid="classphonos_1_1_noise_generator_1ace6db38a06c7eaaf9151c776b7981f48" prot="private" virt="non-virtual"><scope>phonos::NoiseGenerator</scope><name>counter_</name></member>
+      <member refid="classphonos_1_1_noise_generator_1a74e486d02ef4244800479678fcb29777" prot="private" virt="non-virtual"><scope>phonos::NoiseGenerator</scope><name>dist_</name></member>
+      <member refid="classphonos_1_1_noise_generator_1aa43c7fb7f1d6b7a09c83dc90708f543e" prot="private" virt="non-virtual"><scope>phonos::NoiseGenerator</scope><name>GenerateWhite</name></member>
+      <member refid="classphonos_1_1_noise_generator_1abd226796be9567768d63e494bddc4374" prot="private" virt="non-virtual"><scope>phonos::NoiseGenerator</scope><name>kNumStreams</name></member>
+      <member refid="classphonos_1_1_noise_generator_1a49c3b5f28f0725a9687a50934ca6edea" prot="public" virt="non-virtual"><scope>phonos::NoiseGenerator</scope><name>NoiseGenerator</name></member>
+      <member refid="classphonos_1_1_noise_generator_1ace6b43719be96f90abe5d00aa86cd834" prot="public" virt="non-virtual"><scope>phonos::NoiseGenerator</scope><name>Process</name></member>
+      <member refid="classphonos_1_1_noise_generator_1a8a81f0ea379a74644facddc4cc5468a1" prot="private" virt="non-virtual"><scope>phonos::NoiseGenerator</scope><name>rng_</name></member>
+      <member refid="classphonos_1_1_noise_generator_1a89d0a89e19b9201abcd30b2ad57c0822" prot="private" virt="non-virtual"><scope>phonos::NoiseGenerator</scope><name>running_sum_</name></member>
+      <member refid="classphonos_1_1_noise_generator_1ad11633e0c1e75f3ed0f09064aa3b1773" prot="private" virt="non-virtual"><scope>phonos::NoiseGenerator</scope><name>state_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

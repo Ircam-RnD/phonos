@@ -1,0 +1,1057 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="classphonos_1_1_voice" kind="class" language="C++" prot="public">
+    <compoundname>phonos::Voice</compoundname>
+    <templateparamlist>
+      <param>
+        <type><ref refid="concept_v_f_pair_model" kindref="compound">VFPairModel</ref></type>
+        <declname>vf_pair</declname>
+        <defname>vf_pair</defname>
+      </param>
+      <param>
+        <type>typename ftype</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a8d8245fbe2c40618ad1f107862083e3e" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; vf_pair &gt;</type>
+        <definition>std::shared_ptr&lt;vf_pair&gt; phonos::Voice&lt; vf_pair, ftype &gt;::vfs_</definition>
+        <argsstring></argsstring>
+        <name>vfs_</name>
+        <qualifiedname>phonos::Voice::vfs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="25" column="21" bodyfile="include/voice.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a87dc78f64027db07fef387c7f44a36ec" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, vf_pair::get_N()&gt;</type>
+        <definition>Eigen::Vector&lt;ftype, vf_pair::get_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::effective_surfaces_Psub_</definition>
+        <argsstring></argsstring>
+        <name>effective_surfaces_Psub_</name>
+        <qualifiedname>phonos::Voice::effective_surfaces_Psub_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="28" column="19" bodyfile="include/voice.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a76d6d86fd7760ce53ebba7ce5cc8a502" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, vf_pair::get_N()&gt;</type>
+        <definition>Eigen::Vector&lt;ftype, vf_pair::get_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::effective_surfaces_Psup_</definition>
+        <argsstring></argsstring>
+        <name>effective_surfaces_Psup_</name>
+        <qualifiedname>phonos::Voice::effective_surfaces_Psup_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="28" column="44" bodyfile="include/voice.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a3bc93ce82fb6a027477dec440243ff3b" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, vf_pair::get_N()&gt;</type>
+        <definition>Eigen::Vector&lt;ftype, vf_pair::get_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::g_sav_</definition>
+        <argsstring></argsstring>
+        <name>g_sav_</name>
+        <qualifiedname>phonos::Voice::g_sav_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="30" column="19" bodyfile="include/voice.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1ac227d30a31b3045feb39cebd3509a679" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, vf_pair::get_N()&gt;</type>
+        <definition>Eigen::Vector&lt;ftype, vf_pair::get_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::Fnl_</definition>
+        <argsstring></argsstring>
+        <name>Fnl_</name>
+        <qualifiedname>phonos::Voice::Fnl_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="30" column="26" bodyfile="include/voice.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a6a14a10a4da7137ee424f84b5006e9fc" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::Enl_</definition>
+        <argsstring></argsstring>
+        <name>Enl_</name>
+        <qualifiedname>phonos::Voice::Enl_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="31" column="11" bodyfile="include/voice.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a1bee09f41b335deb4f6c1eead8236785" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::epsilon_sav_</definition>
+        <argsstring></argsstring>
+        <name>epsilon_sav_</name>
+        <qualifiedname>phonos::Voice::epsilon_sav_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="31" column="16" bodyfile="include/voice.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a45a0f3b8791cc242cba2b6d78cec2f2a" prot="private" static="no" mutable="no">
+        <type>bool const</type>
+        <definition>bool const phonos::Voice&lt; vf_pair, ftype &gt;::control_term_</definition>
+        <argsstring></argsstring>
+        <name>control_term_</name>
+        <qualifiedname>phonos::Voice::control_term_</qualifiedname>
+        <initializer>{true}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="32" column="16" bodyfile="include/voice.h" bodystart="32" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a5cd1ba20cee97aa5c996507592d24d0d" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::lambda_sav_</definition>
+        <argsstring></argsstring>
+        <name>lambda_sav_</name>
+        <qualifiedname>phonos::Voice::lambda_sav_</qualifiedname>
+        <initializer>{10}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="33" column="11" bodyfile="include/voice.h" bodystart="33" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1af2f5005c1a1e9ed4f230c0a4107eb3ac" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::mean_flow_</definition>
+        <argsstring></argsstring>
+        <name>mean_flow_</name>
+        <qualifiedname>phonos::Voice::mean_flow_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="36" column="11" bodyfile="include/voice.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a381531f6936dc46f8c19f18655cc3f97" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::Rk_</definition>
+        <argsstring></argsstring>
+        <name>Rk_</name>
+        <qualifiedname>phonos::Voice::Rk_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="36" column="22" bodyfile="include/voice.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1ad27d42ba1d0215fb1d1dc02ddccd5cda" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::a_resonator_</definition>
+        <argsstring></argsstring>
+        <name>a_resonator_</name>
+        <qualifiedname>phonos::Voice::a_resonator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="38" column="11" bodyfile="include/voice.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a262774e6640c15723fcff64710f5cd34" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::b_resonator_</definition>
+        <argsstring></argsstring>
+        <name>b_resonator_</name>
+        <qualifiedname>phonos::Voice::b_resonator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="38" column="24" bodyfile="include/voice.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a0df1d6272027ed9150c77eea16f10799" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::C0_feedback_</definition>
+        <argsstring></argsstring>
+        <name>C0_feedback_</name>
+        <qualifiedname>phonos::Voice::C0_feedback_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="39" column="11" bodyfile="include/voice.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1aa04a0203ad804f7e820da0d2a5deb81c" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, 6 &gt;</type>
+        <definition>Eigen::Vector&lt;ftype, 6&gt; phonos::Voice&lt; vf_pair, ftype &gt;::C1_feedback_</definition>
+        <argsstring></argsstring>
+        <name>C1_feedback_</name>
+        <qualifiedname>phonos::Voice::C1_feedback_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="40" column="19" bodyfile="include/voice.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1aebfb371d16fc740421a21e2ad9a508cf" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::A0_inv_</definition>
+        <argsstring></argsstring>
+        <name>A0_inv_</name>
+        <qualifiedname>phonos::Voice::A0_inv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="42" column="11" bodyfile="include/voice.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1ad83248a7b2afb87d3979a446c693e043" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, vf_pair::get_N()&gt;</type>
+        <definition>Eigen::Vector&lt;ftype, vf_pair::get_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::KOp_result_</definition>
+        <argsstring></argsstring>
+        <name>KOp_result_</name>
+        <qualifiedname>phonos::Voice::KOp_result_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="43" column="19" bodyfile="include/voice.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a9a620d4e556698c5307af8480c933bb5" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, vf_pair::get_N()&gt;</type>
+        <definition>Eigen::Vector&lt;ftype, vf_pair::get_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::ROp_result_</definition>
+        <argsstring></argsstring>
+        <name>ROp_result_</name>
+        <qualifiedname>phonos::Voice::ROp_result_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="44" column="19" bodyfile="include/voice.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a32520cd626986607b3cee0b337949f64" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, vf_pair::get_N()&gt;</type>
+        <definition>Eigen::Vector&lt;ftype, vf_pair::get_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::rhs_</definition>
+        <argsstring></argsstring>
+        <name>rhs_</name>
+        <qualifiedname>phonos::Voice::rhs_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="45" column="19" bodyfile="include/voice.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a092108fed6d6c546c374030bcc2004e3" prot="private" static="no" mutable="no">
+        <type>Eigen::Matrix&lt; ftype, 2, vf_pair::get_N()&gt;</type>
+        <definition>Eigen::Matrix&lt;ftype, 2, vf_pair::get_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::v_woodburry_</definition>
+        <argsstring></argsstring>
+        <name>v_woodburry_</name>
+        <qualifiedname>phonos::Voice::v_woodburry_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="46" column="19" bodyfile="include/voice.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a2139b029d6e2b21c9a20804cefdf4e3c" prot="private" static="no" mutable="no">
+        <type>Eigen::Matrix&lt; ftype, vf_pair::get_N(), 2 &gt;</type>
+        <definition>Eigen::Matrix&lt;ftype, vf_pair::get_N(), 2&gt; phonos::Voice&lt; vf_pair, ftype &gt;::u_woodburry_</definition>
+        <argsstring></argsstring>
+        <name>u_woodburry_</name>
+        <qualifiedname>phonos::Voice::u_woodburry_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="47" column="19" bodyfile="include/voice.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a3432ddc23cbc2e11453149c588bcf2af" prot="private" static="no" mutable="no">
+        <type>Eigen::Matrix&lt; ftype, 2, 2 &gt;</type>
+        <definition>Eigen::Matrix&lt;ftype, 2, 2&gt; phonos::Voice&lt; vf_pair, ftype &gt;::woodburry_inv_</definition>
+        <argsstring></argsstring>
+        <name>woodburry_inv_</name>
+        <qualifiedname>phonos::Voice::woodburry_inv_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="48" column="19" bodyfile="include/voice.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a0486395966b455d780541f8909df7e9f" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, vf_pair::get_N()&gt;</type>
+        <definition>Eigen::Vector&lt;ftype, vf_pair::get_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::Minv_p_</definition>
+        <argsstring></argsstring>
+        <name>Minv_p_</name>
+        <qualifiedname>phonos::Voice::Minv_p_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="49" column="19" bodyfile="include/voice.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1acc11276801a7cb11955d4b4c23835c37" prot="private" static="no" mutable="no">
+        <type>Eigen::Matrix&lt; ftype, 2, vf_pair::get_N()&gt;</type>
+        <definition>Eigen::Matrix&lt;ftype, 2, vf_pair::get_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::p_</definition>
+        <argsstring></argsstring>
+        <name>p_</name>
+        <qualifiedname>phonos::Voice::p_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="52" column="19" bodyfile="include/voice.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a702e25312233280ade1d54ca43923d3e" prot="private" static="no" mutable="no">
+        <type>Eigen::Matrix&lt; ftype, 2, vf_pair::get_N()&gt;</type>
+        <definition>Eigen::Matrix&lt;ftype, 2, vf_pair::get_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::q_</definition>
+        <argsstring></argsstring>
+        <name>q_</name>
+        <qualifiedname>phonos::Voice::q_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="52" column="22" bodyfile="include/voice.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a7def5c06df28c7cfde5d5264c4ddcba5" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, vf_pair::get_N()&gt;</type>
+        <definition>Eigen::Vector&lt;ftype, vf_pair::get_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::pmid_</definition>
+        <argsstring></argsstring>
+        <name>pmid_</name>
+        <qualifiedname>phonos::Voice::pmid_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="53" column="19" bodyfile="include/voice.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a613a4a1ea5699d39231c49cc5d2be984" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, vf_pair::get_N()&gt;</type>
+        <definition>Eigen::Vector&lt;ftype, vf_pair::get_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::qmid_</definition>
+        <argsstring></argsstring>
+        <name>qmid_</name>
+        <qualifiedname>phonos::Voice::qmid_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="53" column="25" bodyfile="include/voice.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1ac627b037333d10e1c010705053ad23dd" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, 2 &gt;</type>
+        <definition>Eigen::Vector&lt;ftype, 2&gt; phonos::Voice&lt; vf_pair, ftype &gt;::r_</definition>
+        <argsstring></argsstring>
+        <name>r_</name>
+        <qualifiedname>phonos::Voice::r_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="54" column="19" bodyfile="include/voice.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a2e8f713b6b48f71cbdc960a01a030428" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t phonos::Voice&lt; vf_pair, ftype &gt;::idx_now_</definition>
+        <argsstring></argsstring>
+        <name>idx_now_</name>
+        <qualifiedname>phonos::Voice::idx_now_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="55" column="17" bodyfile="include/voice.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a3d7df885f69fe625200acf5407363830" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t phonos::Voice&lt; vf_pair, ftype &gt;::idx_next_</definition>
+        <argsstring></argsstring>
+        <name>idx_next_</name>
+        <qualifiedname>phonos::Voice::idx_next_</qualifiedname>
+        <initializer>{1}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="55" column="26" bodyfile="include/voice.h" bodystart="55" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a07016e4ab80eb3f33152a09fe94a65ad" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, 2 &gt;</type>
+        <definition>Eigen::Vector&lt;ftype, 2&gt; phonos::Voice&lt; vf_pair, ftype &gt;::Psub_</definition>
+        <argsstring></argsstring>
+        <name>Psub_</name>
+        <qualifiedname>phonos::Voice::Psub_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="57" column="19" bodyfile="include/voice.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1ad6f7f10b326bd5ffdf2c3ad6703960fb" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, 2 &gt;</type>
+        <definition>Eigen::Vector&lt;ftype, 2&gt; phonos::Voice&lt; vf_pair, ftype &gt;::Psub_centered_</definition>
+        <argsstring></argsstring>
+        <name>Psub_centered_</name>
+        <qualifiedname>phonos::Voice::Psub_centered_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="57" column="25" bodyfile="include/voice.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1af5df8a4741a333bf561223bd679f4ffb" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::Psup_</definition>
+        <argsstring></argsstring>
+        <name>Psup_</name>
+        <qualifiedname>phonos::Voice::Psup_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="58" column="11" bodyfile="include/voice.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a838d29514bdd15a0b657a2a4eaf5a038" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool phonos::Voice&lt; vf_pair, ftype &gt;::compute_powers_</definition>
+        <argsstring></argsstring>
+        <name>compute_powers_</name>
+        <qualifiedname>phonos::Voice::compute_powers_</qualifiedname>
+        <initializer>{false}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="61" column="10" bodyfile="include/voice.h" bodystart="61" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1afe5e34aef52402eb68a466b15c2779d0" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, 2 &gt;</type>
+        <definition>Eigen::Vector&lt;ftype, 2&gt; phonos::Voice&lt; vf_pair, ftype &gt;::kinetic_energy_</definition>
+        <argsstring></argsstring>
+        <name>kinetic_energy_</name>
+        <qualifiedname>phonos::Voice::kinetic_energy_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="62" column="19" bodyfile="include/voice.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a9052494232d6736c3a282aafed1e4b23" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector&lt; ftype, 2 &gt;</type>
+        <definition>Eigen::Vector&lt;ftype, 2&gt; phonos::Voice&lt; vf_pair, ftype &gt;::potential_energy_</definition>
+        <argsstring></argsstring>
+        <name>potential_energy_</name>
+        <qualifiedname>phonos::Voice::potential_energy_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="62" column="35" bodyfile="include/voice.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a2a0f3c2f0faebd045e8a68904854620d" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::dissipated_power_</definition>
+        <argsstring></argsstring>
+        <name>dissipated_power_</name>
+        <qualifiedname>phonos::Voice::dissipated_power_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="63" column="11" bodyfile="include/voice.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a3543c5c367a635b19c6bb6748a42a9f1" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::dissipated_power_flow_</definition>
+        <argsstring></argsstring>
+        <name>dissipated_power_flow_</name>
+        <qualifiedname>phonos::Voice::dissipated_power_flow_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="63" column="29" bodyfile="include/voice.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1abe165a040edb576900596441899c9b4f" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::dissipated_power_folds_</definition>
+        <argsstring></argsstring>
+        <name>dissipated_power_folds_</name>
+        <qualifiedname>phonos::Voice::dissipated_power_folds_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="63" column="52" bodyfile="include/voice.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1ae2f89e5b150b9badbf2bca58f95584e6" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::external_power_</definition>
+        <argsstring></argsstring>
+        <name>external_power_</name>
+        <qualifiedname>phonos::Voice::external_power_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="64" column="11" bodyfile="include/voice.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a8b09ba756884a5f1587b8f96bf65ba21" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::external_power_sub_</definition>
+        <argsstring></argsstring>
+        <name>external_power_sub_</name>
+        <qualifiedname>phonos::Voice::external_power_sub_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="64" column="27" bodyfile="include/voice.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a4d89f9decc51ab2de249367acf413ab0" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::external_power_sup_</definition>
+        <argsstring></argsstring>
+        <name>external_power_sup_</name>
+        <qualifiedname>phonos::Voice::external_power_sup_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="64" column="47" bodyfile="include/voice.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1af8e239b22a1f138d8607d1dabc859deb" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::stored_power_</definition>
+        <argsstring></argsstring>
+        <name>stored_power_</name>
+        <qualifiedname>phonos::Voice::stored_power_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="65" column="11" bodyfile="include/voice.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1ae8337ea6f44a64e9cc15cdbf18a084fb" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::stored_power_potential_</definition>
+        <argsstring></argsstring>
+        <name>stored_power_potential_</name>
+        <qualifiedname>phonos::Voice::stored_power_potential_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="65" column="25" bodyfile="include/voice.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a1f239a2a43be2570899f75fb4aeb17ce" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::stored_power_kinetic_</definition>
+        <argsstring></argsstring>
+        <name>stored_power_kinetic_</name>
+        <qualifiedname>phonos::Voice::stored_power_kinetic_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="65" column="49" bodyfile="include/voice.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a750192543d9599f55745b00d17f97323" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::sub_glottal_flow</definition>
+        <argsstring></argsstring>
+        <name>sub_glottal_flow</name>
+        <qualifiedname>phonos::Voice::sub_glottal_flow</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="68" column="11" bodyfile="include/voice.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a64cbdca2688d0abf4f622159f022eafb" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::sup_glottal_flow</definition>
+        <argsstring></argsstring>
+        <name>sup_glottal_flow</name>
+        <qualifiedname>phonos::Voice::sup_glottal_flow</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="68" column="28" bodyfile="include/voice.h" bodystart="68" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a72d015c0046c3f49a9077ee8e0df1fd6" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classphonos_1_1_webster_f_d_t_d" kindref="compound">WebsterFDTD</ref>&lt; ftype &gt; &gt;</type>
+        <definition>std::shared_ptr&lt;WebsterFDTD&lt;ftype&gt; &gt; phonos::Voice&lt; vf_pair, ftype &gt;::resonator_</definition>
+        <argsstring></argsstring>
+        <name>resonator_</name>
+        <qualifiedname>phonos::Voice::resonator_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="69" column="21" bodyfile="include/voice.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1ae442e6226b354e05225e3930efc5d587" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::sr_</definition>
+        <argsstring></argsstring>
+        <name>sr_</name>
+        <qualifiedname>phonos::Voice::sr_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="72" column="11" bodyfile="include/voice.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_voice_1a7cf6025588217760e416dac9c6b9a2f4" prot="private" static="no" mutable="no">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::dt_</definition>
+        <argsstring></argsstring>
+        <name>dt_</name>
+        <qualifiedname>phonos::Voice::dt_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="72" column="15" bodyfile="include/voice.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classphonos_1_1_voice_1ada480119cd4951bef4f3fb3d8ce744a6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Voice&lt; vf_pair, ftype &gt;::ComputeNonlinearDissipationCoefficient</definition>
+        <argsstring>()</argsstring>
+        <name>ComputeNonlinearDissipationCoefficient</name>
+        <qualifiedname>phonos::Voice::ComputeNonlinearDissipationCoefficient</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="75" column="10" bodyfile="src/voice.cpp" bodystart="56" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_voice_1a5bd5b0370f24899a854aa0a779428dac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Voice&lt; vf_pair, ftype &gt;::ComputeSavVector</definition>
+        <argsstring>()</argsstring>
+        <name>ComputeSavVector</name>
+        <qualifiedname>phonos::Voice::ComputeSavVector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="76" column="10" bodyfile="src/voice.cpp" bodystart="63" bodyend="82"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classphonos_1_1_voice_1a21d4d4ea4b0349de50b5c9b012dc365e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>phonos::Voice&lt; vf_pair, ftype &gt;::Voice</definition>
+        <argsstring>(ftype samplerate, bool yielding_walls=false)</argsstring>
+        <name>Voice</name>
+        <qualifiedname>phonos::Voice::Voice</qualifiedname>
+        <param>
+          <type>ftype</type>
+          <declname>samplerate</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>yielding_walls</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="79" column="5" bodyfile="src/voice.cpp" bodystart="6" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_voice_1ada5a95178bac52b2a01086b51eea5dc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Voice&lt; vf_pair, ftype &gt;::DspSetup</definition>
+        <argsstring>(ftype sampleRate, Articulation *art=nullptr)</argsstring>
+        <name>DspSetup</name>
+        <qualifiedname>phonos::Voice::DspSetup</qualifiedname>
+        <param>
+          <type>ftype</type>
+          <declname>sampleRate</declname>
+        </param>
+        <param>
+          <type><ref refid="classphonos_1_1_articulation" kindref="compound">Articulation</ref> *</type>
+          <declname>art</declname>
+          <defval>nullptr</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="80" column="10" bodyfile="src/voice.cpp" bodystart="33" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_voice_1a4b6d8538c07498849f9abca9b62711a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Voice&lt; vf_pair, ftype &gt;::Process</definition>
+        <argsstring>(ftype Pin, ftype Q_chirp=0)</argsstring>
+        <name>Process</name>
+        <qualifiedname>phonos::Voice::Process</qualifiedname>
+        <param>
+          <type>ftype</type>
+          <declname>Pin</declname>
+        </param>
+        <param>
+          <type>ftype</type>
+          <declname>Q_chirp</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="82" column="10" bodyfile="src/voice.cpp" bodystart="85" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_voice_1ac808766de1c9c2b471bd78979b573a6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Eigen::Vector&lt; ftype, vf_pair::get_N()&gt;</type>
+        <definition>Eigen::Vector&lt; ftype, vf_pair::get_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::ReadFoldsDisplacement</definition>
+        <argsstring>()</argsstring>
+        <name>ReadFoldsDisplacement</name>
+        <qualifiedname>phonos::Voice::ReadFoldsDisplacement</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="85" column="26" bodyfile="include/voice.h" bodystart="85" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_voice_1a5dc17977597a39567a86a7bd316d5952" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Eigen::Vector&lt; ftype, vf_pair::get_half_N()&gt;</type>
+        <definition>Eigen::Vector&lt; ftype, vf_pair::get_half_N()&gt; phonos::Voice&lt; vf_pair, ftype &gt;::ReadEffectiveOpenings</definition>
+        <argsstring>()</argsstring>
+        <name>ReadEffectiveOpenings</name>
+        <qualifiedname>phonos::Voice::ReadEffectiveOpenings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="91" column="26" bodyfile="include/voice.h" bodystart="91" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_voice_1ad4125d8c0ce518367486130fe8950944" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::ReadRadiatedPressure</definition>
+        <argsstring>()</argsstring>
+        <name>ReadRadiatedPressure</name>
+        <qualifiedname>phonos::Voice::ReadRadiatedPressure</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="97" column="18" bodyfile="include/voice.h" bodystart="97" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_voice_1a4a3dbacc4a903cfff05c45d7aef83278" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::ReadEpsilonSav</definition>
+        <argsstring>()</argsstring>
+        <name>ReadEpsilonSav</name>
+        <qualifiedname>phonos::Voice::ReadEpsilonSav</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="99" column="18" bodyfile="include/voice.h" bodystart="99" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_voice_1aff436231c3eb1584e40a843a70486f37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::ReadSupGlottalFlow</definition>
+        <argsstring>()</argsstring>
+        <name>ReadSupGlottalFlow</name>
+        <qualifiedname>phonos::Voice::ReadSupGlottalFlow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="102" column="18" bodyfile="include/voice.h" bodystart="102" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_voice_1a956b709f4f675f1655309897205b4947" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::ReadMeanGlottalFlow</definition>
+        <argsstring>()</argsstring>
+        <name>ReadMeanGlottalFlow</name>
+        <qualifiedname>phonos::Voice::ReadMeanGlottalFlow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="103" column="18" bodyfile="include/voice.h" bodystart="103" bodyend="103"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_voice_1a9cbb102eda461a88566dd6baa2abb298" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::ReadPressureDrop</definition>
+        <argsstring>()</argsstring>
+        <name>ReadPressureDrop</name>
+        <qualifiedname>phonos::Voice::ReadPressureDrop</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="104" column="18" bodyfile="include/voice.h" bodystart="104" bodyend="104"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_voice_1a7aa11b65587283eb364699201f333103" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classphonos_1_1_webster_f_d_t_d" kindref="compound">WebsterFDTD</ref>&lt; ftype &gt; &gt;</type>
+        <definition>std::shared_ptr&lt; WebsterFDTD&lt; ftype &gt; &gt; phonos::Voice&lt; vf_pair, ftype &gt;::get_resonator</definition>
+        <argsstring>()</argsstring>
+        <name>get_resonator</name>
+        <qualifiedname>phonos::Voice::get_resonator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="106" column="21" bodyfile="include/voice.h" bodystart="106" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_voice_1abf31b5fe05439ac4c75d5c05b19aca60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; vf_pair &gt;</type>
+        <definition>std::shared_ptr&lt; vf_pair &gt; phonos::Voice&lt; vf_pair, ftype &gt;::get_vocal_folds</definition>
+        <argsstring>()</argsstring>
+        <name>get_vocal_folds</name>
+        <qualifiedname>phonos::Voice::get_vocal_folds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="107" column="21" bodyfile="include/voice.h" bodystart="107" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_voice_1aa1a625fac55b4057f61faa0bd3acd434" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void phonos::Voice&lt; vf_pair, ftype &gt;::set_lambda_sav</definition>
+        <argsstring>(const ftype &amp;lambda_sav)</argsstring>
+        <name>set_lambda_sav</name>
+        <qualifiedname>phonos::Voice::set_lambda_sav</qualifiedname>
+        <param>
+          <type>const ftype &amp;</type>
+          <declname>lambda_sav</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="109" column="10" bodyfile="include/voice.h" bodystart="109" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="classphonos_1_1_voice_1a3344db1db4029dff2dd24ace29d5e1cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>ftype</type>
+        <definition>ftype phonos::Voice&lt; vf_pair, ftype &gt;::get_lambda_sav</definition>
+        <argsstring>()</argsstring>
+        <name>get_lambda_sav</name>
+        <qualifiedname>phonos::Voice::get_lambda_sav</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/voice.h" line="110" column="18" bodyfile="include/voice.h" bodystart="110" bodyend="110"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="include/voice.h" line="22" column="1" bodyfile="include/voice.h" bodystart="22" bodyend="111"/>
+    <listofallmembers>
+      <member refid="classphonos_1_1_voice_1aebfb371d16fc740421a21e2ad9a508cf" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>A0_inv_</name></member>
+      <member refid="classphonos_1_1_voice_1ad27d42ba1d0215fb1d1dc02ddccd5cda" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>a_resonator_</name></member>
+      <member refid="classphonos_1_1_voice_1a262774e6640c15723fcff64710f5cd34" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>b_resonator_</name></member>
+      <member refid="classphonos_1_1_voice_1a0df1d6272027ed9150c77eea16f10799" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>C0_feedback_</name></member>
+      <member refid="classphonos_1_1_voice_1aa04a0203ad804f7e820da0d2a5deb81c" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>C1_feedback_</name></member>
+      <member refid="classphonos_1_1_voice_1a838d29514bdd15a0b657a2a4eaf5a038" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>compute_powers_</name></member>
+      <member refid="classphonos_1_1_voice_1ada480119cd4951bef4f3fb3d8ce744a6" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>ComputeNonlinearDissipationCoefficient</name></member>
+      <member refid="classphonos_1_1_voice_1a5bd5b0370f24899a854aa0a779428dac" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>ComputeSavVector</name></member>
+      <member refid="classphonos_1_1_voice_1a45a0f3b8791cc242cba2b6d78cec2f2a" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>control_term_</name></member>
+      <member refid="classphonos_1_1_voice_1a2a0f3c2f0faebd045e8a68904854620d" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>dissipated_power_</name></member>
+      <member refid="classphonos_1_1_voice_1a3543c5c367a635b19c6bb6748a42a9f1" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>dissipated_power_flow_</name></member>
+      <member refid="classphonos_1_1_voice_1abe165a040edb576900596441899c9b4f" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>dissipated_power_folds_</name></member>
+      <member refid="classphonos_1_1_voice_1ada5a95178bac52b2a01086b51eea5dc3" prot="public" virt="non-virtual"><scope>phonos::Voice</scope><name>DspSetup</name></member>
+      <member refid="classphonos_1_1_voice_1a7cf6025588217760e416dac9c6b9a2f4" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>dt_</name></member>
+      <member refid="classphonos_1_1_voice_1a87dc78f64027db07fef387c7f44a36ec" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>effective_surfaces_Psub_</name></member>
+      <member refid="classphonos_1_1_voice_1a76d6d86fd7760ce53ebba7ce5cc8a502" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>effective_surfaces_Psup_</name></member>
+      <member refid="classphonos_1_1_voice_1a6a14a10a4da7137ee424f84b5006e9fc" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>Enl_</name></member>
+      <member refid="classphonos_1_1_voice_1a1bee09f41b335deb4f6c1eead8236785" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>epsilon_sav_</name></member>
+      <member refid="classphonos_1_1_voice_1ae2f89e5b150b9badbf2bca58f95584e6" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>external_power_</name></member>
+      <member refid="classphonos_1_1_voice_1a8b09ba756884a5f1587b8f96bf65ba21" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>external_power_sub_</name></member>
+      <member refid="classphonos_1_1_voice_1a4d89f9decc51ab2de249367acf413ab0" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>external_power_sup_</name></member>
+      <member refid="classphonos_1_1_voice_1ac227d30a31b3045feb39cebd3509a679" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>Fnl_</name></member>
+      <member refid="classphonos_1_1_voice_1a3bc93ce82fb6a027477dec440243ff3b" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>g_sav_</name></member>
+      <member refid="classphonos_1_1_voice_1a3344db1db4029dff2dd24ace29d5e1cb" prot="public" virt="non-virtual"><scope>phonos::Voice</scope><name>get_lambda_sav</name></member>
+      <member refid="classphonos_1_1_voice_1a7aa11b65587283eb364699201f333103" prot="public" virt="non-virtual"><scope>phonos::Voice</scope><name>get_resonator</name></member>
+      <member refid="classphonos_1_1_voice_1abf31b5fe05439ac4c75d5c05b19aca60" prot="public" virt="non-virtual"><scope>phonos::Voice</scope><name>get_vocal_folds</name></member>
+      <member refid="classphonos_1_1_voice_1a3d7df885f69fe625200acf5407363830" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>idx_next_</name></member>
+      <member refid="classphonos_1_1_voice_1a2e8f713b6b48f71cbdc960a01a030428" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>idx_now_</name></member>
+      <member refid="classphonos_1_1_voice_1afe5e34aef52402eb68a466b15c2779d0" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>kinetic_energy_</name></member>
+      <member refid="classphonos_1_1_voice_1ad83248a7b2afb87d3979a446c693e043" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>KOp_result_</name></member>
+      <member refid="classphonos_1_1_voice_1a5cd1ba20cee97aa5c996507592d24d0d" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>lambda_sav_</name></member>
+      <member refid="classphonos_1_1_voice_1af2f5005c1a1e9ed4f230c0a4107eb3ac" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>mean_flow_</name></member>
+      <member refid="classphonos_1_1_voice_1a0486395966b455d780541f8909df7e9f" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>Minv_p_</name></member>
+      <member refid="classphonos_1_1_voice_1acc11276801a7cb11955d4b4c23835c37" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>p_</name></member>
+      <member refid="classphonos_1_1_voice_1a7def5c06df28c7cfde5d5264c4ddcba5" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>pmid_</name></member>
+      <member refid="classphonos_1_1_voice_1a9052494232d6736c3a282aafed1e4b23" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>potential_energy_</name></member>
+      <member refid="classphonos_1_1_voice_1a4b6d8538c07498849f9abca9b62711a1" prot="public" virt="non-virtual"><scope>phonos::Voice</scope><name>Process</name></member>
+      <member refid="classphonos_1_1_voice_1a07016e4ab80eb3f33152a09fe94a65ad" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>Psub_</name></member>
+      <member refid="classphonos_1_1_voice_1ad6f7f10b326bd5ffdf2c3ad6703960fb" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>Psub_centered_</name></member>
+      <member refid="classphonos_1_1_voice_1af5df8a4741a333bf561223bd679f4ffb" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>Psup_</name></member>
+      <member refid="classphonos_1_1_voice_1a702e25312233280ade1d54ca43923d3e" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>q_</name></member>
+      <member refid="classphonos_1_1_voice_1a613a4a1ea5699d39231c49cc5d2be984" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>qmid_</name></member>
+      <member refid="classphonos_1_1_voice_1ac627b037333d10e1c010705053ad23dd" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>r_</name></member>
+      <member refid="classphonos_1_1_voice_1a5dc17977597a39567a86a7bd316d5952" prot="public" virt="non-virtual"><scope>phonos::Voice</scope><name>ReadEffectiveOpenings</name></member>
+      <member refid="classphonos_1_1_voice_1a4a3dbacc4a903cfff05c45d7aef83278" prot="public" virt="non-virtual"><scope>phonos::Voice</scope><name>ReadEpsilonSav</name></member>
+      <member refid="classphonos_1_1_voice_1ac808766de1c9c2b471bd78979b573a6e" prot="public" virt="non-virtual"><scope>phonos::Voice</scope><name>ReadFoldsDisplacement</name></member>
+      <member refid="classphonos_1_1_voice_1a956b709f4f675f1655309897205b4947" prot="public" virt="non-virtual"><scope>phonos::Voice</scope><name>ReadMeanGlottalFlow</name></member>
+      <member refid="classphonos_1_1_voice_1a9cbb102eda461a88566dd6baa2abb298" prot="public" virt="non-virtual"><scope>phonos::Voice</scope><name>ReadPressureDrop</name></member>
+      <member refid="classphonos_1_1_voice_1ad4125d8c0ce518367486130fe8950944" prot="public" virt="non-virtual"><scope>phonos::Voice</scope><name>ReadRadiatedPressure</name></member>
+      <member refid="classphonos_1_1_voice_1aff436231c3eb1584e40a843a70486f37" prot="public" virt="non-virtual"><scope>phonos::Voice</scope><name>ReadSupGlottalFlow</name></member>
+      <member refid="classphonos_1_1_voice_1a72d015c0046c3f49a9077ee8e0df1fd6" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>resonator_</name></member>
+      <member refid="classphonos_1_1_voice_1a32520cd626986607b3cee0b337949f64" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>rhs_</name></member>
+      <member refid="classphonos_1_1_voice_1a381531f6936dc46f8c19f18655cc3f97" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>Rk_</name></member>
+      <member refid="classphonos_1_1_voice_1a9a620d4e556698c5307af8480c933bb5" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>ROp_result_</name></member>
+      <member refid="classphonos_1_1_voice_1aa1a625fac55b4057f61faa0bd3acd434" prot="public" virt="non-virtual"><scope>phonos::Voice</scope><name>set_lambda_sav</name></member>
+      <member refid="classphonos_1_1_voice_1ae442e6226b354e05225e3930efc5d587" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>sr_</name></member>
+      <member refid="classphonos_1_1_voice_1af8e239b22a1f138d8607d1dabc859deb" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>stored_power_</name></member>
+      <member refid="classphonos_1_1_voice_1a1f239a2a43be2570899f75fb4aeb17ce" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>stored_power_kinetic_</name></member>
+      <member refid="classphonos_1_1_voice_1ae8337ea6f44a64e9cc15cdbf18a084fb" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>stored_power_potential_</name></member>
+      <member refid="classphonos_1_1_voice_1a750192543d9599f55745b00d17f97323" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>sub_glottal_flow</name></member>
+      <member refid="classphonos_1_1_voice_1a64cbdca2688d0abf4f622159f022eafb" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>sup_glottal_flow</name></member>
+      <member refid="classphonos_1_1_voice_1a2139b029d6e2b21c9a20804cefdf4e3c" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>u_woodburry_</name></member>
+      <member refid="classphonos_1_1_voice_1a092108fed6d6c546c374030bcc2004e3" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>v_woodburry_</name></member>
+      <member refid="classphonos_1_1_voice_1a8d8245fbe2c40618ad1f107862083e3e" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>vfs_</name></member>
+      <member refid="classphonos_1_1_voice_1a21d4d4ea4b0349de50b5c9b012dc365e" prot="public" virt="non-virtual"><scope>phonos::Voice</scope><name>Voice</name></member>
+      <member refid="classphonos_1_1_voice_1a3432ddc23cbc2e11453149c588bcf2af" prot="private" virt="non-virtual"><scope>phonos::Voice</scope><name>woodburry_inv_</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
