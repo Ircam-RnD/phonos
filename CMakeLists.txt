@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.30)
-project(tarte
+project(phonos
     VERSION 1.0.0
     DESCRIPTION "Physical audio synthesis engine"
     LANGUAGES CXX)
@@ -17,12 +17,12 @@ string(COMPARE EQUAL "${CMAKE_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}" is_top_
 add_definitions(-DCMAKE_EXPORT_COMPILE_COMMANDS=ON)
 
 # TARTE_SHARED_LIBS option (undefined by default) can be used to force shared/static build
-option(TARTE_BUILD_TESTS "Build tarte tests" OFF)
-option(TARTE_BUILD_EXAMPLES "Build tarte examples" ON)
-option(TARTE_INSTALL "Generate target for installing tarte" ${is_top_level})
+option(TARTE_BUILD_TESTS "Build phonos tests" OFF)
+option(TARTE_BUILD_EXAMPLES "Build phonos examples" ON)
+option(TARTE_INSTALL "Generate target for installing phonos" ${is_top_level})
 option(TARTE_USE_HDF5 "Enable HDF5 support" ON)
-set_if_undefined(TARTE_INSTALL_CMAKEDIR "${CMAKE_INSTALL_LIBDIR}/cmake/tarte" CACHE STRING
-    "Install path for tarte package-related CMake files")
+set_if_undefined(TARTE_INSTALL_CMAKEDIR "${CMAKE_INSTALL_LIBDIR}/cmake/phonos" CACHE STRING
+    "Install path for phonos package-related CMake files")
 
 if(DEFINED TARTE_SHARED_LIBS)
     set(BUILD_SHARED_LIBS ${TARTE_SHARED_LIBS})
@@ -36,18 +36,18 @@ endif()
 set_if_undefined(CMAKE_CXX_VISIBILITY_PRESET hidden)
 set_if_undefined(CMAKE_VISIBILITY_INLINES_HIDDEN ON)
 
-add_library(tarte) # initialized below
-add_library(tarte::tarte ALIAS tarte)
+add_library(phonos) # initialized below
+add_library(phonos::phonos ALIAS phonos)
 
 #----------------------------------------------------------------------------------------------------------------------
-# tarte dependencies
+# phonos dependencies
 #----------------------------------------------------------------------------------------------------------------------
-target_compile_features(tarte PUBLIC cxx_std_23)
+target_compile_features(phonos PUBLIC cxx_std_23)
 # Search for dependencies here
 find_package(Eigen3 5.0 REQUIRED NO_MODULE)
 
 #----------------------------------------------------------------------------------------------------------------------
-# tarte sources
+# phonos sources
 #----------------------------------------------------------------------------------------------------------------------
 
 include(GenerateExportHeader)
@@ -57,7 +57,7 @@ if(NOT BUILD_SHARED_LIBS)
     set(export_file_name "export_static.h")
 endif()
 
-generate_export_header(tarte EXPORT_FILE_NAME include/${export_file_name})
+generate_export_header(phonos EXPORT_FILE_NAME include/${export_file_name})
 
 file(GLOB_RECURSE sources
     "${CMAKE_CURRENT_SOURCE_DIR}/include/*.h"
@@ -67,67 +67,67 @@ file(GLOB_RECURSE sources
 source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" FILES ${sources})
 
 #----------------------------------------------------------------------------------------------------------------------
-# tarte target
+# phonos target
 #----------------------------------------------------------------------------------------------------------------------
 
 include(CMakePackageConfigHelpers)
 
-target_sources(tarte PRIVATE ${sources})
-target_compile_definitions(tarte PUBLIC "$<$<NOT:$<BOOL:${BUILD_SHARED_LIBS}>>:TARTE_STATIC_DEFINE>")
+target_sources(phonos PRIVATE ${sources})
+target_compile_definitions(phonos PUBLIC "$<$<NOT:$<BOOL:${BUILD_SHARED_LIBS}>>:TARTE_STATIC_DEFINE>")
 
-target_include_directories(tarte
+target_include_directories(phonos
     PUBLIC
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
         "$<BUILD_INTERFACE:${CMAKE_CURRENT_BINARY_DIR}/include>")
 
-set_target_properties(tarte PROPERTIES
+set_target_properties(phonos PROPERTIES
     SOVERSION ${PROJECT_VERSION_MAJOR}
     VERSION ${PROJECT_VERSION})
 
-target_link_libraries(tarte PUBLIC 
+target_link_libraries(phonos PUBLIC 
     Eigen3::Eigen)
 
 if(TARTE_USE_HDF5)
     find_package(HDF5 REQUIRED COMPONENTS C CXX)
-    target_link_libraries(tarte PUBLIC ${HDF5_LIBRARIES})
-    target_compile_definitions(tarte PUBLIC TARTE_HDF5_ENABLED)
+    target_link_libraries(phonos PUBLIC ${HDF5_LIBRARIES})
+    target_compile_definitions(phonos PUBLIC TARTE_HDF5_ENABLED)
 endif()
 
 if(TARTE_INSTALL AND NOT CMAKE_SKIP_INSTALL_RULES)
-    configure_package_config_file(cmake/tarte-config.cmake.in tarte-config.cmake
+    configure_package_config_file(cmake/phonos-config.cmake.in phonos-config.cmake
         INSTALL_DESTINATION "${TARTE_INSTALL_CMAKEDIR}")
 
-    write_basic_package_version_file(tarte-config-version.cmake
+    write_basic_package_version_file(phonos-config-version.cmake
         COMPATIBILITY SameMajorVersion)
 
-    install(TARGETS tarte EXPORT tarte_export
-        RUNTIME COMPONENT tarte
-        LIBRARY COMPONENT tarte NAMELINK_COMPONENT tarte-dev
-        ARCHIVE COMPONENT tarte-dev
+    install(TARGETS phonos EXPORT tarte_export
+        RUNTIME COMPONENT phonos
+        LIBRARY COMPONENT phonos NAMELINK_COMPONENT phonos-dev
+        ARCHIVE COMPONENT phonos-dev
         INCLUDES DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}")
     install(DIRECTORY include/
         TYPE INCLUDE
-        COMPONENT tarte-dev)
-    install(FILES "${CMAKE_CURRENT_BINARY_DIR}/include/tarte/${export_file_name}"
-        COMPONENT tarte-dev
-        DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/tarte")
+        COMPONENT phonos-dev)
+    install(FILES "${CMAKE_CURRENT_BINARY_DIR}/include/phonos/${export_file_name}"
+        COMPONENT phonos-dev
+        DESTINATION "${CMAKE_INSTALL_INCLUDEDIR}/phonos")
 
-    set(targets_file "tarte-shared-targets.cmake")
+    set(targets_file "phonos-shared-targets.cmake")
 
     if(NOT BUILD_SHARED_LIBS)
-        set(targets_file "tarte-static-targets.cmake")
+        set(targets_file "phonos-static-targets.cmake")
     endif()
 
     install(EXPORT tarte_export
-        COMPONENT tarte-dev
+        COMPONENT phonos-dev
         FILE "${targets_file}"
         DESTINATION "${TARTE_INSTALL_CMAKEDIR}"
-        NAMESPACE tarte::)
+        NAMESPACE phonos::)
 
     install(FILES
-        "${CMAKE_CURRENT_BINARY_DIR}/tarte-config.cmake"
-        "${CMAKE_CURRENT_BINARY_DIR}/tarte-config-version.cmake"
-        COMPONENT tarte-dev
+        "${CMAKE_CURRENT_BINARY_DIR}/phonos-config.cmake"
+        "${CMAKE_CURRENT_BINARY_DIR}/phonos-config-version.cmake"
+        COMPONENT phonos-dev
         DESTINATION "${TARTE_INSTALL_CMAKEDIR}")
 
     if(MSVC)
@@ -135,16 +135,16 @@ if(TARTE_INSTALL AND NOT CMAKE_SKIP_INSTALL_RULES)
         set(pdb_file_destination "")
 
         if(BUILD_SHARED_LIBS)
-            set(pdb_file "$<TARGET_PDB_FILE:tarte>")
+            set(pdb_file "$<TARGET_PDB_FILE:phonos>")
             set(pdb_file_destination "${CMAKE_INSTALL_BINDIR}")
         else()
             # TARGET_PDB_FILE does not work for pdb file generated for static library build, determining it manually
-            set(pdb_file "$<TARGET_FILE_DIR:tarte>/$<TARGET_FILE_PREFIX:tarte>$<TARGET_FILE_BASE_NAME:tarte>.pdb")
+            set(pdb_file "$<TARGET_FILE_DIR:phonos>/$<TARGET_FILE_PREFIX:phonos>$<TARGET_FILE_BASE_NAME:phonos>.pdb")
             set(pdb_file_destination "${CMAKE_INSTALL_LIBDIR}")
         endif()
 
         install(FILES "${pdb_file}"
-            COMPONENT tarte-dev
+            COMPONENT phonos-dev
             CONFIGURATIONS Debug RelWithDebInfo
             DESTINATION "${pdb_file_destination}"
             OPTIONAL)

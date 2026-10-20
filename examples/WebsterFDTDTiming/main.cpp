@@ -14,7 +14,7 @@ int main(int, char*[])
     float samplerate = 44100;
     float duration = 50;
     std::size_t num_sample = static_cast<int>(samplerate * duration);
-    tarte::WebsterFDTD<float, 300> resonator(samplerate, 1.0f);
+    phonos::WebsterFDTD<float, 300> resonator(samplerate, 1.0f);
     resonator.set_yielding_walls(false);
     resonator.SetConstantSection(1e-4);
     resonator.set_l0(1.0);

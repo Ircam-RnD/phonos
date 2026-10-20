@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <cmath>
 
-namespace tarte {
+namespace phonos {
 
 enum BiquadMode { kLowPass, kHighPass, kBandPass, kNotch, kPeak, kLowShelf, kHighShelf };
 
@@ -165,4 +165,4 @@ public:
     }
 };
 
-} // namespace tarte
+} // namespace phonos

@@ -13,7 +13,7 @@
 #include <tuple>
 #include <vector>
 
-namespace tarte {
+namespace phonos {
 
 template<typename ftype>
 class SingleReed {
@@ -153,4 +153,4 @@ public:
     std::shared_ptr<WebsterFDTD<ftype, 300>> get_resonator() { return resonator_; }
 };
 
-} // namespace tarte
+} // namespace phonos

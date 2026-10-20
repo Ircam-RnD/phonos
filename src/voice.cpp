@@ -1,7 +1,7 @@
 #include "voice.h"
 
 #include <iostream>
-namespace tarte {
+namespace phonos {
 template<VFPairModel vf_pair, typename ftype>
 Voice<vf_pair, ftype>::Voice(ftype samplerate, bool yielding_walls)
 {
@@ -222,4 +222,4 @@ void Voice<vf_pair, ftype>::Process(ftype Pin, ftype Q_chirp)
 template class Voice<BodyCoverPair<float>, float>;
 template class Voice<BodyCoverPair<double>, double>;
 
-} // namespace tarte
+} // namespace phonos

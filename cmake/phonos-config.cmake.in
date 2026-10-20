@@ -1,8 +1,8 @@
-# CMake package config file for tarte library.
+# CMake package config file for phonos library.
 #
 # The following target is imported:
 #
-#   tarte::tarte
+#   phonos::phonos
 #
 # Type of target to import (static or shared) is determined by the following algorithm:
 #
@@ -20,16 +20,16 @@
 @PACKAGE_INIT@
 
 macro(import_targets type)
-    if(NOT EXISTS "${CMAKE_CURRENT_LIST_DIR}/tarte-${type}-targets.cmake")
-        set(${CMAKE_FIND_PACKAGE_NAME}_NOT_FOUND_MESSAGE "tarte ${type} libraries were requested but not found")
+    if(NOT EXISTS "${CMAKE_CURRENT_LIST_DIR}/phonos-${type}-targets.cmake")
+        set(${CMAKE_FIND_PACKAGE_NAME}_NOT_FOUND_MESSAGE "phonos ${type} libraries were requested but not found")
         set(${CMAKE_FIND_PACKAGE_NAME}_FOUND OFF)
         return()
     endif()
 
-    include("${CMAKE_CURRENT_LIST_DIR}/tarte-${type}-targets.cmake")
+    include("${CMAKE_CURRENT_LIST_DIR}/phonos-${type}-targets.cmake")
 endmacro()
 
-if(NOT TARGET tarte::tarte)
+if(NOT TARGET phonos::phonos)
     set(type "")
 
     if(DEFINED TARTE_SHARED_LIBS)
@@ -38,15 +38,15 @@ if(NOT TARGET tarte::tarte)
         else()
             set(type "static")
         endif()
-    elseif(BUILD_SHARED_LIBS AND EXISTS "${CMAKE_CURRENT_LIST_DIR}/tarte-shared-targets.cmake")
+    elseif(BUILD_SHARED_LIBS AND EXISTS "${CMAKE_CURRENT_LIST_DIR}/phonos-shared-targets.cmake")
         set(type "shared")
-    elseif(EXISTS "${CMAKE_CURRENT_LIST_DIR}/tarte-static-targets.cmake")
+    elseif(EXISTS "${CMAKE_CURRENT_LIST_DIR}/phonos-static-targets.cmake")
         set(type "static")
     else()
         set(type "shared")
     endif()
 
     import_targets(${type})
-    check_required_components(tarte)
-    message("-- Found ${type} tarte (version ${${CMAKE_FIND_PACKAGE_NAME}_VERSION})")
+    check_required_components(phonos)
+    message("-- Found ${type} phonos (version ${${CMAKE_FIND_PACKAGE_NAME}_VERSION})")
 endif()

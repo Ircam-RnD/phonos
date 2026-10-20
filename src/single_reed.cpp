@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace tarte {
+namespace phonos {
 
 template<typename ftype>
 SingleReed<ftype>::SingleReed(float samplerate)
@@ -195,4 +195,4 @@ void SingleReed<ftype>::Process(float Pin)
 template class SingleReed<float>;
 template class SingleReed<double>;
 
-} // namespace tarte
+} // namespace phonos

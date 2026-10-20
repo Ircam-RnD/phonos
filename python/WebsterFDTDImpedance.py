@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Change the build directory here if needed
 runner = WebsterFDTDReadWrite(
-    "../build/examples/WebsterFDTDReadWrite/tarte-websterFDTDReadWrite")
+    "../build/examples/WebsterFDTDReadWrite/phonos-websterFDTDReadWrite")
 
 # Simulation setting
 

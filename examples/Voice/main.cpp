@@ -18,9 +18,9 @@ int main(int, char*[])
     float duration = 2.0;
     float subglottal_pressure = 800;
     std::size_t num_sample = static_cast<int>(samplerate * duration);
-    tarte::Voice<tarte::BodyCoverPair<double>, double> proc(samplerate, true);
-    tarte::Articulation art;
-    art.SetFromVowel(tarte::vowels::a);
+    phonos::Voice<phonos::BodyCoverPair<double>, double> proc(samplerate, true);
+    phonos::Articulation art;
+    art.SetFromVowel(phonos::vowels::a);
     proc.get_resonator()->set_l0(17e-2);
     proc.get_resonator()->set_time_varying_geometry(true);
     proc.get_resonator()->set_N_update_geometry(10);
@@ -33,7 +33,7 @@ int main(int, char*[])
     // proc.set_eta_stiffness(0);
     // proc.set_noise_ratio(0.3);
 
-    // tarte::VFPair<tarte::BodyCoverVF<double>, double> vf_pair;
+    // phonos::VFPair<phonos::BodyCoverVF<double>, double> vf_pair;
 
     std::vector<float> samples;
     samples.resize(num_sample);
@@ -51,8 +51,8 @@ int main(int, char*[])
     std::cout << "Varying geometry, yielding walls : "
               << std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count() / duration
               << " milliseconds of computation per second of output\n";
-    tarte::normalize_vector(samples);
+    phonos::normalize_vector(samples);
     // Write an example wav file
-    tarte::WriteWav(path, samples, samplerate);
+    phonos::WriteWav(path, samples, samplerate);
     return 0;
 }

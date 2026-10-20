@@ -9,7 +9,7 @@
 
 #include <cmath>
 
-namespace tarte {
+namespace phonos {
 
 enum FoldIdentifier { kRight, kLeft, kBoth };
 
@@ -463,4 +463,4 @@ public:
     inline Gender get_gender() { return left_vf_->get_gender(); }
 };
 
-} // namespace tarte
+} // namespace phonos

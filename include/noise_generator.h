@@ -5,7 +5,7 @@
 #include <cstdint>
 #include <random>
 
-namespace tarte {
+namespace phonos {
 
 enum NoiseColor { White, Pink };
 
@@ -57,4 +57,4 @@ public:
     }
 };
 
-} // namespace tarte
+} // namespace phonos

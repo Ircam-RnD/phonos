@@ -49,7 +49,7 @@ plugins:
       bib_file: "docs/refs.bib"
   - mkdoxy:
       projects:
-        tarte:
+        phonos:
           src-dirs: src/ include/       # path to your C++ sources
           full-doc: true
           doxy-cfg:
@@ -64,8 +64,8 @@ nav:
   - Theory: theory
   - Examples: examples
   - API reference:
-    - Classes: "tarte/annotated.md"
-    - Files: "tarte/files.md"
+    - Classes: "phonos/annotated.md"
+    - Files: "phonos/files.md"
   # - Theory:
   #   - Overview:
   #     - theory/Overview/00-musical-instruments.md
@@ -78,5 +78,5 @@ nav:
   #     - theory/Physical-components/03-larynx.md
   # - Examples: examples/basic-usage.md
   # - API reference:
-  #     - Classes: "tarte/annotated.md"
-  #     - Files: "tarte/files.md"
+  #     - Classes: "phonos/annotated.md"
+  #     - Files: "phonos/files.md"

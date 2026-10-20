@@ -4,5 +4,5 @@
 
 TEST(DuffingTest, Instanciates)
 {
-    tarte::Duffing<float> model(44100);
+    phonos::Duffing<float> model(44100);
 }

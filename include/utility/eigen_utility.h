@@ -2,7 +2,7 @@
 
 #include <Eigen/Dense>
 
-namespace tarte {
+namespace phonos {
 
 template<typename Derived, typename ftype>
 auto ClipEigen(Eigen::Ref<const Eigen::ArrayX<Derived>> array, const ftype& min, const ftype& max)
@@ -30,4 +30,4 @@ auto SafeSetEigen(Eigen::ArrayBase<Derived1>& array, const Eigen::ArrayBase<Deri
     array.head(minDim) = array2.head(minDim);
 }
 
-} // namespace tarte
+} // namespace phonos

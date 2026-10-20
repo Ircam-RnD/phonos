@@ -1,7 +1,7 @@
 #pragma once
 #include <vector>
 
-namespace tarte {
+namespace phonos {
 template<typename T>
 void normalize_vector(std::vector<T>& vec)
 {
@@ -21,4 +21,4 @@ int sgn(T val)
 {
     return (T(0) < val) - (val < T(0));
 }
-} // namespace tarte
+} // namespace phonos

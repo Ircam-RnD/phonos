@@ -12,9 +12,9 @@ int main(int, char*[])
     float samplerate = 44100;
     float duration = 1;
     std::size_t num_sample = static_cast<int>(samplerate * duration);
-    tarte::WebsterFDTD<double> resonator(samplerate, 1.0f);
-    tarte::Articulation art;
-    art.SetFromVowel(tarte::vowels::u);
+    phonos::WebsterFDTD<double> resonator(samplerate, 1.0f);
+    phonos::Articulation art;
+    art.SetFromVowel(phonos::vowels::u);
     resonator.set_yielding_walls(true);
     resonator.set_radiation(true);
     resonator.set_l0(17e-2);
@@ -46,6 +46,6 @@ int main(int, char*[])
     }
     std::cout << "Maximum relative error on power balance: " << max_power_error / max_power_exchanged << std::endl;
     // Write an example wav file
-    tarte::WriteWav(path, samples, samplerate);
+    phonos::WriteWav(path, samples, samplerate);
     return 0;
 }

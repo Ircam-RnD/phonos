@@ -4,7 +4,7 @@ hide:
 #   - toc
 ---
 
-# Welcome to tarte's documentation!
+# Welcome to phonos's documentation!
 
 ## Description
 

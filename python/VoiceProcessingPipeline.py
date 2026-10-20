@@ -25,7 +25,7 @@ class VoiceProcessingPipeline():
     def __init__(self):
         # ----------------- General settings --------------------- #
         self.output_dir = "./results_voice_processed_data"
-        self.cpp_runner_directory = "../build/examples/VoiceReadWrite/tarte-VoiceReadWrite"
+        self.cpp_runner_directory = "../build/examples/VoiceReadWrite/phonos-VoiceReadWrite"
         # If store_data is set to True, simulation data is deleted along the way, only analysis is kept
         self.store_data = False
         # If store_sounds is set to True, the radiated pressures are exported as wav files

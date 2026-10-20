@@ -6,7 +6,7 @@
 #include <Eigen/Dense>
 #include <algorithm>
 
-namespace tarte {
+namespace phonos {
 
 // Maximum number of discretization elements supported is kMaxN.
 // All arrays are pre-allocated to this size to avoid dynamic allocation
@@ -247,4 +247,4 @@ public:
     void initializeFilters(); //.Can be used to force geometry before begining a simulation with varying geometry
 };
 
-} // namespace tarte
+} // namespace phonos

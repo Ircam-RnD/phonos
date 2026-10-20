@@ -4,7 +4,7 @@
 #include <cmath>
 #include <string>
 
-namespace tarte::vowels {
+namespace phonos::vowels {
 // Data from 1D parametric vocal tract model: "Construction and Evaluation of a Parametric One-Dimensional Vocal Tract
 // Model" Stone, Birkholz, Marxen; in TASLP 2018
 
@@ -139,4 +139,4 @@ inline const Vowel schwa = {"/@/",
                             {406, 1626}};
 
 inline const std::array<Vowel, 16> vowels = {a, e, i, o, u, E, oe, y, a_short, E_short, I, O, U, oe_short, Y, schwa};
-} // namespace tarte::vowels
+} // namespace phonos::vowels

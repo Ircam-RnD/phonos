@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-namespace tarte {
+namespace phonos {
 
 void WriteWav(const std::string& path, const std::vector<float>& samples, int sampleRate)
 {
@@ -23,4 +23,4 @@ void WriteWav(const std::string& path, const std::vector<float>& samples, int sa
     ma_encoder_uninit(&encoder);
 }
 
-} // namespace tarte
+} // namespace phonos

@@ -96,7 +96,7 @@ class WebsterFDTDReadWrite:
 
 if __name__ == "__main__":
     runner = WebsterFDTDReadWrite(
-        "../build/examples/WebsterFDTDReadWrite/tarte-websterFDTDReadWrite")
+        "../build/examples/WebsterFDTDReadWrite/phonos-websterFDTDReadWrite")
     mute = False
 
     Amp = 1e-4

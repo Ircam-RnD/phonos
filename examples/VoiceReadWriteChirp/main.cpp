@@ -82,7 +82,7 @@ int main(int argc, char const* argv[])
     storage.readAttribute("storeEpsilonSav", store_epsilon_sav);
 
     // ------------- Model initialization --------------- //
-    tarte::Voice<tarte::BodyCoverPair<double>, double> proc(sr, true);
+    phonos::Voice<phonos::BodyCoverPair<double>, double> proc(sr, true);
     // Vocal tract parameters
     proc.get_resonator()->set_l0(l0);
     proc.get_resonator()->set_yielding_walls(yielding_walls);
@@ -100,7 +100,7 @@ int main(int argc, char const* argv[])
     // Set geometry
     int articulation_mode;
     storage.readAttribute("articulationMode", articulation_mode);
-    tarte::Articulation art;
+    phonos::Articulation art;
     float constant_section;
     Eigen::VectorXd discrete_geometry;
     switch (articulation_mode) {

@@ -1,6 +1,6 @@
 #include "duffing.h"
 
-namespace tarte {
+namespace phonos {
 
 template<typename T>
 Duffing<T>::Duffing(float sampleRate)
@@ -129,4 +129,4 @@ void Duffing<T>::set_decay_time(T decay_time)
 template class Duffing<double>;
 template class Duffing<float>;
 
-} // namespace tarte
+} // namespace phonos

@@ -13,7 +13,7 @@ int main(int, char*[])
     float samplerate = 44100;
     float duration = 1;
     std::size_t num_sample = static_cast<int>(samplerate * duration);
-    tarte::Duffing<float> duffing_oscillator(samplerate);
+    phonos::Duffing<float> duffing_oscillator(samplerate);
     duffing_oscillator.set_nonlinearity(1e6);
 
     std::vector<float> samples;
@@ -27,8 +27,8 @@ int main(int, char*[])
             duffing_oscillator.Process(0.0f);
         samples[i] = duffing_oscillator.ReadDisplacement();
     }
-    tarte::normalize_vector(samples);
+    phonos::normalize_vector(samples);
     // Write an example wav file
-    tarte::WriteWav(path, samples, samplerate);
+    phonos::WriteWav(path, samples, samplerate);
     return 0;
 }

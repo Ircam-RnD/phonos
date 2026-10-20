@@ -6,7 +6,7 @@
 
 #include <cmath>
 
-namespace tarte {
+namespace phonos {
 enum Gender { MALE, FEMALE };
 
 // Model from [1] "Voice simulation with a body‐cover model of the vocal folds", Story and Titze, 1995
@@ -208,4 +208,4 @@ public:
     Gender get_gender() { return gender_; }
 };
 
-} // namespace tarte
+} // namespace phonos

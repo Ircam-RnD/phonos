@@ -2,7 +2,7 @@
 
 #include <cmath>
 
-namespace tarte {
+namespace phonos {
 
 enum BowMode { kMatusiak, kVigue, kTerrien };
 
@@ -89,4 +89,4 @@ public:
         bow_mode_ = kVigue;
     }
 };
-} // namespace tarte
+} // namespace phonos

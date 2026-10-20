@@ -16,7 +16,7 @@
 #include <tuple>
 #include <vector>
 
-namespace tarte {
+namespace phonos {
 
 template<VFPairModel vf_pair, typename ftype>
 class Voice {
@@ -110,4 +110,4 @@ public:
     inline ftype get_lambda_sav() { return lambda_sav_; }
 };
 
-} // namespace tarte
+} // namespace phonos

@@ -3,7 +3,7 @@
 #include <Eigen/Dense>
 #include <tuple>
 
-namespace tarte {
+namespace phonos {
 
 // This file implements an empty class that satisfies the minimum requriements of a vocal fold pair class, as checked in
 // vf_pair_model.h
@@ -36,4 +36,4 @@ public:
     half_state_type ReadEffectiveOpenings() { return Eigen::Vector<ftype, half_N>::Zero(); };
 };
 
-} // namespace tarte
+} // namespace phonos

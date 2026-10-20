@@ -6,7 +6,7 @@
 #include "articulation.h"
 #include "websterFDTD.h" // adjust path as needed
 
-using namespace tarte;
+using namespace phonos;
 
 // ──────────────────────────────────────────────────────────────────────────────
 // Helpers
@@ -465,7 +465,7 @@ TEST(WebsterFDTD_Double, PowerBalance)
     Articulation art;
     // Arbitrary geometry
     wt.SetTargetGeometryFromArticulation(art);
-    art.SetFromVowel(tarte::vowels::u);
+    art.SetFromVowel(phonos::vowels::u);
     // Wall movement is not taken into account for now in the power balance computation
     wt.set_time_varying_geometry(false);
     wt.set_compute_powers(true);

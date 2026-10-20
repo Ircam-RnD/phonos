@@ -161,7 +161,7 @@ class VoiceReadWrite:
 
 if __name__ == "__main__":
     runner = VoiceReadWrite(
-        "../build/examples/VoiceReadWriteChirp/tarte-VoiceReadWriteChirp")
+        "../build/examples/VoiceReadWriteChirp/phonos-VoiceReadWriteChirp")
     mute = False
     runner.lambda_sav = 1000
 

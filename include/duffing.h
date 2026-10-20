@@ -7,7 +7,7 @@
 #include <export.h>
 
 // TODO : change integration to exact for the linear part
-namespace tarte {
+namespace phonos {
 
 template<typename T>
 class Duffing {
@@ -73,4 +73,4 @@ public:
     void set_lambda_ctrl(T lambda_ctrl) { lambda_ctrl_ = std::clamp(lambda_ctrl, T(0), T(10000)); };
 };
 
-} // namespace tarte
+} // namespace phonos

@@ -2,7 +2,7 @@
 
 #include <Eigen/Dense>
 
-namespace tarte {
+namespace phonos {
 
 template<typename derived, typename ftype>
 auto smoothRampMatrix(const Eigen::MatrixBase<derived>& x, ftype epsilon = 1)
@@ -44,4 +44,4 @@ auto softplusDerivativeMatrix(const Eigen::MatrixBase<derived>& x, ftype epsilon
         .select(Eigen::ArrayX<ftype>::Ones(x.rows(), x.cols()),
                 (x / epsilon).array().exp() / (1 + (x / epsilon).array().exp()));
 }
-} // namespace tarte
+} // namespace phonos

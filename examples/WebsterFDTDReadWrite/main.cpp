@@ -42,7 +42,7 @@ int main(int argc, char const* argv[])
     storage.readAttribute("storeSpatialDistributions", store_spatial_distributions);
 
     // Initialize model
-    tarte::WebsterFDTD<double, 300> proc(sr);
+    phonos::WebsterFDTD<double, 300> proc(sr);
     proc.set_l0(l0);
     proc.set_yielding_walls(yielding_walls);
     proc.set_radiation(radiation);
@@ -52,7 +52,7 @@ int main(int argc, char const* argv[])
     // Set geometry
     int articulation_mode;
     storage.readAttribute("articulationMode", articulation_mode);
-    tarte::Articulation art;
+    phonos::Articulation art;
     float constant_section;
     switch (articulation_mode) {
     case 0: // Constant section (straight tube)

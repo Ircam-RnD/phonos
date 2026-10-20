@@ -7,7 +7,7 @@
 #include <utility>
 #include <vector>
 
-namespace tarte {
+namespace phonos {
 
 class Articulation {
 public:
@@ -181,4 +181,4 @@ public:
 
     inline ReducedSet get_reduced_set() { return reduced_set_; }
 };
-} // namespace tarte
+} // namespace phonos

@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-namespace tarte {
+namespace phonos {
 
 template<typename ftype, int kMaxN>
 WebsterFDTD<ftype, kMaxN>::WebsterFDTD(ftype sampleRate, ftype length, Articulation* art)
@@ -635,4 +635,4 @@ template class WebsterFDTD<double>;
 template class WebsterFDTD<float, 300>;
 template class WebsterFDTD<double, 300>;
 
-} // namespace tarte
+} // namespace phonos
