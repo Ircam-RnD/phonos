@@ -16,16 +16,16 @@ string(COMPARE EQUAL "${CMAKE_SOURCE_DIR}" "${CMAKE_CURRENT_SOURCE_DIR}" is_top_
 # Export compile config
 add_definitions(-DCMAKE_EXPORT_COMPILE_COMMANDS=ON)
 
-# TARTE_SHARED_LIBS option (undefined by default) can be used to force shared/static build
-option(TARTE_BUILD_TESTS "Build phonos tests" OFF)
-option(TARTE_BUILD_EXAMPLES "Build phonos examples" ON)
-option(TARTE_INSTALL "Generate target for installing phonos" ${is_top_level})
-option(TARTE_USE_HDF5 "Enable HDF5 support" ON)
-set_if_undefined(TARTE_INSTALL_CMAKEDIR "${CMAKE_INSTALL_LIBDIR}/cmake/phonos" CACHE STRING
+# PHONOS_SHARED_LIBS option (undefined by default) can be used to force shared/static build
+option(PHONOS_BUILD_TESTS "Build phonos tests" OFF)
+option(PHONOS_BUILD_EXAMPLES "Build phonos examples" ON)
+option(PHONOS_INSTALL "Generate target for installing phonos" ${is_top_level})
+option(PHONOS_USE_HDF5 "Enable HDF5 support" ON)
+set_if_undefined(PHONOS_INSTALL_CMAKEDIR "${CMAKE_INSTALL_LIBDIR}/cmake/phonos" CACHE STRING
     "Install path for phonos package-related CMake files")
 
-if(DEFINED TARTE_SHARED_LIBS)
-    set(BUILD_SHARED_LIBS ${TARTE_SHARED_LIBS})
+if(DEFINED PHONOS_SHARED_LIBS)
+    set(BUILD_SHARED_LIBS ${PHONOS_SHARED_LIBS})
 endif()
 
 if(NOT DEFINED CMAKE_BUILD_TYPE AND NOT DEFINED CMAKE_CONFIGURATION_TYPES)
@@ -73,7 +73,7 @@ source_group(TREE "${CMAKE_CURRENT_SOURCE_DIR}" FILES ${sources})
 include(CMakePackageConfigHelpers)
 
 target_sources(phonos PRIVATE ${sources})
-target_compile_definitions(phonos PUBLIC "$<$<NOT:$<BOOL:${BUILD_SHARED_LIBS}>>:TARTE_STATIC_DEFINE>")
+target_compile_definitions(phonos PUBLIC "$<$<NOT:$<BOOL:${BUILD_SHARED_LIBS}>>:PHONOS_STATIC_DEFINE>")
 
 target_include_directories(phonos
     PUBLIC
@@ -87,20 +87,20 @@ set_target_properties(phonos PROPERTIES
 target_link_libraries(phonos PUBLIC 
     Eigen3::Eigen)
 
-if(TARTE_USE_HDF5)
+if(PHONOS_USE_HDF5)
     find_package(HDF5 REQUIRED COMPONENTS C CXX)
     target_link_libraries(phonos PUBLIC ${HDF5_LIBRARIES})
-    target_compile_definitions(phonos PUBLIC TARTE_HDF5_ENABLED)
+    target_compile_definitions(phonos PUBLIC PHONOS_HDF5_ENABLED)
 endif()
 
-if(TARTE_INSTALL AND NOT CMAKE_SKIP_INSTALL_RULES)
+if(PHONOS_INSTALL AND NOT CMAKE_SKIP_INSTALL_RULES)
     configure_package_config_file(cmake/phonos-config.cmake.in phonos-config.cmake
-        INSTALL_DESTINATION "${TARTE_INSTALL_CMAKEDIR}")
+        INSTALL_DESTINATION "${PHONOS_INSTALL_CMAKEDIR}")
 
     write_basic_package_version_file(phonos-config-version.cmake
         COMPATIBILITY SameMajorVersion)
 
-    install(TARGETS phonos EXPORT tarte_export
+    install(TARGETS phonos EXPORT PHONOS_export
         RUNTIME COMPONENT phonos
         LIBRARY COMPONENT phonos NAMELINK_COMPONENT phonos-dev
         ARCHIVE COMPONENT phonos-dev
@@ -118,17 +118,17 @@ if(TARTE_INSTALL AND NOT CMAKE_SKIP_INSTALL_RULES)
         set(targets_file "phonos-static-targets.cmake")
     endif()
 
-    install(EXPORT tarte_export
+    install(EXPORT PHONOS_export
         COMPONENT phonos-dev
         FILE "${targets_file}"
-        DESTINATION "${TARTE_INSTALL_CMAKEDIR}"
+        DESTINATION "${PHONOS_INSTALL_CMAKEDIR}"
         NAMESPACE phonos::)
 
     install(FILES
         "${CMAKE_CURRENT_BINARY_DIR}/phonos-config.cmake"
         "${CMAKE_CURRENT_BINARY_DIR}/phonos-config-version.cmake"
         COMPONENT phonos-dev
-        DESTINATION "${TARTE_INSTALL_CMAKEDIR}")
+        DESTINATION "${PHONOS_INSTALL_CMAKEDIR}")
 
     if(MSVC)
         set(pdb_file "")
@@ -155,12 +155,12 @@ endif()
 # other targets
 #----------------------------------------------------------------------------------------------------------------------
 
-if(TARTE_BUILD_TESTS)
+if(PHONOS_BUILD_TESTS)
     include(CTest)
     enable_testing()
     add_subdirectory(tests)
 endif()
 
-if(TARTE_BUILD_EXAMPLES)
+if(PHONOS_BUILD_EXAMPLES)
     add_subdirectory(examples)
 endif()
