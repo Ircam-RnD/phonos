@@ -60,7 +60,9 @@ plugins:
             EXCLUDE_PATTERNS: "*/external/* */deprecated/*"
 
 nav:
-  - Home: index.md
+  - Home: 
+      - Readme: index.md
+      - Getting started:  home/Getting-started.md
   - Theory: theory
   - Examples: examples
   - API reference:
