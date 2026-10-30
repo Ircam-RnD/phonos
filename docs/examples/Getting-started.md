@@ -27,9 +27,9 @@ If you wish to use result storage, you also need to have hdf5 installed on your 
 -   Linux: something like `apt install hdf5-tools` should work if you have apt as a package manager.
 -   Windows: no idea.
 
-I fyou don't want to use result storage, then you can still build the rest of the code without having to install hdf5 by setting the TARTE_USE_HDF5 flag to OFF in the root CMakeLists.txt:
+If you don't want to use result storage, then you can still build the rest of the code without having to install hdf5 by setting the PHONOS_USE_HDF5 flag to OFF in the root CMakeLists.txt:
 
-`option(TARTE_USE_HDF5 "Enable HDF5 support" OFF)`
+`option(PHONOS_USE_HDF5 "Enable HDF5 support" OFF)`
 
 ### Command line compilation
 
