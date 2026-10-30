@@ -10,7 +10,7 @@
 ```C++
 #pragma once
 
-#ifndef TARTE_STATIC_DEFINE
+#ifndef PHONOS_STATIC_DEFINE
 #    include <export_shared.h>
 #else
 #    include <export_static.h>

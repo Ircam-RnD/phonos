@@ -8,7 +8,7 @@
 
 
 ```C++
-#ifdef TARTE_HDF5_ENABLED
+#ifdef PHONOS_HDF5_ENABLED
 
 #    ifndef RESULTS_STORAGE_H
 #        define RESULTS_STORAGE_H

@@ -8,7 +8,7 @@
 
 
 ```C++
-#ifdef TARTE_HDF5_ENABLED
+#ifdef PHONOS_HDF5_ENABLED
 
 #    include "utility/ResultsStorage.h"
 #    include <filesystem>

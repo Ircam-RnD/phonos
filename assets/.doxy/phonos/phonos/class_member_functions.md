@@ -20,7 +20,6 @@
 ## c
 
 * **ComputeCoeffs** ([**phonos::Biquad**](classphonos_1_1_biquad.md))
-* **ComputeInter** ([**phonos::Biquad**](classphonos_1_1_biquad.md))
 * **ComputeFlow** ([**phonos::BodyCoverPair**](classphonos_1_1_body_cover_pair.md), [**phonos::VFPairExample**](classphonos_1_1_v_f_pair_example.md))
 * **ComputeParametersFromMuscularActivity** ([**phonos::BodyCoverVF**](classphonos_1_1_body_cover_v_f.md))
 * **ComputePhysicalParameters** ([**phonos::Duffing**](classphonos_1_1_duffing.md))

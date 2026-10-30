@@ -3,240 +3,6 @@
   <compounddef id="classphonos_1_1_biquad" kind="class" language="C++" prot="public">
     <compoundname>phonos::Biquad</compoundname>
     <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1a4aaf1a3eb0050e2d9ac6e5393544d17a" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double phonos::Biquad::x0_</definition>
-        <argsstring></argsstring>
-        <name>x0_</name>
-        <qualifiedname>phonos::Biquad::x0_</qualifiedname>
-        <initializer>{0}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="12" column="12" bodyfile="include/utility/biquad.h" bodystart="12" bodyend="12"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1ab3775317538891c48c8ff28314eac012" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double phonos::Biquad::x1_</definition>
-        <argsstring></argsstring>
-        <name>x1_</name>
-        <qualifiedname>phonos::Biquad::x1_</qualifiedname>
-        <initializer>{0}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="12" column="16" bodyfile="include/utility/biquad.h" bodystart="12" bodyend="12"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1af308b3f149abefd511330328e46f74cb" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double phonos::Biquad::x2_</definition>
-        <argsstring></argsstring>
-        <name>x2_</name>
-        <qualifiedname>phonos::Biquad::x2_</qualifiedname>
-        <initializer>{0}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="12" column="20" bodyfile="include/utility/biquad.h" bodystart="12" bodyend="12"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1a195faed86a76632ebfcaab144d28f462" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double phonos::Biquad::y0_</definition>
-        <argsstring></argsstring>
-        <name>y0_</name>
-        <qualifiedname>phonos::Biquad::y0_</qualifiedname>
-        <initializer>{0}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="12" column="24" bodyfile="include/utility/biquad.h" bodystart="12" bodyend="12"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1a987926b46fb21587c0be5b69af6610e3" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double phonos::Biquad::y1_</definition>
-        <argsstring></argsstring>
-        <name>y1_</name>
-        <qualifiedname>phonos::Biquad::y1_</qualifiedname>
-        <initializer>{0}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="12" column="28" bodyfile="include/utility/biquad.h" bodystart="12" bodyend="12"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1a19c2f8fd7a14715b699da41854b9c1ec" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double phonos::Biquad::y2_</definition>
-        <argsstring></argsstring>
-        <name>y2_</name>
-        <qualifiedname>phonos::Biquad::y2_</qualifiedname>
-        <initializer>{0}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="12" column="32" bodyfile="include/utility/biquad.h" bodystart="12" bodyend="12"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1a44c7947162f914dc0b699771c3c24560" prot="private" static="no" mutable="no">
-        <type>float</type>
-        <definition>float phonos::Biquad::sr_</definition>
-        <argsstring></argsstring>
-        <name>sr_</name>
-        <qualifiedname>phonos::Biquad::sr_</qualifiedname>
-        <initializer>{44100}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="13" column="11" bodyfile="include/utility/biquad.h" bodystart="13" bodyend="13"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1a340bd3318189baaca015602eecfffa9e" prot="private" static="no" mutable="no">
-        <type>float</type>
-        <definition>float phonos::Biquad::freq_</definition>
-        <argsstring></argsstring>
-        <name>freq_</name>
-        <qualifiedname>phonos::Biquad::freq_</qualifiedname>
-        <initializer>{100}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="15" column="11" bodyfile="include/utility/biquad.h" bodystart="15" bodyend="15"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1aabf62930d3e403a5fcfe0b7fd1c3c811" prot="private" static="no" mutable="no">
-        <type>float</type>
-        <definition>float phonos::Biquad::dB_gain_</definition>
-        <argsstring></argsstring>
-        <name>dB_gain_</name>
-        <qualifiedname>phonos::Biquad::dB_gain_</qualifiedname>
-        <initializer>{0}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="15" column="17" bodyfile="include/utility/biquad.h" bodystart="15" bodyend="15"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1a630897a2db9e6b6a41ab08cfe830405a" prot="private" static="no" mutable="no">
-        <type>float</type>
-        <definition>float phonos::Biquad::Q_</definition>
-        <argsstring></argsstring>
-        <name>Q_</name>
-        <qualifiedname>phonos::Biquad::Q_</qualifiedname>
-        <initializer>{0.7}</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="15" column="26" bodyfile="include/utility/biquad.h" bodystart="15" bodyend="15"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1a5085ee6f8ebcf6d02f2bd0cf32ec56f9" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double phonos::Biquad::A_</definition>
-        <argsstring></argsstring>
-        <name>A_</name>
-        <qualifiedname>phonos::Biquad::A_</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="17" column="12" bodyfile="include/utility/biquad.h" bodystart="17" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1a357d67f8fc482b13c4b69d8dc73c4bb4" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double phonos::Biquad::omega_</definition>
-        <argsstring></argsstring>
-        <name>omega_</name>
-        <qualifiedname>phonos::Biquad::omega_</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="17" column="15" bodyfile="include/utility/biquad.h" bodystart="17" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1a043e52be6b3c94fbcc6636fb7d4213a8" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double phonos::Biquad::sin_omega_</definition>
-        <argsstring></argsstring>
-        <name>sin_omega_</name>
-        <qualifiedname>phonos::Biquad::sin_omega_</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="17" column="22" bodyfile="include/utility/biquad.h" bodystart="17" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1a63330697255017aae8d351482bd3793c" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double phonos::Biquad::cos_omega_</definition>
-        <argsstring></argsstring>
-        <name>cos_omega_</name>
-        <qualifiedname>phonos::Biquad::cos_omega_</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="17" column="33" bodyfile="include/utility/biquad.h" bodystart="17" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1a1fdc473bc4356e03225985a14aebe7b7" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double phonos::Biquad::alpha_</definition>
-        <argsstring></argsstring>
-        <name>alpha_</name>
-        <qualifiedname>phonos::Biquad::alpha_</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="17" column="44" bodyfile="include/utility/biquad.h" bodystart="17" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="variable" id="classphonos_1_1_biquad_1a53137da81d7b8e8feeb06d781ea83b8b" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double phonos::Biquad::beta_</definition>
-        <argsstring></argsstring>
-        <name>beta_</name>
-        <qualifiedname>phonos::Biquad::beta_</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="include/utility/biquad.h" line="17" column="51" bodyfile="include/utility/biquad.h" bodystart="17" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="classphonos_1_1_biquad_1a4e9449dbdc22674673483bc06246f609" prot="private" static="no" mutable="no">
         <type>double</type>
         <definition>double phonos::Biquad::b0_</definition>
@@ -250,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="19" column="12" bodyfile="include/utility/biquad.h" bodystart="19" bodyend="19"/>
+        <location file="include/utility/biquad.h" line="13" column="12" bodyfile="include/utility/biquad.h" bodystart="13" bodyend="13"/>
       </memberdef>
       <memberdef kind="variable" id="classphonos_1_1_biquad_1aa1131db1f6680a095c10782b91115252" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -265,7 +31,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="19" column="16" bodyfile="include/utility/biquad.h" bodystart="19" bodyend="19"/>
+        <location file="include/utility/biquad.h" line="13" column="16" bodyfile="include/utility/biquad.h" bodystart="13" bodyend="13"/>
       </memberdef>
       <memberdef kind="variable" id="classphonos_1_1_biquad_1a3c065ad084c163b11b48e3be78ae95a1" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -280,7 +46,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="19" column="20" bodyfile="include/utility/biquad.h" bodystart="19" bodyend="19"/>
+        <location file="include/utility/biquad.h" line="13" column="20" bodyfile="include/utility/biquad.h" bodystart="13" bodyend="13"/>
       </memberdef>
       <memberdef kind="variable" id="classphonos_1_1_biquad_1a2ad7bcf393a94fc0e6da935f1b736c56" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -288,14 +54,14 @@
         <argsstring></argsstring>
         <name>a0_</name>
         <qualifiedname>phonos::Biquad::a0_</qualifiedname>
-        <initializer>{0}</initializer>
+        <initializer>{1}</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="19" column="24" bodyfile="include/utility/biquad.h" bodystart="19" bodyend="19"/>
+        <location file="include/utility/biquad.h" line="13" column="24" bodyfile="include/utility/biquad.h" bodystart="13" bodyend="13"/>
       </memberdef>
       <memberdef kind="variable" id="classphonos_1_1_biquad_1a3ee02f0a55e7837419a963f2d0610bb2" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -310,7 +76,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="19" column="28" bodyfile="include/utility/biquad.h" bodystart="19" bodyend="19"/>
+        <location file="include/utility/biquad.h" line="13" column="28" bodyfile="include/utility/biquad.h" bodystart="13" bodyend="13"/>
       </memberdef>
       <memberdef kind="variable" id="classphonos_1_1_biquad_1abf876c839c630f73e8f512ebf835ac04" prot="private" static="no" mutable="no">
         <type>double</type>
@@ -325,7 +91,157 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="19" column="32" bodyfile="include/utility/biquad.h" bodystart="19" bodyend="19"/>
+        <location file="include/utility/biquad.h" line="13" column="32" bodyfile="include/utility/biquad.h" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1a4aaf1a3eb0050e2d9ac6e5393544d17a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double phonos::Biquad::x0_</definition>
+        <argsstring></argsstring>
+        <name>x0_</name>
+        <qualifiedname>phonos::Biquad::x0_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="16" column="12" bodyfile="include/utility/biquad.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1ab3775317538891c48c8ff28314eac012" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double phonos::Biquad::x1_</definition>
+        <argsstring></argsstring>
+        <name>x1_</name>
+        <qualifiedname>phonos::Biquad::x1_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="16" column="16" bodyfile="include/utility/biquad.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1af308b3f149abefd511330328e46f74cb" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double phonos::Biquad::x2_</definition>
+        <argsstring></argsstring>
+        <name>x2_</name>
+        <qualifiedname>phonos::Biquad::x2_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="16" column="20" bodyfile="include/utility/biquad.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1a195faed86a76632ebfcaab144d28f462" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double phonos::Biquad::y0_</definition>
+        <argsstring></argsstring>
+        <name>y0_</name>
+        <qualifiedname>phonos::Biquad::y0_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="16" column="24" bodyfile="include/utility/biquad.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1a987926b46fb21587c0be5b69af6610e3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double phonos::Biquad::y1_</definition>
+        <argsstring></argsstring>
+        <name>y1_</name>
+        <qualifiedname>phonos::Biquad::y1_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="16" column="28" bodyfile="include/utility/biquad.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1a19c2f8fd7a14715b699da41854b9c1ec" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double phonos::Biquad::y2_</definition>
+        <argsstring></argsstring>
+        <name>y2_</name>
+        <qualifiedname>phonos::Biquad::y2_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="16" column="32" bodyfile="include/utility/biquad.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1a44c7947162f914dc0b699771c3c24560" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float phonos::Biquad::sr_</definition>
+        <argsstring></argsstring>
+        <name>sr_</name>
+        <qualifiedname>phonos::Biquad::sr_</qualifiedname>
+        <initializer>{44100}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="19" column="11" bodyfile="include/utility/biquad.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1a340bd3318189baaca015602eecfffa9e" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float phonos::Biquad::freq_</definition>
+        <argsstring></argsstring>
+        <name>freq_</name>
+        <qualifiedname>phonos::Biquad::freq_</qualifiedname>
+        <initializer>{100}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="20" column="11" bodyfile="include/utility/biquad.h" bodystart="20" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1aabf62930d3e403a5fcfe0b7fd1c3c811" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float phonos::Biquad::dB_gain_</definition>
+        <argsstring></argsstring>
+        <name>dB_gain_</name>
+        <qualifiedname>phonos::Biquad::dB_gain_</qualifiedname>
+        <initializer>{0}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="21" column="11" bodyfile="include/utility/biquad.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1a630897a2db9e6b6a41ab08cfe830405a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float phonos::Biquad::Q_</definition>
+        <argsstring></argsstring>
+        <name>Q_</name>
+        <qualifiedname>phonos::Biquad::Q_</qualifiedname>
+        <initializer>{0.7}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="22" column="11" bodyfile="include/utility/biquad.h" bodystart="22" bodyend="22"/>
       </memberdef>
       <memberdef kind="variable" id="classphonos_1_1_biquad_1a36a90c2392a2a35260029b5dfba23a77" prot="private" static="no" mutable="no">
         <type>BiquadMode</type>
@@ -340,24 +256,80 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="21" column="16" bodyfile="include/utility/biquad.h" bodystart="21" bodyend="21"/>
+        <location file="include/utility/biquad.h" line="23" column="16" bodyfile="include/utility/biquad.h" bodystart="23" bodyend="23"/>
       </memberdef>
-    </sectiondef>
-    <sectiondef kind="private-func">
-      <memberdef kind="function" id="classphonos_1_1_biquad_1a8953e02d7960cb6b1aea37e774b44968" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type>void</type>
-        <definition>void phonos::Biquad::ComputeInter</definition>
-        <argsstring>()</argsstring>
-        <name>ComputeInter</name>
-        <qualifiedname>phonos::Biquad::ComputeInter</qualifiedname>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1a5085ee6f8ebcf6d02f2bd0cf32ec56f9" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double phonos::Biquad::A_</definition>
+        <argsstring></argsstring>
+        <name>A_</name>
+        <qualifiedname>phonos::Biquad::A_</qualifiedname>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="23" column="10" bodyfile="include/utility/biquad.h" bodystart="23" bodyend="35"/>
+        <location file="include/utility/biquad.h" line="26" column="12" bodyfile="include/utility/biquad.h" bodystart="26" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1a357d67f8fc482b13c4b69d8dc73c4bb4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double phonos::Biquad::omega_</definition>
+        <argsstring></argsstring>
+        <name>omega_</name>
+        <qualifiedname>phonos::Biquad::omega_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="26" column="15" bodyfile="include/utility/biquad.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1a043e52be6b3c94fbcc6636fb7d4213a8" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double phonos::Biquad::sin_omega_</definition>
+        <argsstring></argsstring>
+        <name>sin_omega_</name>
+        <qualifiedname>phonos::Biquad::sin_omega_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="26" column="22" bodyfile="include/utility/biquad.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1a63330697255017aae8d351482bd3793c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double phonos::Biquad::cos_omega_</definition>
+        <argsstring></argsstring>
+        <name>cos_omega_</name>
+        <qualifiedname>phonos::Biquad::cos_omega_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="26" column="33" bodyfile="include/utility/biquad.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classphonos_1_1_biquad_1a1fdc473bc4356e03225985a14aebe7b7" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double phonos::Biquad::alpha_</definition>
+        <argsstring></argsstring>
+        <name>alpha_</name>
+        <qualifiedname>phonos::Biquad::alpha_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="include/utility/biquad.h" line="26" column="44" bodyfile="include/utility/biquad.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
       <memberdef kind="function" id="classphonos_1_1_biquad_1ad9a9d00b8250a0a96b4c37a86a748ee8" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void phonos::Biquad::ComputeCoeffs</definition>
@@ -370,7 +342,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="37" column="10" bodyfile="include/utility/biquad.h" bodystart="37" bodyend="97"/>
+        <location file="include/utility/biquad.h" line="28" column="10" bodyfile="include/utility/biquad.h" bodystart="28" bodyend="140"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -411,7 +383,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="100" column="5" bodyfile="include/utility/biquad.h" bodystart="100" bodyend="113"/>
+        <location file="include/utility/biquad.h" line="143" column="5" bodyfile="include/utility/biquad.h" bodystart="143" bodyend="154"/>
       </memberdef>
       <memberdef kind="function" id="classphonos_1_1_biquad_1a4a27b03158a2c6c126f06868c602dd65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -429,7 +401,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="115" column="10" bodyfile="include/utility/biquad.h" bodystart="115" bodyend="120"/>
+        <location file="include/utility/biquad.h" line="156" column="10" bodyfile="include/utility/biquad.h" bodystart="156" bodyend="160"/>
       </memberdef>
       <memberdef kind="function" id="classphonos_1_1_biquad_1a89843eb61d33996d166d2820e40424ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -447,7 +419,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="122" column="10" bodyfile="include/utility/biquad.h" bodystart="122" bodyend="127"/>
+        <location file="include/utility/biquad.h" line="162" column="10" bodyfile="include/utility/biquad.h" bodystart="162" bodyend="166"/>
       </memberdef>
       <memberdef kind="function" id="classphonos_1_1_biquad_1a58f7d5ba6b1a4b741fe9b49a06c1779d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -465,7 +437,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="129" column="10" bodyfile="include/utility/biquad.h" bodystart="129" bodyend="134"/>
+        <location file="include/utility/biquad.h" line="168" column="10" bodyfile="include/utility/biquad.h" bodystart="168" bodyend="172"/>
       </memberdef>
       <memberdef kind="function" id="classphonos_1_1_biquad_1a2c4950436d87295992c995ae60bdb04e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -483,7 +455,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="136" column="10" bodyfile="include/utility/biquad.h" bodystart="136" bodyend="141"/>
+        <location file="include/utility/biquad.h" line="174" column="10" bodyfile="include/utility/biquad.h" bodystart="174" bodyend="178"/>
       </memberdef>
       <memberdef kind="function" id="classphonos_1_1_biquad_1af23042f371f42fbed2531e1fe4478bc4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -501,7 +473,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="143" column="10" bodyfile="include/utility/biquad.h" bodystart="143" bodyend="152"/>
+        <location file="include/utility/biquad.h" line="180" column="10" bodyfile="include/utility/biquad.h" bodystart="180" bodyend="189"/>
       </memberdef>
       <memberdef kind="function" id="classphonos_1_1_biquad_1a759de3bff1a25bf686ad2b7cb25c6ba6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -519,14 +491,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="include/utility/biquad.h" line="154" column="12" bodyfile="include/utility/biquad.h" bodystart="154" bodyend="165"/>
+        <location file="include/utility/biquad.h" line="191" column="12" bodyfile="include/utility/biquad.h" bodystart="191" bodyend="203"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="include/utility/biquad.h" line="10" column="1" bodyfile="include/utility/biquad.h" bodystart="10" bodyend="166"/>
+    <location file="include/utility/biquad.h" line="10" column="1" bodyfile="include/utility/biquad.h" bodystart="10" bodyend="204"/>
     <listofallmembers>
       <member refid="classphonos_1_1_biquad_1a2ad7bcf393a94fc0e6da935f1b736c56" prot="private" virt="non-virtual"><scope>phonos::Biquad</scope><name>a0_</name></member>
       <member refid="classphonos_1_1_biquad_1a3ee02f0a55e7837419a963f2d0610bb2" prot="private" virt="non-virtual"><scope>phonos::Biquad</scope><name>a1_</name></member>
@@ -536,10 +508,8 @@
       <member refid="classphonos_1_1_biquad_1a4e9449dbdc22674673483bc06246f609" prot="private" virt="non-virtual"><scope>phonos::Biquad</scope><name>b0_</name></member>
       <member refid="classphonos_1_1_biquad_1aa1131db1f6680a095c10782b91115252" prot="private" virt="non-virtual"><scope>phonos::Biquad</scope><name>b1_</name></member>
       <member refid="classphonos_1_1_biquad_1a3c065ad084c163b11b48e3be78ae95a1" prot="private" virt="non-virtual"><scope>phonos::Biquad</scope><name>b2_</name></member>
-      <member refid="classphonos_1_1_biquad_1a53137da81d7b8e8feeb06d781ea83b8b" prot="private" virt="non-virtual"><scope>phonos::Biquad</scope><name>beta_</name></member>
       <member refid="classphonos_1_1_biquad_1ad434d9c544741222e03185ecb821dbf0" prot="public" virt="non-virtual"><scope>phonos::Biquad</scope><name>Biquad</name></member>
       <member refid="classphonos_1_1_biquad_1ad9a9d00b8250a0a96b4c37a86a748ee8" prot="private" virt="non-virtual"><scope>phonos::Biquad</scope><name>ComputeCoeffs</name></member>
-      <member refid="classphonos_1_1_biquad_1a8953e02d7960cb6b1aea37e774b44968" prot="private" virt="non-virtual"><scope>phonos::Biquad</scope><name>ComputeInter</name></member>
       <member refid="classphonos_1_1_biquad_1a63330697255017aae8d351482bd3793c" prot="private" virt="non-virtual"><scope>phonos::Biquad</scope><name>cos_omega_</name></member>
       <member refid="classphonos_1_1_biquad_1aabf62930d3e403a5fcfe0b7fd1c3c811" prot="private" virt="non-virtual"><scope>phonos::Biquad</scope><name>dB_gain_</name></member>
       <member refid="classphonos_1_1_biquad_1a340bd3318189baaca015602eecfffa9e" prot="private" virt="non-virtual"><scope>phonos::Biquad</scope><name>freq_</name></member>

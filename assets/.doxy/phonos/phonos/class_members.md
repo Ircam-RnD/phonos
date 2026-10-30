@@ -34,7 +34,6 @@
 * **b0\_** ([**phonos::Biquad**](classphonos_1_1_biquad.md))
 * **b1\_** ([**phonos::Biquad**](classphonos_1_1_biquad.md))
 * **b2\_** ([**phonos::Biquad**](classphonos_1_1_biquad.md))
-* **beta\_** ([**phonos::Biquad**](classphonos_1_1_biquad.md))
 * **BodyCoverPair** ([**phonos::BodyCoverPair**](classphonos_1_1_body_cover_pair.md))
 * **BodyCoverVF** ([**phonos::BodyCoverVF**](classphonos_1_1_body_cover_v_f.md))
 * **b\_ta\_** ([**phonos::BodyCoverVF**](classphonos_1_1_body_cover_v_f.md))
@@ -51,7 +50,6 @@
 ## c
 
 * **ComputeCoeffs** ([**phonos::Biquad**](classphonos_1_1_biquad.md))
-* **ComputeInter** ([**phonos::Biquad**](classphonos_1_1_biquad.md))
 * **cos\_omega\_** ([**phonos::Biquad**](classphonos_1_1_biquad.md))
 * **ComputeFlow** ([**phonos::BodyCoverPair**](classphonos_1_1_body_cover_pair.md), [**phonos::VFPairExample**](classphonos_1_1_v_f_pair_example.md))
 * **c0\_** ([**phonos::BodyCoverPair**](classphonos_1_1_body_cover_pair.md), [**phonos::WebsterFDTD**](classphonos_1_1_webster_f_d_t_d.md))

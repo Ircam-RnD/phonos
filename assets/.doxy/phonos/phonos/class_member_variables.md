@@ -30,7 +30,6 @@
 * **b0\_** ([**phonos::Biquad**](classphonos_1_1_biquad.md))
 * **b1\_** ([**phonos::Biquad**](classphonos_1_1_biquad.md))
 * **b2\_** ([**phonos::Biquad**](classphonos_1_1_biquad.md))
-* **beta\_** ([**phonos::Biquad**](classphonos_1_1_biquad.md))
 * **b\_ta\_** ([**phonos::BodyCoverVF**](classphonos_1_1_body_cover_v_f.md))
 * **base\_length\_** ([**phonos::BodyCoverVF**](classphonos_1_1_body_cover_v_f.md))
 * **base\_thickness\_** ([**phonos::BodyCoverVF**](classphonos_1_1_body_cover_v_f.md))

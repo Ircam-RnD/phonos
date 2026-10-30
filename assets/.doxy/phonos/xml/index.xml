@@ -13,6 +13,12 @@
     <member refid="classphonos_1_1_articulation_1afd56056b979f3dcc44179ce6fc65e843" kind="function"><name>get_reduced_set</name></member>
   </compound>
   <compound refid="classphonos_1_1_biquad" kind="class"><name>phonos::Biquad</name>
+    <member refid="classphonos_1_1_biquad_1a4e9449dbdc22674673483bc06246f609" kind="variable"><name>b0_</name></member>
+    <member refid="classphonos_1_1_biquad_1aa1131db1f6680a095c10782b91115252" kind="variable"><name>b1_</name></member>
+    <member refid="classphonos_1_1_biquad_1a3c065ad084c163b11b48e3be78ae95a1" kind="variable"><name>b2_</name></member>
+    <member refid="classphonos_1_1_biquad_1a2ad7bcf393a94fc0e6da935f1b736c56" kind="variable"><name>a0_</name></member>
+    <member refid="classphonos_1_1_biquad_1a3ee02f0a55e7837419a963f2d0610bb2" kind="variable"><name>a1_</name></member>
+    <member refid="classphonos_1_1_biquad_1abf876c839c630f73e8f512ebf835ac04" kind="variable"><name>a2_</name></member>
     <member refid="classphonos_1_1_biquad_1a4aaf1a3eb0050e2d9ac6e5393544d17a" kind="variable"><name>x0_</name></member>
     <member refid="classphonos_1_1_biquad_1ab3775317538891c48c8ff28314eac012" kind="variable"><name>x1_</name></member>
     <member refid="classphonos_1_1_biquad_1af308b3f149abefd511330328e46f74cb" kind="variable"><name>x2_</name></member>
@@ -23,20 +29,12 @@
     <member refid="classphonos_1_1_biquad_1a340bd3318189baaca015602eecfffa9e" kind="variable"><name>freq_</name></member>
     <member refid="classphonos_1_1_biquad_1aabf62930d3e403a5fcfe0b7fd1c3c811" kind="variable"><name>dB_gain_</name></member>
     <member refid="classphonos_1_1_biquad_1a630897a2db9e6b6a41ab08cfe830405a" kind="variable"><name>Q_</name></member>
+    <member refid="classphonos_1_1_biquad_1a36a90c2392a2a35260029b5dfba23a77" kind="variable"><name>mode</name></member>
     <member refid="classphonos_1_1_biquad_1a5085ee6f8ebcf6d02f2bd0cf32ec56f9" kind="variable"><name>A_</name></member>
     <member refid="classphonos_1_1_biquad_1a357d67f8fc482b13c4b69d8dc73c4bb4" kind="variable"><name>omega_</name></member>
     <member refid="classphonos_1_1_biquad_1a043e52be6b3c94fbcc6636fb7d4213a8" kind="variable"><name>sin_omega_</name></member>
     <member refid="classphonos_1_1_biquad_1a63330697255017aae8d351482bd3793c" kind="variable"><name>cos_omega_</name></member>
     <member refid="classphonos_1_1_biquad_1a1fdc473bc4356e03225985a14aebe7b7" kind="variable"><name>alpha_</name></member>
-    <member refid="classphonos_1_1_biquad_1a53137da81d7b8e8feeb06d781ea83b8b" kind="variable"><name>beta_</name></member>
-    <member refid="classphonos_1_1_biquad_1a4e9449dbdc22674673483bc06246f609" kind="variable"><name>b0_</name></member>
-    <member refid="classphonos_1_1_biquad_1aa1131db1f6680a095c10782b91115252" kind="variable"><name>b1_</name></member>
-    <member refid="classphonos_1_1_biquad_1a3c065ad084c163b11b48e3be78ae95a1" kind="variable"><name>b2_</name></member>
-    <member refid="classphonos_1_1_biquad_1a2ad7bcf393a94fc0e6da935f1b736c56" kind="variable"><name>a0_</name></member>
-    <member refid="classphonos_1_1_biquad_1a3ee02f0a55e7837419a963f2d0610bb2" kind="variable"><name>a1_</name></member>
-    <member refid="classphonos_1_1_biquad_1abf876c839c630f73e8f512ebf835ac04" kind="variable"><name>a2_</name></member>
-    <member refid="classphonos_1_1_biquad_1a36a90c2392a2a35260029b5dfba23a77" kind="variable"><name>mode</name></member>
-    <member refid="classphonos_1_1_biquad_1a8953e02d7960cb6b1aea37e774b44968" kind="function"><name>ComputeInter</name></member>
     <member refid="classphonos_1_1_biquad_1ad9a9d00b8250a0a96b4c37a86a748ee8" kind="function"><name>ComputeCoeffs</name></member>
     <member refid="classphonos_1_1_biquad_1ad434d9c544741222e03185ecb821dbf0" kind="function"><name>Biquad</name></member>
     <member refid="classphonos_1_1_biquad_1a4a27b03158a2c6c126f06868c602dd65" kind="function"><name>set_freq</name></member>
