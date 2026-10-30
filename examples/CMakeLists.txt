@@ -16,6 +16,7 @@ set(examples
     webster_fdtd_example
     webster_fdtd_timing_example
     benchmark_biquad_example
+    webster_fdtd_comparison
 )
 
 # Add read/write examples only if HDF5 is enabled
