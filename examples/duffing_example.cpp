@@ -1,6 +1,6 @@
 #define MINIAUDIO_IMPLEMENTATION
-#include "utility/audiowrite.h"
-#include "utility/maths.h"
+#include <utility/audiowrite.h>
+#include <utility/maths.h>
 
 #include <duffing.h>
 #include <iostream>

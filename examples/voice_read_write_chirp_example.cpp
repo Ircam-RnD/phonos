@@ -1,4 +1,3 @@
-
 #include <chrono>
 #include <iostream>
 #include <string>
@@ -31,6 +30,10 @@ int main(int argc, char const* argv[])
     // Input pressure vector
     Eigen::VectorXd Psub = Eigen::VectorXd::Zero(N_samples);
     storage.readVector("Psub", Psub);
+
+    // Chirp flow
+    Eigen::VectorXd Q_chirp = Eigen::VectorXd::Zero(N_samples);
+    storage.readVector("Qchirp", Q_chirp);
 
     // General flag
     bool compute_powers;
@@ -98,6 +101,7 @@ int main(int argc, char const* argv[])
     storage.readAttribute("articulationMode", articulation_mode);
     phonos::Articulation art;
     float constant_section;
+    Eigen::VectorXd discrete_geometry;
     switch (articulation_mode) {
     case 0: // Constant section (straight tube)
         storage.readAttribute("constantSection", constant_section);
@@ -112,6 +116,12 @@ int main(int argc, char const* argv[])
         art.SetFromFormants(F1, F2);
         proc.get_resonator()->SetTargetGeometryFromArticulation(art);
         std::cout << "Using geometry computed from target F1 = " << F1 << ", F2 = " << F2 << " Hz." << std::endl;
+        break;
+
+    case 2: // Set from discrete geometry
+        storage.readVector("discreteGeometry", discrete_geometry);
+        proc.get_resonator()->SetTargetGeometry(discrete_geometry.data(), discrete_geometry.size());
+        std::cout << "Using geometry computed from target Discrete Geometry" << std::endl;
         break;
 
     default: // Constant section (straight tube)
@@ -180,7 +190,7 @@ int main(int argc, char const* argv[])
 
     // Run a simulation with the default parameters and a dirac impulse as input
     for (int i = 0; i < N_samples; i++) {
-        proc.Process(Psub[i]);
+        proc.Process(Psub[i], Q_chirp[i]);
         radiated_pressure(i) = proc.ReadRadiatedPressure();
         input_pressure(i) = proc.get_resonator()->ReadInputPressure();
 

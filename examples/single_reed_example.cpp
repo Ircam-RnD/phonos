@@ -1,8 +1,8 @@
 #define MINIAUDIO_IMPLEMENTATION
-#include "articulation.h"
-#include "single_reed.h"
-#include "utility/audiowrite.h"
-#include "utility/maths.h"
+#include <articulation.h>
+#include <single_reed.h>
+#include <utility/audiowrite.h>
+#include <utility/maths.h>
 
 #include <iostream>
 #include <string>
