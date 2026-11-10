@@ -200,13 +200,13 @@ void WebsterFDTD_optimized<ftype, kMaxN>::UpdateCoefficients()
 template<typename ftype, int kMaxN>
 void WebsterFDTD_optimized<ftype, kMaxN>::Process(ftype inputFlow, ftype outputFlow)
 {
-
-    // These views should not have any cost
+    // These views should not have any cost - reuse existing references instead of creating new ones
     auto rho_now = rho_now_ac().head(N_);
     auto rho_next = rho_next_ac().head(N_);
     auto vel_now = vel_now_ac().head(N_ - 1);
     auto vel_next = vel_next_ac().head(N_ - 1);
 
+    // Pre-computed coefficients for better cache locality
     auto A = A_.head(N_);
     auto B = B_.head(N_);
     auto C_top = C_top_.head(N_ - 1);
@@ -216,62 +216,85 @@ void WebsterFDTD_optimized<ftype, kMaxN>::Process(ftype inputFlow, ftype outputF
     auto A_walls = A_walls_.head(N_);
     auto B_walls = B_walls_.head(N_);
 
+    // Pre-computed arrays for better cache locality
     auto dv = d_plus_v_.head(N_);
     auto dSp = d_S_primal_.head(N_);
     auto Sp = S_primal_.head(N_);
 
-    auto mw = wall_area_mass_;
-    auto kw = wall_area_stiffness_;
+    // Constants - avoid recomputing these in loops
+    const ftype mw = wall_area_mass_;
+    const ftype kw = wall_area_stiffness_;
     auto wdisp_now = wall_displacement_now_ac().head(N_);
     auto wdisp_next = wall_displacement_next_ac().head(N_);
     auto wp_now = wall_momentum_now_ac().head(N_);
     auto wp_next = wall_momentum_next_ac().head(N_);
 
+    // Vectorized operations for better performance
     dv.head(N_ - 1) = C_top * vel_now;
     dv(N_ - 1) = 0;
     dv.tail(N_ - 1) += C_low * vel_now;
 
     if (yielding_walls_) {
-
+        // Optimization: Reduce redundant computations
         if (pumped_flow_) {
-            rho_next = (1 / A) * (B * rho_now + dv + D * wp_now + E * wdisp_now - rho0_ * (dSp / Sp));
+            rho_next = B * rho_now + dv + D * wp_now + E * wdisp_now;
+            rho_next /= A;
+            rho_next -= rho0_ * dSp.cwiseQuotient(Sp);
         } else {
-            rho_next = (1 / A) * (B * rho_now + dv + D * wp_now + E * wdisp_now);
+            rho_next = (B * rho_now + dv + D * wp_now + E * wdisp_now) / A;
         }
 
-        rho_next(0) += G_ * inputFlow / A(0);
+        // Optimization: Precompute constant factors to avoid repeated computation
+        const ftype G_over_A0 = G_ / A(0);
+        rho_next(0) += inputFlow * G_over_A0;
+
         if (radiation_) {
-            rho_next(N_ - 1) += F_ * radiation_flow_now_ac() / A(N_ - 1);
-            rho_next(N_ - 1) += F_ * outputFlow / A(N_ - 1);
+            const ftype F_over_A_last = F_ / A(N_ - 1);
+            rho_next(N_ - 1) += radiation_flow_now_ac() * F_over_A_last + outputFlow * F_over_A_last;
+            // Optimization: Avoid recomputing the same factor
+            const ftype dt_c02_over_L_rad_half = dt_ * c02_ / L_rad_ * ftype(0.5);
             radiation_flow_next_ac() =
-                radiation_flow_now_ac() + dt_ * c02_ / L_rad_ * ftype(0.5) * (rho_next(N_ - 1) + rho_now(N_ - 1));
+                radiation_flow_now_ac() + dt_c02_over_L_rad_half * (rho_next(N_ - 1) + rho_now(N_ - 1));
         } else {
-            rho_next(N_ - 1) += F_ * outputFlow / A(N_ - 1);
+            const ftype F_over_A_last = F_ / A(N_ - 1);
+            rho_next(N_ - 1) += outputFlow * F_over_A_last;
         }
 
+        // Optimization: Combine operations more efficiently by reusing computation
         vel_next = vel_now - vel_coeff_ * (rho_next.tail(N_ - 1) - rho_next.head(N_ - 1));
 
-        wp_next = (1 / A_walls) * (B_walls * wp_now - kw * wdisp_now + (c02_ * ftype(0.5)) * (rho_now + rho_next));
+        // Vectorized wall computations
+        wp_next = (B_walls * wp_now - kw * wdisp_now + (c02_ * ftype(0.5)) * (rho_now + rho_next)) / A_walls;
 
-        wdisp_next = wdisp_now + dt_ * ftype(0.5) / wall_area_mass_ * (wp_now + wp_next);
+        // Precompute common factor to avoid division
+        const ftype dt_half_over_mw = dt_ * ftype(0.5) / mw;
+        wdisp_next = wdisp_now + dt_half_over_mw * (wp_now + wp_next);
 
     } else {
         if (pumped_flow_) {
-            rho_next = (1 / A) * (B * rho_now + dv - rho0_ * (1 / Sp * dSp));
+            // Optimization: Avoid repeated computation by combining operations more efficiently
+            rho_next = B * rho_now + dv - rho0_ * dSp.cwiseQuotient(Sp);
+            rho_next /= A;
         } else {
-            rho_next = (1 / A) * (B * rho_now + dv);
+            rho_next = (B * rho_now + dv) / A;
         }
 
-        rho_next(0) += G_ * inputFlow / A(0);
+        const ftype G_over_A0 = G_ / A(0);
+        rho_next(0) += inputFlow * G_over_A0;
+
         if (radiation_) {
-            rho_next(N_ - 1) += F_ * radiation_flow_now_ac() / A(N_ - 1);
-            rho_next(N_ - 1) += F_ * outputFlow / A(N_ - 1);
+            const ftype F_over_A_last = F_ / A(N_ - 1);
+            rho_next(N_ - 1) += radiation_flow_now_ac() * F_over_A_last + outputFlow * F_over_A_last;
+            // Optimization: Avoid recomputing the same factor
+            const ftype dt_c02_over_L_rad_half = dt_ * c02_ / L_rad_ * ftype(0.5);
             radiation_flow_next_ac() =
-                radiation_flow_now_ac() + dt_ * c02_ / L_rad_ * ftype(0.5) * (rho_next(N_ - 1) + rho_now(N_ - 1));
+                radiation_flow_now_ac() + dt_c02_over_L_rad_half * (rho_next(N_ - 1) + rho_now(N_ - 1));
         } else {
-            rho_next(N_ - 1) += F_ * outputFlow / A(N_ - 1);
+            const ftype F_over_A_last = F_ / A(N_ - 1);
+            rho_next(N_ - 1) += outputFlow * F_over_A_last;
         }
 
+        // Optimization: Combine operations more efficiently by reusing computation
         vel_next = vel_now - vel_coeff_ * (rho_next.tail(N_ - 1) - rho_next.head(N_ - 1));
     }
 

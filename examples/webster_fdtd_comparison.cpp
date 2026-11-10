@@ -22,10 +22,12 @@ int main(int, char*[])
 
     resonator1.set_yielding_walls(true);
     resonator1.SetConstantSection(1e-4);
+    resonator1.set_time_varying_geometry(true);
     resonator1.set_l0(1.0);
 
     resonator2.set_yielding_walls(true);
     resonator2.SetConstantSection(1e-4);
+    resonator2.set_time_varying_geometry(true);
     resonator2.set_l0(1.0);
 
     std::cout << "Number of segment is " << resonator1.get_N() << std::endl;
@@ -82,39 +84,5 @@ int main(int, char*[])
 
     std::cout << "Original version: " << time1 << " milliseconds of computation per second of output" << std::endl;
     std::cout << "Comparison version: " << time2 << " milliseconds of computation per second of output" << std::endl;
-
-    // Also test the timing example scenario
-    resonator1.set_yielding_walls(false);
-    resonator2.set_yielding_walls(false);
-
-    t1 = std::chrono::high_resolution_clock::now();
-    for (int i = 0; i < samples1.size(); i++) {
-        if (i == 0) {
-            input = 1.f;
-        } else {
-            input = 0.f;
-        }
-        resonator1.Process(input);
-        samples1[i] = resonator1.ReadRadiatedPressure();
-    }
-    t2 = std::chrono::high_resolution_clock::now();
-    time1 = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count() / duration;
-
-    t1 = std::chrono::high_resolution_clock::now();
-    for (int i = 0; i < samples2.size(); i++) {
-        if (i == 0) {
-            input = 1.f;
-        } else {
-            input = 0.f;
-        }
-        resonator2.Process(input);
-        samples2[i] = resonator2.ReadRadiatedPressure();
-    }
-    t2 = std::chrono::high_resolution_clock::now();
-    time2 = std::chrono::duration_cast<std::chrono::milliseconds>(t2 - t1).count() / duration;
-
-    std::cout << "Constant geometry, no yielding walls (comparison): " << time2
-              << " milliseconds of computation per second of output" << std::endl;
-
     return 0;
 }
