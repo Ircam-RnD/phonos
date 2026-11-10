@@ -40,6 +40,8 @@ private:
     ftype c0_{340}, rho0_{1.2}, l0_{17e-2}, c02_{0.0};                               // Acoustic
     ftype lip_radius{0}, L_rad_{0}, R_rad_{0};                                       // Radiation
     ftype wall_area_mass_{15}, wall_area_stiffness_{3e6}, wall_area_damping_{16000}; // Yielding walls, per-area values
+    ftype A_ref_diss_{1e-4}, boundary_loss_freq{2250}, R_boundary_losses_{0.0065}, alpha_boundary_losses_{1},
+        R_viscous_losses_{0.03}, alpha_viscous_losses_{2.6}; // Losses
 
     // General settings
     bool radiation_{true};
@@ -91,6 +93,7 @@ private:
     ftype F_, G_;
     ftype vel_coeff_;
     ArrayNm1 C_top_, C_low_;
+    ArrayNm1 R_vec_;
 
     // Private helpers
     void SetNStability();

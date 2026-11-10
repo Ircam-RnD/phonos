@@ -194,6 +194,11 @@ void WebsterFDTD<ftype, kMaxN>::UpdateCoefficients()
 
     F_ = -rho0_ / (h_ * Sp(N_ - 1)); // lips boundary
     G_ = rho0_ / (h_ * Sp(0));       // Glottis boudary
+
+    // Dissipations
+    R_vec_.head(N_ - 1) = h_ / rho0_ * Sd *
+                          (R_boundary_losses_ * (A_ref_diss_ / Sd) * sqrt(boundary_loss_freq))
+                              .max(R_viscous_losses_ * (A_ref_diss_ / Sd).pow(alpha_viscous_losses_));
 }
 
 template<typename ftype, int kMaxN>
@@ -214,6 +219,8 @@ void WebsterFDTD<ftype, kMaxN>::Process(ftype inputFlow, ftype outputFlow)
     auto E = E_.head(N_);
     auto A_walls = A_walls_.head(N_);
     auto B_walls = B_walls_.head(N_);
+
+    auto R_vec = R_vec_.head(N_ - 1);
 
     auto dv = d_plus_v_.head(N_);
     auto dSp = d_S_primal_.head(N_);
@@ -248,7 +255,8 @@ void WebsterFDTD<ftype, kMaxN>::Process(ftype inputFlow, ftype outputFlow)
             rho_next(N_ - 1) += F_ * outputFlow / A(N_ - 1);
         }
 
-        vel_next = vel_now - vel_coeff_ * (rho_next.tail(N_ - 1) - rho_next.head(N_ - 1));
+        vel_next = 1 / (1 + dt_ * R_vec / 2) *
+                   ((1 - dt_ * R_vec / 2) * vel_now - vel_coeff_ * (rho_next.tail(N_ - 1) - rho_next.head(N_ - 1)));
 
         wp_next = (1 / A_walls) * (B_walls * wp_now - kw * wdisp_now + (c02_ * ftype(0.5)) * (rho_now + rho_next));
 
@@ -271,7 +279,8 @@ void WebsterFDTD<ftype, kMaxN>::Process(ftype inputFlow, ftype outputFlow)
             rho_next(N_ - 1) += F_ * outputFlow / A(N_ - 1);
         }
 
-        vel_next = vel_now - vel_coeff_ * (rho_next.tail(N_ - 1) - rho_next.head(N_ - 1));
+        vel_next = 1 / (1 + dt_ * R_vec / 2) *
+                   ((1 - dt_ * R_vec / 2) * vel_now - vel_coeff_ * (rho_next.tail(N_ - 1) - rho_next.head(N_ - 1)));
     }
 
     if (compute_powers_) {
