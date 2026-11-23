@@ -2,6 +2,7 @@ import numpy as np
 import h5py
 import os.path as path
 import subprocess
+import scipy.io.wavfile
 
 ''' 
 This class is made to work with the VoiceReadWrite.cpp file. The main function fills an hdf5 file the relevant
@@ -25,9 +26,11 @@ class VoiceReadWrite:
         self.store_spatial_distributions_vt = False
 
         # Geometry articulation parameters
-        # 0 for constant section, 1 for formants setting, 2 for direct setting
+        # 0 for constant section, 1 for formants setting, 2 for direct setting, 3 for linear interpolation
         self.articulation_mode = 0
         self.constant_section = np.pi * 0.25e-4  # Only used if articulation_mode == 0
+        self.piecewise_linear_geometry = np.zeros(
+            2)  # Only used if articulation_mode == 3
         self.F1 = 300  # Only used if articulation_mode == 1
         self.F2 = 1200  # Only used if articulation_mode == 1
 
@@ -97,6 +100,7 @@ class VoiceReadWrite:
             x = np.linspace(
                 0, runner.l0, runner.compute_N_stability(self.sr), endpoint=True)
             f["discreteGeometry"] = self.geometry(x)
+            f["piecewiseLienarGeometry"] = self.piecewise_linear_geometry
 
             # Larynx parameters
             f.attrs["a_ct"] = self.a_ct
@@ -161,11 +165,11 @@ class VoiceReadWrite:
 
 if __name__ == "__main__":
     runner = VoiceReadWrite(
-        "../build/examples/VoiceReadWriteChirp/phonos-VoiceReadWriteChirp")
+        "../build/examples/phonos-voice_read_write_chirp_example")
     mute = False
     runner.lambda_sav = 1000
 
-    Pmax = 800
+    Pmax = 2000
     trise = 0.05
 
     def Psub(t):
@@ -173,14 +177,20 @@ if __name__ == "__main__":
     runner.Psub = Psub
 
     def Qchirp(t):
-        return np.sin(2 * np.pi * 440 * t) * 1e-4
+        return np.sin(2 * np.pi * 440 * t) * 0
     runner.Qchirp = Qchirp
 
-    runner.articulation_mode = 2
+    runner.articulation_mode = 3
 
+    # Directly set the discrete geometry
     def geometry(x):
         return np.ones_like(x) * 1e-4
     runner.geometry = geometry
+
+    # Specify a piecewise linear geometry using equally spaced point in [0, l0]
+    runner.piecewise_linear_geometry = ((np.flip(np.array([
+        32, 28, 30, 34, 38, 38, 34, 30, 26, 20, 14, 12, 16, 26, 18, 18, 18
+    ])) / 2) ** 2 * np.pi) * 1e-6
 
     runner.duration = 1
     runner.store_spatial_distributions = False
@@ -190,3 +200,5 @@ if __name__ == "__main__":
     runner.store_larynx_state = True
     runner.store_epsilon_sav = False
     results = runner.run_simulation("VoiceReadWriteChirpExample.hdf5", mute)
+    scipy.io.wavfile.write(
+        "son.wav", runner.sr, results["radiatedPressure"] / np.max(np.abs(results["radiatedPressure"])))

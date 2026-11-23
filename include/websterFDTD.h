@@ -1,6 +1,7 @@
 #pragma once
 
 #include <articulation.h>
+#include <iostream>
 #include <utility/biquad.h>
 
 #include <Eigen/Dense>
@@ -127,6 +128,42 @@ public:
     void DspSetup(ftype sampleRate, Articulation* art = nullptr);
 
     // Geometry setters
+    template<typename intype>
+    void SetTargetGeometryPiecewiseLinear(intype const* in, std::size_t const size)
+    {
+        if (size < 2) {
+            throw std::invalid_argument("Need at least 2 points for piecewise linear interpolation");
+        }
+
+        std::vector<ftype> interpolated_area(N_ + 1, 0.);
+
+        // Input grid spacing in index units: output point i sits at
+        // position t = i * (size - 1) / N_ on the input index axis.
+        for (std::size_t i = 0; i <= N_; ++i) {
+            ftype const t = static_cast<ftype>(i) * static_cast<ftype>(size - 1) / static_cast<ftype>(N_);
+
+            std::size_t index = static_cast<std::size_t>(t);
+            if (index >= size - 1) {
+                index = size - 2; // clamp so index + 1 is valid
+            }
+            ftype const frac = t - static_cast<ftype>(index); // in [0, 1]
+
+            interpolated_area[i] =
+                (1 - frac) * static_cast<ftype>(in[index]) + frac * static_cast<ftype>(in[index + 1]);
+        }
+
+        for (std::size_t i = 0; i <= N_; ++i) {
+            S_target_[i] = std::max(static_cast<ftype>(1e-8), interpolated_area[i]);
+        }
+
+        if (!time_varying_geometry_) {
+            S_direct_.head(N_) = S_target_.head(N_);
+            ComputeDiscreteGeometry();
+            UpdateRadiationParameters();
+            UpdateCoefficients();
+        }
+    }
+
     template<typename intype>
     void SetTargetGeometry(intype const* in, std::size_t const size)
     {

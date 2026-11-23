@@ -173,7 +173,7 @@ public:
                 out[i] = reduced_set_.areas[5];
             }
             // Bound the area
-            out[i] = std::max(T(1e-8), out[i]);
+            out[i] = std::max(T(0), out[i]);
         }
     };
 

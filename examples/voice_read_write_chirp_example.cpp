@@ -124,11 +124,23 @@ int main(int argc, char const* argv[])
         std::cout << "Using geometry computed from target Discrete Geometry" << std::endl;
         break;
 
+    case 3: // Piecewise linear interpolation considering equally spaced input in [0, l0]
+        storage.readVector("piecewiseLienarGeometry", discrete_geometry);
+        proc.get_resonator()->SetTargetGeometryPiecewiseLinear(discrete_geometry.data(), discrete_geometry.size());
+        std::cout << "Using geometry linearly inteprolated from target Geometry" << std::endl;
+        break;
+
     default: // Constant section (straight tube)
         storage.readAttribute("constantSection", constant_section);
         proc.get_resonator()->SetConstantSection(constant_section);
         std::cout << "Using constant section geometry with S=" << constant_section << " m^2." << std::endl;
         break;
+    }
+
+    std::vector<double> target_geometry(proc.get_resonator()->get_N(), 0.);
+    proc.get_resonator()->getTargetGeometry(target_geometry.data(), target_geometry.size());
+    for (int i = 0; i < proc.get_resonator()->get_N(); i++) {
+        std::cout << target_geometry[i] << std::endl;
     }
 
     /*
