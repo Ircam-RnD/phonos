@@ -13,6 +13,7 @@ set(examples
     duffing_example
     single_reed_example
     voice_example
+    voice_apa_example
     webster_fdtd_example
     webster_fdtd_timing_example
     benchmark_biquad_example
